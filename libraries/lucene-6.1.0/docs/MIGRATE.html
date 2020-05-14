@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Apache Lucene Migration Guide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1>Apache Lucene Migration Guide</h1>
+<h2>Query.hashCode and Query.equals are now abstract methods (<a href="https://issues.apache.org/jira/browse/LUCENE-7277">LUCENE-7277</a>)</h2>
+<p>Any custom query subclasses should redeclare equivalence relationship according to the subclass's details. See code patterns used in existing core Lucene query classes for details.</p>
+<h2>The way how number of document calculated is changed (<a href="https://issues.apache.org/jira/browse/LUCENE-6711">LUCENE-6711</a>)</h2>
+<p>The number of documents (numDocs) is used to calculate term specificity (idf) and average document length (avdl). Prior to <a href="https://issues.apache.org/jira/browse/LUCENE-6711">LUCENE-6711</a>, collectionStats.maxDoc() was used for the statistics. Now, collectionStats.docCount() is used whenever possible, if not maxDocs() is used.</p>
+<p>Assume that a collection contains 100 documents, and 50 of them have "keywords" field. In this example, maxDocs is 100 while docCount is 50 for the "keywords" field. The total number of tokens for "keywords" field is divided by docCount to obtain avdl. Therefore, docCount which is the total number of documents that have at least one term for the field, is a more precise metric for optional fields.</p>
+<p>DefaultSimilarity does not leverage avdl, so this change would have relatively minor change in the result list. Because relative idf values of terms will remain same. However, when combined with other factors such as term frequency, relative ranking of documents could change. Some Similarity implementations (such as the ones instantiated with NormalizationH2 and BM25) take account into avdl and would have notable change in ranked list. Especially if you have a collection of documents with varying lengths. Because NormalizationH2 tends to punish documents longer than avdl.</p>
+<h2>FunctionValues.exist() Behavior Changes due to ValueSource bug fixes (<a href="https://issues.apache.org/jira/browse/LUCENE-5961">LUCENE-5961</a>)</h2>
+<p>Bugs fixed in several ValueSource functions may result in different behavior in situations where some documents do not have values for fields wrapped in other ValueSources. Users who want to preserve the previous behavior may need to wrap their ValueSources in a "DefFunction" along with a ConstValueSource of "0.0".</p>
+<h2>Removal of Filter and FilteredQuery (<a href="https://issues.apache.org/jira/browse/LUCENE-6301">LUCENE-6301</a>,<a href="https://issues.apache.org/jira/browse/LUCENE-6583">LUCENE-6583</a>)</h2>
+<p>Filter and FilteredQuery have been removed. Regular queries can be used instead of filters as they have been optimized for the filtering case. And you can construct a BooleanQuery with one MUST clause for the query, and one FILTER clause for the filter in order to have similar behaviour to FilteredQuery.</p>
+<h2>PhraseQuery, MultiPhraseQuery, and BooleanQuery made immutable (<a href="https://issues.apache.org/jira/browse/LUCENE-6531">LUCENE-6531</a> <a href="https://issues.apache.org/jira/browse/LUCENE-7064">LUCENE-7064</a> <a href="https://issues.apache.org/jira/browse/LUCENE-6570">LUCENE-6570</a>)</h2>
+<p>PhraseQuery, MultiPhraseQuery, and BooleanQuery are now immutable and have a builder API to help construct them. For instance a BooleanQuery that used to be constructed like this:</p>
+<p>BooleanQuery bq = new BooleanQuery();  bq.add(q1, Occur.SHOULD);  bq.add(q2, Occur.SHOULD);  bq.add(q3, Occur.MUST);  bq.setMinimumNumberShouldMatch(1);</p>
+<p>can now be constructed this way using its builder:</p>
+<p>BooleanQuery bq = new BooleanQuery.Builder()  .add(q1, Occur.SHOULD)  .add(q2, Occur.SHOULD)  .add(q3, Occur.SHOULD)  .setMinimumNumberShouldMatch(1)  .build();</p>
+<h2>AttributeImpl now requires that reflectWith() is implemented (<a href="https://issues.apache.org/jira/browse/LUCENE-6651">LUCENE-6651</a>)</h2>
+<p>AttributeImpl removed the default, reflection-based implementation of reflectWith(AtrributeReflector). The method was made abstract. If you have implemented your own attribute, make sure to add the required method sigature. See the Javadocs for an example.</p>
+<h2>Query.setBoost() and Query.clone() are removed (<a href="https://issues.apache.org/jira/browse/LUCENE-6590">LUCENE-6590</a>)</h2>
+<p>Query.setBoost has been removed. In order to apply a boost to a Query, you now need to wrap it inside a BoostQuery. For instance,</p>
+<p>Query q = &hellip;;  float boost = &hellip;;  q = new BoostQuery(q, boost);</p>
+<p>would be equivalent to the following code with the old setBoost API:</p>
+<p>Query q = &hellip;;  float boost = &hellip;;  q.setBoost(q.getBoost() * boost);</p>
+<h1>PointValues replaces NumericField (<a href="https://issues.apache.org/jira/browse/LUCENE-6917">LUCENE-6917</a>)</h1>
+<p>PointValues provides faster indexing and searching, a smaller index size, and less heap used at search time. See org.apache.lucene.index.PointValues for an introduction. </p>
+<p>Legacy numeric encodings from previous versions of Lucene are deprecated as LegacyIntField, LegacyFloatField, LegacyLongField, and LegacyDoubleField, and can be searched with LegacyNumericRangeQuery.</p>
+</body>
+</html>

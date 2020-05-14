@@ -1,0 +1,4 @@
+org.apache.lucene.spatial
+org.apache.lucene.spatial.geopoint.document
+org.apache.lucene.spatial.geopoint.search
+org.apache.lucene.spatial.util
