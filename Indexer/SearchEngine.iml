@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libraries" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-common" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-icu" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-kuromoji" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-morfologik" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-phonetic" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-smartcn" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-stempel" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/analyzers-uima" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/backward-codecs" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/benchmark" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/classification" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/codecs" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/core" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/demo" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/expressions" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/facet" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/grouping" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/highlighter" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/join" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/memory" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/misc" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/queries" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/queryparser" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/replicator" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/sandbox" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/spatial" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/spatial-extras" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/spatial3d" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/suggest" />
+          <root url="file://$MODULE_DIR$/libraries/lucene-6.1.0/docs/test-framework" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/libraries" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libraries/lucene-6.1.0/analysis/common/lucene-analyzers-common-6.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libraries/lucene-6.1.0/core/lucene-core-6.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
