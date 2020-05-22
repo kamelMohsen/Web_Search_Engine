@@ -14,24 +14,42 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class PageRanker implements Runnable {
-    private static final String DATABASE_NAME = "";
-    private static final String CRAWLER_COLLECTION_NAME = ""; //write crawler table name here
+public class PageRanker  {
+    private static final String DATABASE_NAME = "Index";
+    private static final String CRAWLER_COLLECTION_NAME = "Index"; //write crawler table name here
     private static final String INDEXER_COLLECTION_NAME = "";
-    public static void calculatePageRank(Document doc){
 
-            float tempSum = 0;
-            for (int i = 0; i < doc.linksPageRanks; i++) {
-                tempSum += doc.linksPageRanks[i].pageRank / doc.linksPageRanks[i].numberOfOutboundLinks;
+    public static void calculatePageRank(MongoDatabase database){
+        MongoCollection<Document> collection = database.getCollection(CRAWLER_COLLECTION_NAME);
+        MongoCursor<Document> cur = collection.find().cursor();
+            if (cur.hasNext()) {
+                Document current = cur.next();
+                String url = (String) current.get("InboundLinks");
+                //System.out.println(url);
+                MongoCursor<Document> curt = collection.find(eq("url", url)).cursor();
+                if (curt.hasNext()) {
+                    double rank = (double) curt.next().get("PageRank");
+                    BasicDBObject query = new BasicDBObject();
+                    query.put("InboundLinks", url); // (1)
 
-            }
+                    BasicDBObject newDocument = new BasicDBObject();
+                    newDocument.put("PageRank", rank); // (2)
 
+                    BasicDBObject updateObject = new BasicDBObject();
+                    updateObject.put("$set", newDocument); // (3)
 
+                    database.getCollection("Index").updateMany(query, updateObject); // (
+                }
+                else{
+                    System.out.println("can't do");
+                    return;
+            }}
+        
     }
     public static void updateDocumentByID(){}
 
 
-    public void run() {
+    public static void main(String[] args) {
 //        MongoClient mongoMan = new MongoClient("localhost", 27017);
 //        MongoDatabase database = mongoMan.getDatabase("Index");
 //        MongoCollection<Document> collection = database.getCollection("Index");
@@ -61,14 +79,11 @@ public class PageRanker implements Runnable {
         //TODO: retrieve an object representing the crawler's collection
         MongoCollection<Document> collection = database.getCollection(CRAWLER_COLLECTION_NAME);
 
+        calculatePageRank(database);
         //TODO: retrieve un-ranked urls
         //TODO: rank them according to the pageRank
         //TODO: update the crawler collection
-        MongoCursor<Document> cur = collection.find(eq("ranked", "0")).cursor();
-        while (cur.hasNext()){
-            calculatePageRank(cur.next());
-//            updateDocumentByID();
-        }
+
 
     }
 
