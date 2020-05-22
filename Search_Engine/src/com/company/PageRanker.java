@@ -13,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
 public class PageRanker  {
     private static final String DATABASE_NAME = "Index";
@@ -22,70 +23,50 @@ public class PageRanker  {
     public static void calculatePageRank(MongoDatabase database){
         MongoCollection<Document> collection = database.getCollection(CRAWLER_COLLECTION_NAME);
         MongoCursor<Document> cur = collection.find().cursor();
-            if (cur.hasNext()) {
-                Document current = cur.next();
-                String url = (String) current.get("InboundLinks");
-                //System.out.println(url);
-                MongoCursor<Document> curt = collection.find(eq("url", url)).cursor();
-                if (curt.hasNext()) {
-                    double rank = (double) curt.next().get("PageRank");
-                    BasicDBObject query = new BasicDBObject();
-                    query.put("InboundLinks", url); // (1)
 
-                    BasicDBObject newDocument = new BasicDBObject();
-                    newDocument.put("PageRank", rank); // (2)
+        if(cur.hasNext()) {
+            Document current = cur.next();
+            String currentUrl = (String) current.get("url");
+            ArrayList<String> courses = (ArrayList<String>) current.get("InboundLinks");
+            ArrayList<URLRank>  pageRankArray = new ArrayList<URLRank>();
+            MongoCursor<Document> curt = collection.find().cursor();
+            while(curt.hasNext()) {
+                    Document doc = curt.next();
 
-                    BasicDBObject updateObject = new BasicDBObject();
-                    updateObject.put("$set", newDocument); // (3)
+                    String s = (String) doc.get("url");
+                    for (String e: courses){
+                        if (e.equals(s)){
+                            double rank = (double) doc.get("PageRank");
+                            int noOfLinks = (int) doc.get("NoOfOutBoundLinks");
+                            pageRankArray.add(new URLRank(rank, noOfLinks));
+                        }
+                    }
+            }
+            double actualRank = 0;
+            for (URLRank e: pageRankArray) {
+                actualRank += e.calculateRankSlice();
+            }
+            System.out.println(actualRank);
+            BasicDBObject query = new BasicDBObject();
+            query.put("url", currentUrl); // (1)
 
-                    database.getCollection("Index").updateMany(query, updateObject); // (
-                }
-                else{
-                    System.out.println("can't do");
-                    return;
-            }}
-        
+            BasicDBObject newDocument = new BasicDBObject();
+            newDocument.put("PageRank", actualRank); // (2)
+
+            BasicDBObject updateObject = new BasicDBObject();
+            updateObject.put("$set", newDocument); // (3)
+
+            database.getCollection("Index").updateMany(query, updateObject);
+        }
+
     }
-    public static void updateDocumentByID(){}
 
 
     public static void main(String[] args) {
-//        MongoClient mongoMan = new MongoClient("localhost", 27017);
-//        MongoDatabase database = mongoMan.getDatabase("Index");
-//        MongoCollection<Document> collection = database.getCollection("Index");
-//        MongoCursor<Document> cur = collection.find().iterator();
-//        ArrayList<String> names = new ArrayList<String>();
-//        while (cur.hasNext()){
-//            Document obj = cur.next();
-//            String name3 = obj.getString("name");
-//            names.add(name3);
-//            System.out.println(name3);
-//        }
-//        BasicDBObject query = new BasicDBObject();
-//        query.put("name", "Ahmad Nader");
-//
-//        BasicDBObject newDocument = new BasicDBObject();
-//        newDocument.put("name", "Nadora");
-//
-//        BasicDBObject updateObject = new BasicDBObject();
-//        updateObject.put("$set", newDocument);
-//
-//        database.getCollection("Index").updateOne(query, updateObject);
-
         //TODO: open a connection to the database
         MongoClient mongoMan = new MongoClient("localhost", 27017);
         MongoDatabase database = mongoMan.getDatabase(DATABASE_NAME);
-
-        //TODO: retrieve an object representing the crawler's collection
         MongoCollection<Document> collection = database.getCollection(CRAWLER_COLLECTION_NAME);
-
         calculatePageRank(database);
-        //TODO: retrieve un-ranked urls
-        //TODO: rank them according to the pageRank
-        //TODO: update the crawler collection
-
-
     }
-
-
 }
