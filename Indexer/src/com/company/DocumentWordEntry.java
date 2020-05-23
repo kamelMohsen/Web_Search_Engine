@@ -1,13 +1,15 @@
 package com.company;
 
+import java.util.List;
+
 public class DocumentWordEntry {
     private String docID;
     private int frequency;
     private boolean inTitle;
     private String firstStatement;
-    private String imgSrc;
+    private List<String> imgSrc;
 
-    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, String imgSrc) {
+    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, List<String> imgSrc) {
         this.docID = docID;
         this.frequency = frequency;
         this.inTitle = inTitle;
@@ -18,11 +20,13 @@ public class DocumentWordEntry {
 
     // Setters & Getters
 
-    public String getImgSrc() {
+    public List<String> getImgSrcList() {
         return imgSrc;
     }
-
-    public void setImgSrc(String imgSrc) {
+    public String getImgSrc(int i) {
+        return imgSrc.get(i);
+    }
+    public void setImgSrc(List<String> imgSrc) {
         this.imgSrc = imgSrc;
     }
 

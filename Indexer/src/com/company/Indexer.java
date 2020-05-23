@@ -13,19 +13,21 @@ import java.util.*;
 import static java.lang.System.exit;
 import static java.lang.System.setErr;
 
-public class Indexer {
+public class Indexer  {
 
 
     public static void main(String[] args)  {
         DataBase dataBase = new DataBase();
         long startTime = System.nanoTime();
 
-        List<Link> linksList = new LinkedList<>();
-        dataBase.getLinks(linksList);
+//        List<Link> linksList = new LinkedList<>();
+//        dataBase.getLinks(linksList);
+//
+//        for(int i =0;i<linksList.size();i++) {
+//            index(linksList.get(i).getId(),linksList.get(i).getUrl(), dataBase);
+//        }
 
-        for(int i =0;i<linksList.size();i++) {
-            index(linksList.get(i).getId(),linksList.get(i).getUrl(), dataBase);
-        }
+        index("a","https://www.bbc.com/", dataBase);
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
         System.out.println("Total time is : "+totalTime/1000000000);
@@ -42,7 +44,7 @@ public class Indexer {
 
             for(int i = 0 ;i<keywordsList.size();i++)
             {
-                DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml,keywordsList.get(i).getFirstStatement(),keywordsList.get(i).getImgSrc());
+                DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml,keywordsList.get(i).getFirstStatement(),keywordsList.get(i).getImgSrcList());
                 IndexItem newIndexEntry = new IndexItem(keywordsList.get(i).getStem(),documentWordElement);
                 dataBase.updateIndex(newIndexEntry);
             }
@@ -68,6 +70,7 @@ public class Indexer {
             for(int i = 0; i<htmlPage.getImgList().size(); i++){
                 try {
                     imageKeywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getImgList().get(i).getAltText(),htmlPage.getImgList().get(i).getSrc());
+
                 } catch (IOException e) {
                     System.out.println("Failed extracting words from image alt text");
                     e.printStackTrace();
@@ -81,7 +84,7 @@ public class Indexer {
         for(int i = 0; i < keywordsList.size(); i++){
             for(int j = 0; j < imageKeywordsList.size(); j++){
                 if(keywordsList.get(i).getStem().equals(imageKeywordsList.get(j).getStem())){
-                    keywordsList.get(i).setImgSrc(imageKeywordsList.get(j).getImgSrc());
+                    keywordsList.get(i).addImgSrc(imageKeywordsList.get(j).getImgSrc(0));
                 }
             }
         }
@@ -99,7 +102,7 @@ public class Indexer {
         return keywordsList;
     }
 
-    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, String imageSrc) {
+    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, List<String> imageSrcList) {
 
         DocumentWordEntry newDocumentWordEntry = null;
         List<Keyword> keywordsListTitle = null;
@@ -112,7 +115,7 @@ public class Indexer {
             exit(0);
         }
 
-            newDocumentWordEntry = new DocumentWordEntry(htmlPage.getId(),frequency,inTitle(word,keywordsListTitle),firstStatement,imageSrc);
+            newDocumentWordEntry = new DocumentWordEntry(htmlPage.getId(),frequency,inTitle(word,keywordsListTitle),firstStatement,imageSrcList);
 
 
         return newDocumentWordEntry;

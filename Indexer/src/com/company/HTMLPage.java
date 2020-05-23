@@ -46,12 +46,7 @@ public class HTMLPage {
 
                 src = metaTag.attr("src").toLowerCase();
 
-                try{
-                    URL url1 = new URL(src);
-                }catch(MalformedURLException e){
-                    alt = "";
-                    src = "";
-                }
+
                 if(!alt.equals("") && !src.equals("")) {
                     ImageContainer imageContainer = new ImageContainer(alt,src);
                     imgList.add(imageContainer);
