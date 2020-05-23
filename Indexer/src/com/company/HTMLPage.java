@@ -1,4 +1,5 @@
 package com.company;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -6,12 +7,14 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.NodeVisitor;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.List;
 
 public class HTMLPage {
     private Integer id;
@@ -19,40 +22,77 @@ public class HTMLPage {
     private Document parsedHtml;
     private String title;
     private String text;
-
+    private List<ImageContainer> imgList;
 
 
     //Constructor that makes HtmlPage with initialized info
     public HTMLPage(Integer id, String url) throws IOException {
+        this.imgList = new LinkedList<>();
+        try {
+            parsedHtml = Jsoup.connect(url).get();
+            StringBuilder parsedText = new StringBuilder();
+            this.id = id;
+            this.url = url;
 
-        parsedHtml = Jsoup.connect(url).get();
-        StringBuilder parsedText = new StringBuilder();
-        this.id = id;
-        this.url = url;
+            // Extract title
+            this.title = parsedHtml.title().toLowerCase().replaceAll("[^a-z0-9]", " ");
 
-        // Extract title
-        this.title = parsedHtml.title().toLowerCase().replaceAll("[^a-z0-9]", " ");
+            String alt = "";
+            String src = "";
+            for(Element metaTag: parsedHtml.getElementsByTag("img")) {
+
+                alt = metaTag.attr("alt").toLowerCase();
 
 
-        // Extract text
-        parsedHtml.body().traverse(new NodeVisitor() {
-            @Override
-            public void head(Node node, int i) {
-                if (node instanceof TextNode && !((TextNode) node).isBlank()) {
-                    parsedText.append(((TextNode) node).text().toLowerCase().replaceAll("[^a-z0-9]", " "))
-                            .append(" ");
+                src = metaTag.attr("src").toLowerCase();
+
+                try{
+                    URL url1 = new URL(src);
+                }catch(MalformedURLException e){
+                    alt = "";
+                    src = "";
+                }
+                if(!alt.equals("") && !src.equals("")) {
+                    ImageContainer imageContainer = new ImageContainer(alt,src);
+                    imgList.add(imageContainer);
+                    alt = "";
+                    src = "";
                 }
             }
 
-            @Override
-            public void tail(Node node, int i) {
+            // Extract text
+            parsedHtml.body().traverse(new NodeVisitor() {
+                @Override
+                public void head(Node node, int i) {
+                    if (node instanceof TextNode && !((TextNode) node).isBlank()) {
+                        parsedText.append(((TextNode) node).text().toLowerCase().replaceAll("[^a-z0-9]", " "))
+                                .append(" ");
+                    }
+                }
 
-            }
-        });
-        this.text = parsedText.toString();
+                @Override
+                public void tail(Node node, int i) {
+
+                }
+            });
+            this.text = parsedText.toString();
+
+        }catch (HttpStatusException e)
+        {
+
+        }
     }
 
    // Setters & Getters
+
+    public List<ImageContainer> getImgList() {
+        return imgList;
+    }
+
+    public void setImgList(List<ImageContainer> imgList) {
+        this.imgList = imgList;
+    }
+
     public Integer getId() {
         return id;
     }

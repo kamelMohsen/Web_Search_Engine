@@ -9,8 +9,6 @@ public class IndexItem {
 
     private String word;
 
-
-
     private DocumentWordEntry documentWordElement;
 
     public IndexItem(String word, DocumentWordEntry documentWordEntriesList) {
