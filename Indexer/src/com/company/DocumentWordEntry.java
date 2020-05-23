@@ -1,13 +1,13 @@
 package com.company;
 
 public class DocumentWordEntry {
-    private int docID;
+    private String docID;
     private int frequency;
     private boolean inTitle;
     private String firstStatement;
     private String imgSrc;
 
-    public DocumentWordEntry(int docID, int frequency, boolean inTitle, String firstStatement, String imgSrc) {
+    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, String imgSrc) {
         this.docID = docID;
         this.frequency = frequency;
         this.inTitle = inTitle;
@@ -34,11 +34,11 @@ public class DocumentWordEntry {
         this.firstStatement = firstStatement;
     }
 
-    public int getDocID() {
+    public String getDocID() {
         return docID;
     }
 
-    public void setDocID(int docID) {
+    public void setDocID(String docID) {
         this.docID = docID;
     }
 

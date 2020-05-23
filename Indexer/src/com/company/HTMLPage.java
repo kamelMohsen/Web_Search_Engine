@@ -17,7 +17,7 @@ import java.util.*;
 import java.util.List;
 
 public class HTMLPage {
-    private Integer id;
+    private String id;
     private String url;
     private Document parsedHtml;
     private String title;
@@ -26,7 +26,7 @@ public class HTMLPage {
 
 
     //Constructor that makes HtmlPage with initialized info
-    public HTMLPage(Integer id, String url) throws IOException {
+    public HTMLPage(String id, String url) throws IOException {
         this.imgList = new LinkedList<>();
         try {
             parsedHtml = Jsoup.connect(url).get();
@@ -93,11 +93,11 @@ public class HTMLPage {
         this.imgList = imgList;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

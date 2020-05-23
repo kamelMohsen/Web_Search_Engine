@@ -2,29 +2,40 @@ package com.company;
 
 import com.mongodb.*;
 import org.bson.Document;
+import org.bson.types.ObjectId;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class DataBase {
     MongoClient mongoClient ;
     DB indexDB ;
     DBCollection indexCollection;
-    DB htmlsDB ;
-    DBCollection htmlsCollection;
+    DB crawlerDB ;
+    DBCollection crawlerCollection;
 
     public DataBase(){
         this.mongoClient  = new MongoClient("localhost", 27017);
         indexDB = mongoClient.getDB("index");
-        htmlsDB = mongoClient.getDB("htmls");
+        crawlerDB = mongoClient.getDB("CrawlerDB");
         indexCollection = indexDB.getCollection("index_table");
-        htmlsCollection = htmlsDB.getCollection("websites_table");
+        crawlerCollection = crawlerDB.getCollection("Links");
 
     }
 
-    public void dropIndexDB(){
-        indexDB.dropDatabase();
-    }
-
-    public void dropHtmlsDB(){
-
+    public void getLinks(List<Link> linksList){
+        DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0).append("Visited",1));
+        int size = cur.size();
+        for(int i = 0 ;i< size;i++) {
+            DBObject doc = cur.next();
+            String URL = (String) doc.get("URL");
+            ObjectId objID = (ObjectId) doc.get("_id");
+            String ID = objID.toString();
+            Link link = new Link(URL,ID);
+            linksList.add(link);
+        }
     }
 
     public void updateIndex(IndexItem indexItem) {

@@ -57,7 +57,7 @@ public class Scraper {
                 }
             }
 
-            System.out.println(metaKeyWords + "      ");
+
             if (metaKeyWords.toLowerCase().contains("news") || metaKeyWords.toLowerCase().contains("movie") || metaKeyWords.toLowerCase().contains("tv") || metaKeyWords.toLowerCase().contains("radio") || metaKeyWords.toLowerCase().contains("music") || metaKeyWords.toLowerCase().contains("sport"))
                 importance = 1;
             Elements hyperLinks = htmlDocument.select("a[href]");
@@ -88,7 +88,7 @@ public class Scraper {
             baseUrl = url.getProtocol() + "://" + url.getHost();
 
         } catch (MalformedURLException e) {
-            System.out.println(" ");
+            System.out.println("Malformed Exception ");
         }
         return baseUrl;
     }

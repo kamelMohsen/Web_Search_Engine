@@ -1,13 +1,14 @@
 package com.company;
 
+import org.jsoup.nodes.Element;
+
 import javax.swing.*;
 import javax.swing.text.html.HTML;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 import static java.lang.System.exit;
 import static java.lang.System.setErr;
@@ -18,22 +19,19 @@ public class Indexer {
     public static void main(String[] args)  {
         DataBase dataBase = new DataBase();
         long startTime = System.nanoTime();
-        index(0,"https://en.wikipedia.org/",dataBase);
-        index(1,"https://www.bbc.com/",dataBase);
-        index(2,"https://www.theguardian.com/",dataBase);
-        index(3,"https://web.whatsapp.com/",dataBase);
-        index(4,"https://www.youtube.com/",dataBase);
-        index(5,"https://www.eharmony.com/",dataBase);
-        index(6,"https://www.match.com/",dataBase);
-        index(7,"https://maktoob.yahoo.com/",dataBase);
-        index(8,"https://mail.google.com/",dataBase);
-        index(9,"https://www.nytimes.com/",dataBase);
+
+        List<Link> linksList = new LinkedList<>();
+        dataBase.getLinks(linksList);
+
+        for(int i =0;i<linksList.size();i++) {
+            index(linksList.get(i).getId(),linksList.get(i).getUrl(), dataBase);
+        }
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
         System.out.println("Total time is : "+totalTime/1000000000);
     }
 
-    public static void index(int id, String url, DataBase dataBase){
+    public static void index(String id, String url, DataBase dataBase){
 
         //Create HTMLPage object
             HTMLPage newHtml = createHtmlPage(id,url);
@@ -51,7 +49,7 @@ public class Indexer {
             }
     }
 
-    public static HTMLPage createHtmlPage(int id, String url)  {
+    public static HTMLPage createHtmlPage(String id, String url)  {
         HTMLPage newHtml = null;
         try {
             newHtml = new HTMLPage(id,url);
