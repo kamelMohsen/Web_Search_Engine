@@ -14,23 +14,40 @@ import static java.lang.System.setErr;
 
 public class Indexer {
 
+
     public static void main(String[] args)  {
         DataBase dataBase = new DataBase();
-        index(0,"https://www.bbc.com/",dataBase);
-        index(1,"https://en.wikipedia.org/wiki/Main_Page",dataBase);
-
+        long startTime = System.nanoTime();
+        index(0,"https://en.wikipedia.org/",dataBase);
+        index(1,"https://www.bbc.com/",dataBase);
+        index(2,"https://www.theguardian.com/",dataBase);
+        index(3,"https://web.whatsapp.com/",dataBase);
+        index(4,"https://www.youtube.com/",dataBase);
+        index(5,"https://www.eharmony.com/",dataBase);
+        index(6,"https://www.match.com/",dataBase);
+        index(7,"https://maktoob.yahoo.com/",dataBase);
+        index(8,"https://mail.google.com/",dataBase);
+        index(9,"https://www.nytimes.com/",dataBase);
+        long endTime   = System.nanoTime();
+        long totalTime = endTime - startTime;
+        System.out.println("Total time is : "+totalTime/1000000000);
     }
 
     public static void index(int id, String url, DataBase dataBase){
 
         //Create HTMLPage object
             HTMLPage newHtml = createHtmlPage(id,url);
+            if(newHtml.getParsedHtml() != null)
+            {
             List<Keyword> keywordsList = findKeywords(newHtml);
+            mergeImages(newHtml,keywordsList);
+
             for(int i = 0 ;i<keywordsList.size();i++)
             {
-                DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml);
+                DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml,keywordsList.get(i).getFirstStatement(),keywordsList.get(i).getImgSrc());
                 IndexItem newIndexEntry = new IndexItem(keywordsList.get(i).getStem(),documentWordElement);
                 dataBase.updateIndex(newIndexEntry);
+            }
             }
     }
 
@@ -45,7 +62,32 @@ public class Indexer {
         }
             return newHtml;
     }
+    public static void mergeImages(HTMLPage htmlPage,List<Keyword> keywordsList){
+        List<Keyword> imageKeywordsList = null;
 
+
+
+            for(int i = 0; i<htmlPage.getImgList().size(); i++){
+                try {
+                    imageKeywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getImgList().get(i).getAltText(),htmlPage.getImgList().get(i).getSrc());
+                } catch (IOException e) {
+                    System.out.println("Failed extracting words from image alt text");
+                    e.printStackTrace();
+                    exit(0);
+                }
+                getMatches(keywordsList,imageKeywordsList);
+            }
+
+    }
+    public static void getMatches(List<Keyword> keywordsList,List<Keyword> imageKeywordsList) {
+        for(int i = 0; i < keywordsList.size(); i++){
+            for(int j = 0; j < imageKeywordsList.size(); j++){
+                if(keywordsList.get(i).getStem().equals(imageKeywordsList.get(j).getStem())){
+                    keywordsList.get(i).setImgSrc(imageKeywordsList.get(j).getImgSrc());
+                }
+            }
+        }
+    }
     public static List<Keyword> findKeywords(HTMLPage htmlPage) {
         List<Keyword> keywordsList = null;
         try {
@@ -55,10 +97,11 @@ public class Indexer {
             e.printStackTrace();
             exit(0);
         }
+
         return keywordsList;
     }
 
-    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage) {
+    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, String imageSrc) {
 
         DocumentWordEntry newDocumentWordEntry = null;
         List<Keyword> keywordsListTitle = null;
@@ -71,7 +114,7 @@ public class Indexer {
             exit(0);
         }
 
-            newDocumentWordEntry = new DocumentWordEntry(htmlPage.getId(),frequency,inTitle(word,keywordsListTitle));
+            newDocumentWordEntry = new DocumentWordEntry(htmlPage.getId(),frequency,inTitle(word,keywordsListTitle),firstStatement,imageSrc);
 
 
         return newDocumentWordEntry;

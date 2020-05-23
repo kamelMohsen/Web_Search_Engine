@@ -12,10 +12,31 @@ class Keyword implements Comparable<Keyword> {
     private final String stem;
     private final Set<String> terms = new HashSet<>();
     private int frequency;
+    private String firstStatement;
+    private String imgSrc;
 
 
-    public Keyword(String stem) {
+    public String getImgSrc() {
+        return imgSrc;
+    }
+
+    public void setImgSrc(String imgSrc) {
+        this.imgSrc = imgSrc;
+    }
+
+    public String getFirstStatement() {
+        return firstStatement;
+    }
+
+    public void setFirstStatement(String firstStatement) {
+        this.firstStatement = firstStatement;
+    }
+
+    public Keyword(String stem,String firstStatement, String imgSrc) {
+
         this.stem = stem;
+        this.firstStatement = firstStatement;
+        this.imgSrc = imgSrc;
     }
     public void add(String term) {
         this.terms.add(term);

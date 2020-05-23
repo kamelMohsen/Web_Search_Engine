@@ -30,6 +30,7 @@ class KeywordsExtractor {
 
         TokenStream tokenStream = null;
 
+
         try {
             // treat the dashed words, don't let separate them during the processing
             fullText = fullText.replaceAll("-+", "-0");
@@ -46,17 +47,32 @@ class KeywordsExtractor {
             tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
             tokenStream.reset();
 
+
+
             List<Keyword> cardKeywords = new LinkedList<>();
 
             CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
 
+            String wholeText = "";
+            String [] splitTerms = null;
+            String firstStatement = "";
+            int counter = 0;
             while (tokenStream.incrementToken()) {
-
+                firstStatement = "";
                 String term = token.toString();
+                wholeText += " "+term;
                 String stem = getStemForm(term);
 
+                splitTerms = wholeText.split(" ");
+
+                int start = ((counter - 5 > 0) ? (counter - 5):0);
+                int end = ((counter + 5 < splitTerms.length - 1) ? (counter+5):splitTerms.length - 1);
+                for(int i = start; i <= end ; i++){
+                    firstStatement += " " + splitTerms[i];
+                }
+                counter++;
                 if (stem != null) {
-                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-")));
+                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement,""));
                     // treat the dashed words back, let look them pretty
                     cardKeyword.add(term.replaceAll("-0", "-"));
                 }
@@ -76,7 +92,72 @@ class KeywordsExtractor {
             }
         }
     }
+    static List<Keyword> getKeywordsList(String fullText,String imgSrc) throws IOException {
 
+        TokenStream tokenStream = null;
+
+
+        try {
+            // treat the dashed words, don't let separate them during the processing
+            fullText = fullText.replaceAll("-+", "-0");
+
+            // replace any punctuation char but apostrophes and dashes with a space
+            fullText = fullText.replaceAll("[\\p{Punct}&&[^'-]]+", " ");
+
+            // replace most common English contractions
+            fullText = fullText.replaceAll("(?:'(?:[tdsm]|[vr]e|ll))+\\b", "");
+
+            StandardTokenizer stdToken = new StandardTokenizer();
+            stdToken.setReader(new StringReader(fullText));
+
+            tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
+            tokenStream.reset();
+
+
+
+            List<Keyword> cardKeywords = new LinkedList<>();
+
+            CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+
+            String wholeText = "";
+            String [] splitTerms = null;
+            String firstStatement = "";
+            int counter = 0;
+            while (tokenStream.incrementToken()) {
+                firstStatement = "";
+                String term = token.toString();
+                wholeText += " "+term;
+                String stem = getStemForm(term);
+
+                splitTerms = wholeText.split(" ");
+
+                int start = ((counter - 5 > 0) ? (counter - 5):0);
+                int end = ((counter + 5 < splitTerms.length - 1) ? (counter+5):splitTerms.length - 1);
+                for(int i = start; i <= end ; i++){
+                    firstStatement += " " + splitTerms[i];
+                }
+                counter++;
+                if (stem != null) {
+                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement,imgSrc));
+                    // treat the dashed words back, let look them pretty
+                    cardKeyword.add(term.replaceAll("-0", "-"));
+                }
+            }
+
+            // reverse sort by frequency
+            Collections.sort(cardKeywords);
+
+            return cardKeywords;
+        } finally {
+            if (tokenStream != null) {
+                try {
+                    tokenStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
     /**
      * Get stem form of the term
      *
