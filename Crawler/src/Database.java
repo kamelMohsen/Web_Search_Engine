@@ -41,7 +41,8 @@ public class Database {
             BasicDBObject crawlerEntry = new BasicDBObject("URL", Link.get(i))
                     .append("Visited", 0)
                     .append("indexed", 0)
-                    .append("importance",0);
+                    .append("importance",0)
+                    .append("PageRank", 0);
 
 
             crawlerCollection.insert(crawlerEntry);
@@ -59,7 +60,8 @@ public class Database {
             BasicDBObject crawlerEntry = new BasicDBObject("URL", Link)
                     .append("Visited", 1)
                     .append("indexed", 0)
-                    .append("importance",importance);
+                    .append("importance",importance)
+                    .append("PageRank", 0);
 
 
             crawlerCollection.insert(crawlerEntry);
