@@ -20,11 +20,20 @@ public class DataBase {
         this.mongoClient  = new MongoClient("localhost", 27017);
         indexDB = mongoClient.getDB("index");
         crawlerDB = mongoClient.getDB("CrawlerDB");
-        indexCollection = indexDB.getCollection("index_table1");
+        indexCollection = indexDB.getCollection("index_table_wikipedia");
         crawlerCollection = crawlerDB.getCollection("Links");
 
     }
 
+    public void setIndexed(String _id){
+
+        DBObject findQuery = new BasicDBObject("_id",new ObjectId(_id));
+        DBObject objQuery = new BasicDBObject("indexed", 1);
+        DBObject updateQuery = new BasicDBObject("$set",objQuery );
+        if(crawlerCollection.find(findQuery).count() != 0)
+            crawlerCollection.update(findQuery, updateQuery);
+
+    }
     public void getLinks(List<Link> linksList){
         DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0).append("Visited",1));
         int size = cur.size();

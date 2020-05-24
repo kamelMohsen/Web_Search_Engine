@@ -13,27 +13,41 @@ import java.util.*;
 import static java.lang.System.exit;
 import static java.lang.System.setErr;
 
-public class Indexer  {
+public class Indexer  implements Runnable{
 
+    DataBase dataBase ;
+    List<Link> linksList;
+    String ID;
+    String url;
 
-    public static void main(String[] args)  {
-        DataBase dataBase = new DataBase();
-        long startTime = System.nanoTime();
-
-//        List<Link> linksList = new LinkedList<>();
-//        dataBase.getLinks(linksList);
-//
-//        for(int i =0;i<linksList.size();i++) {
-//            index(linksList.get(i).getId(),linksList.get(i).getUrl(), dataBase);
-//        }
-
-        index("a","https://www.bbc.com/", dataBase);
-        long endTime   = System.nanoTime();
-        long totalTime = endTime - startTime;
-        System.out.println("Total time is : "+totalTime/1000000000);
+    public Indexer(DataBase dataBase, List<Link> linksList) {
+        this.dataBase = dataBase;
+        this.linksList = linksList;
     }
 
-    public static void index(String id, String url, DataBase dataBase){
+    public void startIndexing() {
+
+
+        while (true) {
+            synchronized (linksList) {
+                if(linksList.size()==0)
+                    break;
+                try {
+                    this.url = "";
+                    this.ID = "";
+                    this.url = linksList.get(0).getUrl();
+                    this.ID = linksList.remove(0).getId();
+                }catch(NullPointerException e)
+                {
+
+                }
+            }
+            index(this.ID,this.url , dataBase);
+        }
+
+
+    }
+    public  void index(String id, String url, DataBase dataBase){
 
         //Create HTMLPage object
             HTMLPage newHtml = createHtmlPage(id,url);
@@ -46,12 +60,15 @@ public class Indexer  {
             {
                 DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml,keywordsList.get(i).getFirstStatement(),keywordsList.get(i).getImgSrcList());
                 IndexItem newIndexEntry = new IndexItem(keywordsList.get(i).getStem(),documentWordElement);
+                synchronized (dataBase){
                 dataBase.updateIndex(newIndexEntry);
+                dataBase.setIndexed(id);
+                }
             }
             }
     }
 
-    public static HTMLPage createHtmlPage(String id, String url)  {
+    public  HTMLPage createHtmlPage(String id, String url)  {
         HTMLPage newHtml = null;
         try {
             newHtml = new HTMLPage(id,url);
@@ -62,7 +79,7 @@ public class Indexer  {
         }
             return newHtml;
     }
-    public static void mergeImages(HTMLPage htmlPage,List<Keyword> keywordsList){
+    public  void mergeImages(HTMLPage htmlPage,List<Keyword> keywordsList){
         List<Keyword> imageKeywordsList = null;
 
 
@@ -80,7 +97,7 @@ public class Indexer  {
             }
 
     }
-    public static void getMatches(List<Keyword> keywordsList,List<Keyword> imageKeywordsList) {
+    public  void getMatches(List<Keyword> keywordsList,List<Keyword> imageKeywordsList) {
         for(int i = 0; i < keywordsList.size(); i++){
             for(int j = 0; j < imageKeywordsList.size(); j++){
                 if(keywordsList.get(i).getStem().equals(imageKeywordsList.get(j).getStem())){
@@ -89,7 +106,7 @@ public class Indexer  {
             }
         }
     }
-    public static List<Keyword> findKeywords(HTMLPage htmlPage) {
+    public  List<Keyword> findKeywords(HTMLPage htmlPage) {
         List<Keyword> keywordsList = null;
         try {
             keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getText() + htmlPage.getTitle());
@@ -102,7 +119,7 @@ public class Indexer  {
         return keywordsList;
     }
 
-    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, List<String> imageSrcList) {
+    public  DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, List<String> imageSrcList) {
 
         DocumentWordEntry newDocumentWordEntry = null;
         List<Keyword> keywordsListTitle = null;
@@ -121,7 +138,7 @@ public class Indexer  {
         return newDocumentWordEntry;
     }
 
-    public static boolean inTitle(String word, List<Keyword> keywordsList){
+    public  boolean inTitle(String word, List<Keyword> keywordsList){
 
         for (int i = 0; i < keywordsList.size(); i++) {
             if(keywordsList.get(i).getStem().equals(word))
@@ -133,7 +150,8 @@ public class Indexer  {
     }
 
 
-
-
-
+    @Override
+    public void run() {
+            startIndexing();
+    }
 }

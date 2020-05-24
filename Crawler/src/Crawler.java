@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Crawler implements Runnable{
 
-    private int maxPages = 500;
+    private int maxPages = 550;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;
@@ -50,13 +50,13 @@ public class Crawler implements Runnable{
        List<String> queue = new LinkedList<String>();
         Map<String,Vector<String>> forbiddenList=new HashMap<String, Vector<String>>();
         Map<String,Vector<String>> allowedList=new HashMap<String, Vector<String>>();
-       queue.add("https://www.bbc.com/");
+       queue.add("https://en.wikipedia.org/");
        Thread t1 = null;
 
         Database DB = new Database();
         DB.getQueue(queue);
         DB.getVisited(Visited);
-       for(int i = 0 ;i< 50; i++) {
+       for(int i = 0 ;i< 7; i++) {
            t1 = new Thread(new Crawler(DB,Visited, queue,forbiddenList,allowedList, i));
            t1.start();
        }

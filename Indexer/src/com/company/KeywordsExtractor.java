@@ -139,7 +139,7 @@ class KeywordsExtractor {
             while (tokenStream.incrementToken()) {
                 firstStatement = "";
                 String term = token.toString();
-                wholeText += " "+term;
+                wholeText += term + " ";
                 String stem = getStemForm(term);
 
                 splitTerms = wholeText.split(" ");
