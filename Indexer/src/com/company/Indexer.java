@@ -1,9 +1,7 @@
 package com.company;
 
 
-import java.awt.*;
 import java.io.IOException;
-import java.util.*;
 import java.util.List;
 
 import static java.lang.System.exit;
@@ -12,15 +10,13 @@ public class Indexer  implements Runnable{
 
     DataBase dataBase ;
     final List<Link> linksList;
-    Map<String,LinkedList<IndexItem>> bigMap;
     String url;
     String ID;
 
-    public Indexer(DataBase dataBase, List<Link> linksList,Map<String,LinkedList<IndexItem>> bigMap) {
+    public Indexer(DataBase dataBase, List<Link> linksList) {
 
         this.dataBase = dataBase;
         this.linksList = linksList;
-        this.bigMap = bigMap;
     }
 
     public void startIndexing() {
@@ -60,18 +56,13 @@ public class Indexer  implements Runnable{
                 keywordsList.forEach(keyword -> {
                     DocumentWordEntry documentWordElement = getDocumentWordElement(keyword.getStem(), keyword.getFrequency(), newHtml, keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount());
                     IndexItem newIndexEntry = new IndexItem(keyword.getStem(), documentWordElement);
-                    synchronized (bigMap){
-                        if(!bigMap.containsKey(keyword.getStem())){
-                            bigMap.put(keyword.getStem(),new LinkedList<IndexItem>());
-                        }
-                        bigMap.get(keyword.getStem()).add(newIndexEntry);
+
+                    synchronized (dataBase) {
+
+                        dataBase.updateIndex(newIndexEntry);
+                        //dataBase.setIndexed(ID);
+
                     }
-//                    synchronized (dataBase) {
-//
-//                        dataBase.updateIndex(newIndexEntry);
-//                        //dataBase.setIndexed(ID);
-//
-//                    }
                 });
             }
     }
