@@ -26,7 +26,9 @@ public class Main {
         for (Thread thread : threadsList) {
             thread.join();
         }
-
+        for (String key: bigMap.keySet()) {
+            dataBase.updateIndex(bigMap.get(key));
+        }
 
 
         long endTime = System.nanoTime();

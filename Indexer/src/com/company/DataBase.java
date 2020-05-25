@@ -4,6 +4,7 @@ import com.mongodb.*;
 
 import org.bson.types.ObjectId;
 
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -19,7 +20,7 @@ public class DataBase {
         this.mongoClient  = new MongoClient("localhost", 27017);
         indexDB = mongoClient.getDB("index");
         crawlerDB = mongoClient.getDB("CrawlerDB");
-        indexCollection = indexDB.getCollection("wikipedia_500_pages_try_2");
+        indexCollection = indexDB.getCollection("wikipedia_500_pages_try_3");
         crawlerCollection = crawlerDB.getCollection("Links");
         indexCollection.createIndex("word");
 
@@ -47,6 +48,16 @@ public class DataBase {
         }
     }
 
+    public void updateIndex(LinkedList<IndexItem> indexItemList) {
+
+
+
+                insertNewIndexEntry(indexItemList);
+
+
+    }
+
+
     public void updateIndex(IndexItem indexItem) {
 
         if(newOrOldWord(indexItem) == null)
@@ -69,6 +80,35 @@ public class DataBase {
         DBObject query = new BasicDBObject("documents_"+indexItem.getWord()+".doc_url", indexItem.getDocumentWordElement().getdocURL());
         return indexCollection.findOne(query);
     }
+
+
+    private void insertNewIndexEntry(LinkedList<IndexItem> indexItemList){
+        BasicDBList dbl = new BasicDBList();;
+        BasicDBList dblImgs;
+
+        for(int i =0 ; i< indexItemList.size() ;i++ )
+        {
+
+            dblImgs = new BasicDBList();
+            for (int j = 0; j < indexItemList.get(i).getDocumentWordElement().getImgSrcList().size(); j++) {
+
+                dblImgs.add(new BasicDBObject("img_Src", indexItemList.get(i).getDocumentWordElement().getImgSrc(j)));
+            }
+            dbl.add(new BasicDBObject("doc_url", indexItemList.get(i).getDocumentWordElement().getdocURL())
+                    .append("word_frequency", indexItemList.get(i).getDocumentWordElement().getFrequency())
+                    .append("is_in_title", indexItemList.get(i).getDocumentWordElement().isInTitle())
+                    .append("first_statement", indexItemList.get(i).getDocumentWordElement().getFirstStatement())
+                    .append("img_srcs", dblImgs)
+                    .append("title", indexItemList.get(i).getDocumentWordElement().getTitle())
+                    .append("page_rank", indexItemList.get(i).getDocumentWordElement().getPageRank())
+                    .append("total_words_count", indexItemList.get(i).getDocumentWordElement().getWordsCount()));
+
+        }
+        BasicDBObject indexEntry = new BasicDBObject("word", indexItemList.get(0).getWord()).append("documents_"+indexItemList.get(0).getWord(), dbl);
+        indexCollection.insert(indexEntry);
+    }
+
+
     private void insertNewIndexEntry(IndexItem indexItem){
 
         BasicDBList dbl = new BasicDBList();
