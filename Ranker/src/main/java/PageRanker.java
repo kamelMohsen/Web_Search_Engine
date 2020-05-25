@@ -23,7 +23,6 @@ public class PageRanker  {
     private static final double dampingFactor = 0.85;
     private static final int noOfIterations = 30;
     public static void calculatePageRank(MongoDatabase database) {
-        System.out.println("Boom, looking for this?");
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);
         long noOfDocuments = linksCollection.countDocuments();
@@ -40,7 +39,6 @@ public class PageRanker  {
             int documentCount = 0;
             while (linksCur.hasNext()) {
                 ArrayList<URLRank> list = new ArrayList<URLRank>();
-                System.out.println("Document count is " + documentCount);
                 documentCount++;
                 Document current = linksCur.next();
                 ObjectId id = (ObjectId) current.get("_id");
@@ -64,10 +62,8 @@ public class PageRanker  {
                     actualRank += e.calculateRankSlice();
                 }
                 String currentUrl = (String) current.get("URL");
-                System.out.println("The pagerank of "+ currentUrl +
-                        " before multiplying the damping factor is " + actualRank);
+
                 actualRank = (1 - dampingFactor) + dampingFactor * actualRank;
-                System.out.println("The pagerank of "+ currentUrl + " is " + actualRank);
                 BasicDBObject query = new BasicDBObject();
                 query.put("URL", currentUrl); // (1)
 
