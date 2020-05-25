@@ -1,14 +1,13 @@
 package com.company;
 
 import com.mongodb.*;
-import org.bson.Document;
+
 import org.bson.types.ObjectId;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
+
+@SuppressWarnings("deprecation")
 public class DataBase {
     MongoClient mongoClient ;
     DB indexDB ;
@@ -20,8 +19,9 @@ public class DataBase {
         this.mongoClient  = new MongoClient("localhost", 27017);
         indexDB = mongoClient.getDB("index");
         crawlerDB = mongoClient.getDB("CrawlerDB");
-        indexCollection = indexDB.getCollection("index_table_wikipedia");
+        indexCollection = indexDB.getCollection("wikipedia_500_pages_try_2");
         crawlerCollection = crawlerDB.getCollection("Links");
+        indexCollection.createIndex("word");
 
     }
 
@@ -30,7 +30,7 @@ public class DataBase {
         DBObject findQuery = new BasicDBObject("_id",new ObjectId(_id));
         DBObject objQuery = new BasicDBObject("indexed", 1);
         DBObject updateQuery = new BasicDBObject("$set",objQuery );
-        if(crawlerCollection.find(findQuery).count() != 0)
+        if(crawlerCollection.findOne(findQuery) != null)
             crawlerCollection.update(findQuery, updateQuery);
 
     }
@@ -48,8 +48,8 @@ public class DataBase {
     }
 
     public void updateIndex(IndexItem indexItem) {
-        DBCursor dbCursor = newOrOldWord(indexItem);
-        if(dbCursor.count() == 0)
+
+        if(newOrOldWord(indexItem) == null)
         {
         insertNewIndexEntry(indexItem);
         }
@@ -60,14 +60,14 @@ public class DataBase {
 
     }
 
-    private DBCursor newOrOldWord(IndexItem indexItem){
+    private DBObject newOrOldWord(IndexItem indexItem){
         DBObject query = new BasicDBObject("word", indexItem.getWord());
-        return indexCollection.find(query);
+        return indexCollection.findOne(query);
     }
-    private DBCursor newOrOldDocumentWord(IndexItem indexItem){
+    private DBObject newOrOldDocumentWord(IndexItem indexItem){
 
-        DBObject query = new BasicDBObject("documents_"+indexItem.getWord()+".doc_id", indexItem.getDocumentWordElement().getDocID());
-        return indexCollection.find(query);
+        DBObject query = new BasicDBObject("documents_"+indexItem.getWord()+".doc_url", indexItem.getDocumentWordElement().getdocURL());
+        return indexCollection.findOne(query);
     }
     private void insertNewIndexEntry(IndexItem indexItem){
 
@@ -78,11 +78,14 @@ public class DataBase {
 
             dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
         }
-        dbl.add(new BasicDBObject("doc_id",indexItem.getDocumentWordElement().getDocID())
+        dbl.add(new BasicDBObject("doc_url",indexItem.getDocumentWordElement().getdocURL())
                 .append("word_frequency",indexItem.getDocumentWordElement().getFrequency())
                 .append("is_in_title",indexItem.getDocumentWordElement().isInTitle())
                 .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                .append("img_srcs",dblImgs));
+                .append("img_srcs",dblImgs)
+                .append("title",indexItem.getDocumentWordElement().getTitle())
+                .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
+                .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
 
 
         BasicDBObject indexEntry = new BasicDBObject("word", indexItem.getWord()).append("documents_"+indexItem.getWord(), dbl);
@@ -90,26 +93,27 @@ public class DataBase {
     }
     private void updateIndexEntry(IndexItem indexItem){
 
-        DBCursor element = newOrOldDocumentWord(indexItem);
-
-        if(element.count() == 0) {
+        if(newOrOldDocumentWord(indexItem) == null) {
             DBObject findQuery = new BasicDBObject("word", indexItem.getWord());
             BasicDBList dblImgs = new BasicDBList();
             for(int i = 0;i<indexItem.getDocumentWordElement().getImgSrcList().size();i++)
             {
                 dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
             }
-            DBObject listItem = new BasicDBObject("documents_" + indexItem.getWord(), new BasicDBObject("doc_id", indexItem.getDocumentWordElement().getDocID()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
+            DBObject listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
                     .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
                     .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                    .append("img_srcs", dblImgs));
+                    .append("img_srcs", dblImgs)
+                    .append("title",indexItem.getDocumentWordElement().getTitle())
+                    .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
+                    .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
             DBObject updateQuery = new BasicDBObject("$push", listItem);
             indexCollection.update(findQuery, updateQuery);
         }
         else {
 
-            DBObject findQuery = new BasicDBObject("documents_" + indexItem.getWord() + ".doc_id", indexItem.getDocumentWordElement().getDocID());
-            DBObject listItem = new BasicDBObject("documents_" + indexItem.getWord(), new BasicDBObject("doc_id", indexItem.getDocumentWordElement().getDocID()));
+            DBObject findQuery = new BasicDBObject("documents_"+indexItem.getWord()+".doc_url", indexItem.getDocumentWordElement().getdocURL());
+            DBObject listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()));
 
             DBObject updateQuery = new BasicDBObject("$pull", listItem);
             indexCollection.update(findQuery, updateQuery);
@@ -119,10 +123,13 @@ public class DataBase {
                 dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
             }
             findQuery = new BasicDBObject("word", indexItem.getWord());
-            listItem = new BasicDBObject("documents_" + indexItem.getWord(), new BasicDBObject("doc_id", indexItem.getDocumentWordElement().getDocID()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
+            listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
                     .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
                     .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                    .append("img_srcs", dblImgs));
+                    .append("img_srcs", dblImgs)
+                    .append("title",indexItem.getDocumentWordElement().getTitle())
+                    .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
+                    .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
             updateQuery = new BasicDBObject("$push", listItem);
             indexCollection.update(findQuery, updateQuery);
 

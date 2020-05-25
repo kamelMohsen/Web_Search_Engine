@@ -78,8 +78,8 @@ class KeywordsExtractor {
 
                 splitTerms = wholeText.split(" ");
 
-                int start = ((counter - 5 > 0) ? (counter - 5):0);
-                int end = ((counter + 5 < splitTerms.length - 1) ? (counter+5):splitTerms.length - 1);
+                int start = ((counter - 10 > 0) ? (counter - 10):0);
+                int end = ((counter + 10 < splitTerms.length - 1) ? (counter+10):splitTerms.length - 1);
                 for(int i = start; i <= end ; i++){
                     firstStatement += " " + splitTerms[i];
                 }

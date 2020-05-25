@@ -1,15 +1,20 @@
 package com.company;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
+import org.jsoup.UncheckedIOException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
+
 import org.jsoup.select.NodeVisitor;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.awt.*;
+import javax.net.ssl.SSLException;
+
+import java.net.SocketException;
+import java.net.SocketTimeoutException;
+
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -17,28 +22,33 @@ import java.util.*;
 import java.util.List;
 
 public class HTMLPage {
-    private String id;
+
     private String url;
     private Document parsedHtml;
     private String title;
+    private double pageRank;
     private String text;
+    private int wordsCount;
     private List<ImageContainer> imgList;
 
 
     //Constructor that makes HtmlPage with initialized info
-    public HTMLPage(String id, String url) throws IOException {
+    public HTMLPage( String url, double pageRank) throws IOException {
         this.imgList = new LinkedList<>();
+        this.text = "";
+        this.pageRank = pageRank;
+        this.wordsCount =0;
         try {
             parsedHtml = Jsoup.connect(url).get();
             StringBuilder parsedText = new StringBuilder();
-            this.id = id;
             this.url = url;
 
             // Extract title
             this.title = parsedHtml.title().toLowerCase().replaceAll("[^a-z0-9]", " ");
 
-            String alt = "";
-            String src = "";
+            String alt;
+            String src;
+
             for(Element metaTag: parsedHtml.getElementsByTag("img")) {
 
                 alt = metaTag.attr("alt").toLowerCase();
@@ -50,18 +60,19 @@ public class HTMLPage {
                 if(!alt.equals("") && !src.equals("")) {
                     ImageContainer imageContainer = new ImageContainer(alt,src);
                     imgList.add(imageContainer);
-                    alt = "";
-                    src = "";
                 }
             }
+
+
 
             // Extract text
             parsedHtml.body().traverse(new NodeVisitor() {
                 @Override
                 public void head(Node node, int i) {
                     if (node instanceof TextNode && !((TextNode) node).isBlank()) {
-                        parsedText.append(((TextNode) node).text().toLowerCase().replaceAll("[^a-z0-9]", " "))
+                        parsedText.append(((TextNode) node).text().toLowerCase())
                                 .append(" ");
+                        wordsCount++;
                     }
                 }
 
@@ -72,13 +83,32 @@ public class HTMLPage {
             });
             this.text = parsedText.toString();
 
-        }catch (HttpStatusException e)
+
+
+        }catch (HttpStatusException | SSLException | SocketException | SocketTimeoutException | UncheckedIOException ignored)
         {
 
         }
+
     }
 
    // Setters & Getters
+
+    public double getPageRank() {
+        return pageRank;
+    }
+
+    public void setPageRank(double pageRank) {
+        this.pageRank = pageRank;
+    }
+
+    public int getWordsCount() {
+        return wordsCount;
+    }
+
+    public void setWordsCount(int wordsCount) {
+        this.wordsCount = wordsCount;
+    }
 
     public List<ImageContainer> getImgList() {
         return imgList;
@@ -88,13 +118,6 @@ public class HTMLPage {
         this.imgList = imgList;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getUrl() {
         return url;

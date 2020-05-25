@@ -3,22 +3,64 @@ package com.company;
 import java.util.List;
 
 public class DocumentWordEntry {
-    private String docID;
+    private String docURL;
     private int frequency;
     private boolean inTitle;
     private String firstStatement;
     private List<String> imgSrc;
+    private String title;
+    private double pageRank;
+    private int  wordsCount;
 
-    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, List<String> imgSrc) {
-        this.docID = docID;
+    public DocumentWordEntry(String docURL, int frequency, boolean inTitle, String firstStatement, List<String> imgSrc, String title, double pageRank, int wordsCount) {
+        this.docURL = docURL;
         this.frequency = frequency;
         this.inTitle = inTitle;
         this.firstStatement = firstStatement;
         this.imgSrc = imgSrc;
-
+        this.title = title;
+        this.pageRank = pageRank;
+        this.wordsCount = wordsCount;
     }
 
+
     // Setters & Getters
+
+    public String getDocURL() {
+        return docURL;
+    }
+
+    public void setDocURL(String docURL) {
+        this.docURL = docURL;
+    }
+
+    public List<String> getImgSrc() {
+        return imgSrc;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public double getPageRank() {
+        return pageRank;
+    }
+
+    public void setPageRank(double pageRank) {
+        this.pageRank = pageRank;
+    }
+
+    public int getWordsCount() {
+        return wordsCount;
+    }
+
+    public void setWordsCount(int wordsCount) {
+        this.wordsCount = wordsCount;
+    }
 
     public List<String> getImgSrcList() {
         return imgSrc;
@@ -38,12 +80,12 @@ public class DocumentWordEntry {
         this.firstStatement = firstStatement;
     }
 
-    public String getDocID() {
-        return docID;
+    public String getdocURL() {
+        return docURL;
     }
 
-    public void setDocID(String docID) {
-        this.docID = docID;
+    public void setdocURL(String docID) {
+        this.docURL = docID;
     }
 
     public int getFrequency() {
