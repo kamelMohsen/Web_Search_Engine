@@ -50,7 +50,7 @@ public class Crawler implements Runnable{
        List<String> queue = new LinkedList<String>();
         Map<String,Vector<String>> forbiddenList=new HashMap<String, Vector<String>>();
         Map<String,Vector<String>> allowedList=new HashMap<String, Vector<String>>();
-       queue.add("https://www.bbc.com/");
+       queue.add("https://en.wikipedia.org/");
        Thread t1 = null;
 
         Database DB = new Database();

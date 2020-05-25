@@ -8,7 +8,6 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        Map<String,LinkedList<IndexItem>> bigMap = new HashMap<>();
         DataBase dataBase = new DataBase();
         List<Link> linksList;
         linksList = new LinkedList<>();
@@ -18,16 +17,13 @@ public class Main {
         Thread t1;
         List<Thread> threadsList = new LinkedList<>();
         for(int i = 0; i < 7; i++) {
-            t1 = new Thread(new Indexer(dataBase,linksList,bigMap));
+            t1 = new Thread(new Indexer(dataBase,linksList));
             threadsList.add(t1);
             t1.start();
         }
 
         for (Thread thread : threadsList) {
             thread.join();
-        }
-        for (String key: bigMap.keySet()) {
-            dataBase.updateIndex(bigMap.get(key));
         }
 
 

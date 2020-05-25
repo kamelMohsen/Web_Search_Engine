@@ -4,7 +4,7 @@ import com.mongodb.*;
 
 import org.bson.types.ObjectId;
 
-import java.util.LinkedList;
+
 import java.util.List;
 
 
@@ -20,12 +20,15 @@ public class DataBase {
         this.mongoClient  = new MongoClient("localhost", 27017);
         indexDB = mongoClient.getDB("index");
         crawlerDB = mongoClient.getDB("CrawlerDB");
-        indexCollection = indexDB.getCollection("wikipedia_500_pages_try_3");
+        indexCollection = indexDB.getCollection("wikipedia_500_pages_try_6");
         crawlerCollection = crawlerDB.getCollection("Links");
         indexCollection.createIndex("word");
+        indexCollection.createIndex(new BasicDBObject("word", 1).append("doc_url",1),"indexEntry",true);
 
     }
 
+
+    //deals with crawler data base
     public void setIndexed(String _id){
 
         DBObject findQuery = new BasicDBObject("_id",new ObjectId(_id));
@@ -35,6 +38,7 @@ public class DataBase {
             crawlerCollection.update(findQuery, updateQuery);
 
     }
+    //deals with crawler data base
     public void getLinks(List<Link> linksList){
         DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0).append("Visited",1));
         int size = cur.size();
@@ -48,21 +52,13 @@ public class DataBase {
         }
     }
 
-    public void updateIndex(LinkedList<IndexItem> indexItemList) {
-
-
-
-                insertNewIndexEntry(indexItemList);
-
-
-    }
 
 
     public void updateIndex(IndexItem indexItem) {
 
-        if(newOrOldWord(indexItem) == null)
+        if(newOrOld(indexItem) == null)
         {
-        insertNewIndexEntry(indexItem);
+            insertNewIndexEntry(indexItem);
         }
         else
         {
@@ -71,42 +67,12 @@ public class DataBase {
 
     }
 
-    private DBObject newOrOldWord(IndexItem indexItem){
-        DBObject query = new BasicDBObject("word", indexItem.getWord());
-        return indexCollection.findOne(query);
-    }
-    private DBObject newOrOldDocumentWord(IndexItem indexItem){
-
-        DBObject query = new BasicDBObject("documents_"+indexItem.getWord()+".doc_url", indexItem.getDocumentWordElement().getdocURL());
+    private DBObject newOrOld(IndexItem indexItem){
+        DBObject query = new BasicDBObject("word", indexItem.getWord())
+                .append("doc_url",indexItem.getDocumentWordElement().getdocURL());
         return indexCollection.findOne(query);
     }
 
-
-    private void insertNewIndexEntry(LinkedList<IndexItem> indexItemList){
-        BasicDBList dbl = new BasicDBList();;
-        BasicDBList dblImgs;
-
-        for(int i =0 ; i< indexItemList.size() ;i++ )
-        {
-
-            dblImgs = new BasicDBList();
-            for (int j = 0; j < indexItemList.get(i).getDocumentWordElement().getImgSrcList().size(); j++) {
-
-                dblImgs.add(new BasicDBObject("img_Src", indexItemList.get(i).getDocumentWordElement().getImgSrc(j)));
-            }
-            dbl.add(new BasicDBObject("doc_url", indexItemList.get(i).getDocumentWordElement().getdocURL())
-                    .append("word_frequency", indexItemList.get(i).getDocumentWordElement().getFrequency())
-                    .append("is_in_title", indexItemList.get(i).getDocumentWordElement().isInTitle())
-                    .append("first_statement", indexItemList.get(i).getDocumentWordElement().getFirstStatement())
-                    .append("img_srcs", dblImgs)
-                    .append("title", indexItemList.get(i).getDocumentWordElement().getTitle())
-                    .append("page_rank", indexItemList.get(i).getDocumentWordElement().getPageRank())
-                    .append("total_words_count", indexItemList.get(i).getDocumentWordElement().getWordsCount()));
-
-        }
-        BasicDBObject indexEntry = new BasicDBObject("word", indexItemList.get(0).getWord()).append("documents_"+indexItemList.get(0).getWord(), dbl);
-        indexCollection.insert(indexEntry);
-    }
 
 
     private void insertNewIndexEntry(IndexItem indexItem){
@@ -118,62 +84,22 @@ public class DataBase {
 
             dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
         }
-        dbl.add(new BasicDBObject("doc_url",indexItem.getDocumentWordElement().getdocURL())
+
+        indexCollection.insert(new BasicDBObject("word", indexItem.getWord()).append("doc_url",indexItem.getDocumentWordElement().getdocURL())
                 .append("word_frequency",indexItem.getDocumentWordElement().getFrequency())
                 .append("is_in_title",indexItem.getDocumentWordElement().isInTitle())
                 .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                .append("img_srcs",dblImgs)
                 .append("title",indexItem.getDocumentWordElement().getTitle())
                 .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
-                .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
-
-
-        BasicDBObject indexEntry = new BasicDBObject("word", indexItem.getWord()).append("documents_"+indexItem.getWord(), dbl);
-        indexCollection.insert(indexEntry);
+                .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount())
+                .append("img_srcs",dblImgs));
     }
     private void updateIndexEntry(IndexItem indexItem){
+        DBObject query = new BasicDBObject("word", indexItem.getWord())
+                .append("doc_url",indexItem.getDocumentWordElement().getdocURL());
+        indexCollection.remove(query);
+        insertNewIndexEntry(indexItem);
 
-        if(newOrOldDocumentWord(indexItem) == null) {
-            DBObject findQuery = new BasicDBObject("word", indexItem.getWord());
-            BasicDBList dblImgs = new BasicDBList();
-            for(int i = 0;i<indexItem.getDocumentWordElement().getImgSrcList().size();i++)
-            {
-                dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
-            }
-            DBObject listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
-                    .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
-                    .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                    .append("img_srcs", dblImgs)
-                    .append("title",indexItem.getDocumentWordElement().getTitle())
-                    .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
-                    .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
-            DBObject updateQuery = new BasicDBObject("$push", listItem);
-            indexCollection.update(findQuery, updateQuery);
-        }
-        else {
-
-            DBObject findQuery = new BasicDBObject("documents_"+indexItem.getWord()+".doc_url", indexItem.getDocumentWordElement().getdocURL());
-            DBObject listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()));
-
-            DBObject updateQuery = new BasicDBObject("$pull", listItem);
-            indexCollection.update(findQuery, updateQuery);
-            BasicDBList dblImgs = new BasicDBList();
-            for (int i = 0; i < indexItem.getDocumentWordElement().getImgSrcList().size(); i++)
-            {
-                dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
-            }
-            findQuery = new BasicDBObject("word", indexItem.getWord());
-            listItem = new BasicDBObject("documents_"+indexItem.getWord(), new BasicDBObject("doc_url", indexItem.getDocumentWordElement().getdocURL()).append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
-                    .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
-                    .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
-                    .append("img_srcs", dblImgs)
-                    .append("title",indexItem.getDocumentWordElement().getTitle())
-                    .append("page_rank",indexItem.getDocumentWordElement().getPageRank())
-                    .append("total_words_count",indexItem.getDocumentWordElement().getWordsCount()));
-            updateQuery = new BasicDBObject("$push", listItem);
-            indexCollection.update(findQuery, updateQuery);
-
-        }
     }
 
 
