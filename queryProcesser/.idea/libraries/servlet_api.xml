@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="servlet-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../APT/apache-tomcat-9.0.35-windows-x64/apache-tomcat-9.0.35/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/mongodb-win32-x86_64-enterprise-windows-64-4.2.6/mongodb-win32-x86_64-enterprise-windows-64-4.2.6/bin/mongo-java-driver-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/jar_files/opennlp-tools-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/jsoup-1.6.0.jar/jsoup-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
