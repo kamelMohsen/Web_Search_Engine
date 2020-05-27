@@ -12,6 +12,7 @@
       <root url="jar://$PROJECT_DIR$/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar!/" />
       <root url="jar://$PROJECT_DIR$/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../mongodb-win32-x86_64-enterprise-windows-64-4.2.6/mongodb-win32-x86_64-enterprise-windows-64-4.2.6/bin/mongo-java-driver-3.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../apache-tomcat-9.0.35-windows-x64/apache-tomcat-9.0.35/lib/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../APT/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar!/" />

@@ -17,12 +17,12 @@ import  com.mongodb.DBCursor;
 
 
 public class queryProcessor {
-    //0.Data Members
+    //Data Members
     static PorterStemmer porterStemmer = new PorterStemmer();
-    static private MongoDatabase Yara;
-    static private DBCollection firstTable;
-    private MongoClient mongoClient;
-  //  static final String pagesPath = "E:/CCE Files/Semster6/APT/spring 2018/Crawler/pages/";
+    static public MongoDatabase Yara;
+    static public DBCollection collection;
+    public MongoClient mongoClient;
+
 
     //1.Constructor
     public queryProcessor() {
@@ -61,8 +61,29 @@ public class queryProcessor {
     }
 
     //4. nonPhraseSearch
-    public void nonPhraseSearch() throws IOException{
+    public ArrayList<DocumentWordEntry> nonPhraseSearch(String [] finalStemmedArray,int length,MongoCollection<Document> collection  ) throws IOException{
+        ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
+        for(int i = 0 ; i <length; i++) {
+            //  List<Document> documents = (List<Document>) collection.find(Filters.eq("nickName", "Saraaaa")).into(new ArrayList<Document>());
+            FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.or(Filters.eq("word", finalStemmedArray[i]), Filters.eq("word", "bad")));
+            //4. Iterate and print to check
 
+            for (Document document : documents) {
+                System.out.println(document);
+                ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
+                for (Document obj : allWebPages) {
+                    String a = (String) obj.get("doc_id");
+                    int b = (int) obj.get("word_frequency");
+                    boolean c = (boolean) obj.get("is_in_title");
+                    String d = (String) obj.get("first_statement");
+                    String e = (String) obj.get("img_srcs");
+                    System.out.println(d);
+                    toRanker.add(i, new DocumentWordEntry(a, b, c, d, e));
+                }
+            }
+
+        }
+        return toRanker;
     }
 
     //5. build results from to be sent to the interface and be displayed in case of list
@@ -104,44 +125,6 @@ public class queryProcessor {
         return results;
     }
 
-    public static void main(String[] args) throws IOException {
 
-        //1. Query processor constructor
-        queryProcessor qp = new queryProcessor();
-
-        //2. Retrieve data from the collection(table) and put it in vector of documents
-        MongoCollection<Document> collection = Yara.getCollection("firstTable");
-
-        // 3. Receive the userInput
-        String s = new Interface().userInput;
-
-        //4. and test the check of phrase and non phrase
-        phraseOrNonphrase(s);
-
-        //3. Filtered the database for all the  and put it in a list of documents
-
-       String [] arr = {"done" , "ball" , "play"};
-        ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
-       for(int i = 0 ; i <3; i++) {
-         //  List<Document> documents = (List<Document>) collection.find(Filters.eq("nickName", "Saraaaa")).into(new ArrayList<Document>());
-           FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.or(Filters.eq("word", arr[i]), Filters.eq("word", "bad")));
-           //4. Iterate and print to check
-
-           for (Document document : documents) {
-               System.out.println(document);
-               ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
-               for (Document obj : allWebPages) {
-                   String a = (String) obj.get("doc_id");
-                   int b = (int) obj.get("word_frequency");
-                   boolean c = (boolean) obj.get("is_in_title");
-                   String d = (String) obj.get("first_statement");
-                   String e = (String) obj.get("img_srcs");
-                   System.out.println(d);
-                   toRanker.add(i, new DocumentWordEntry(a, b, c, d, e));
-               }
-           }
-
-       }
-        }
   }
 

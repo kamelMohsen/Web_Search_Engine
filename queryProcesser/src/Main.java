@@ -18,13 +18,15 @@ public class Main {
     //Data members
     static private MongoDatabase Yara;
     static private DBCollection firstTable;
-    private MongoClient mongoClient;
+    private static MongoClient mongoClient;
     static PorterStemmer porterStemmer = new PorterStemmer();
 
     public static void main(String[] args) throws IOException {
 
         //0. Declarations
-
+        mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        Yara = mongoClient.getDatabase("Yara");
+        MongoCollection<Document> collection = Yara.getCollection("firstTable");
 
         //1. class constructors
         queryProcessor qp = new queryProcessor();
@@ -34,8 +36,8 @@ public class Main {
 
 
         // 3. Receive the userInput
-        String s = new Interface().userInput;
-
+        //String s = new Interface().userInput;
+        String s = "done ball play";
         //4.Stem the input query and put in a list
         List<String> noStoppingWordsList = new ArrayList<>(); // Construct an List to put in it the words without the stopping words
         noStoppingWordsList = CI.remove(s); //Fill this list
@@ -53,10 +55,11 @@ public class Main {
 
         //5. and test the check of phrase and non phrase
         if(qp.phraseOrNonphrase(s) == 1)
-            qp.nonPhraseSearch(); //Fills array list toRanker
+            qp.nonPhraseSearch(finalStemmedArray,length, collection); //Fills array list toRanker
         if(qp.phraseOrNonphrase(s)== 0)
             qp.phraseSearch(); //Fills array List toRanker
 
+        //6. Call the ranker ; the toRanker arrayList should be filled by this stage
 
     }
 }
