@@ -54,10 +54,10 @@ public class Main {
         }
 
         //5. and test the check of phrase and non phrase
-        if(qp.phraseOrNonphrase(s) == 1)
-            qp.nonPhraseSearch(finalStemmedArray,length, collection); //Fills array list toRanker
-        if(qp.phraseOrNonphrase(s)== 0)
-            qp.phraseSearch(); //Fills array List toRanker
+//        if(qp.phraseOrNonphrase(s) == 1)
+//            qp.nonPhraseSearch(finalStemmedArray,length, collection); //Fills array list toRanker
+//        if(qp.phraseOrNonphrase(s)== 0)
+//            qp.phraseSearch(); //Fills array List toRanker
 
         //6. Call the ranker ; the toRanker arrayList should be filled by this stage
 
