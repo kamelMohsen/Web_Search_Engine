@@ -5,14 +5,18 @@ public class DocumentWordEntry {
     private String firstStatement;
     private String imgSrc;
     private String name;
+    int rank ;
+    int docLength;
 
-    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, String imgSrc ,String name) {
+    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, String imgSrc ,String name, int rank , int docLength) {
         this.docID = docID;
         this.frequency = frequency;
         this.inTitle = inTitle;
         this.firstStatement = firstStatement;
         this.imgSrc = imgSrc;
         this.name = name;
+        this.rank = rank;
+        this.docLength = docLength;
 
     }
 
@@ -37,9 +41,9 @@ public class DocumentWordEntry {
     public String getDocID() {
         return docID;
     }
-    public String getName(){
-        return name;
-    }
+    public String getName(){ return name; }
+    public int getRank(){ return rank; }
+    public int getDocumentLength(){ return docLength; }
 
     public void setDocID(String docID) {
         this.docID = docID;
