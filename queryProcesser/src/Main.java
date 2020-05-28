@@ -25,8 +25,8 @@ public class Main {
 
         //0. Declarations
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-        Yara = mongoClient.getDatabase("Yara");
-        MongoCollection<Document> collection = Yara.getCollection("firstTable");
+        Yara = mongoClient.getDatabase("index");
+        MongoCollection<Document> collection = Yara.getCollection("index_table");
 
         //1. class constructors
         queryProcessor qp = new queryProcessor();
@@ -37,7 +37,7 @@ public class Main {
 
         // 3. Receive the userInput
         //String s = new Interface().userInput;
-        String s = "done ball play";
+        String s = "messi";
         //4.Stem the input query and put in a list
         List<String> noStoppingWordsList = new ArrayList<>(); // Construct an List to put in it the words without the stopping words
         noStoppingWordsList = CI.remove(s); //Fill this list
@@ -52,14 +52,27 @@ public class Main {
                 count++;
             }
         }
-
+        ArrayList<DocumentWordEntry> docs = null;
         //5. and test the check of phrase and non phrase
         if(qp.phraseOrNonphrase(s) == 1)
-            qp.nonPhraseSearch(finalStemmedArray,length, collection); //Fills array list toRanker
+             docs = qp.nonPhraseSearch(finalStemmedArray,length, collection); //Fills array list toRanker
         if(qp.phraseOrNonphrase(s)== 0)
-            qp.PhraseSearch(finalStemmedArray,length,collection); //Fills array List toRanker
+            docs = qp.PhraseSearch(finalStemmedArray,length,collection); //Fills array List toRanker
 
         //6. Call the ranker ; the toRanker arrayList should be filled by this stage
+        RelevanceRanker rr = new RelevanceRanker();
+        System.out.println("Before Relevance Ranker: ");
 
+        for (DocumentWordEntry doc: docs){
+            System.out.println(doc.getFirstStatement());
+            System.out.println(doc.getTotalRank());
+        }
+
+        rr.calculateRelevanceRank(docs);
+        System.out.println("After Relevance Ranker: ");
+        for (DocumentWordEntry doc: docs){
+            System.out.println(doc.getFirstStatement());
+            System.out.println(doc.getTotalRank());
+        }
     }
 }

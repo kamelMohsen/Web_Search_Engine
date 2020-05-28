@@ -70,8 +70,8 @@ public class queryProcessor {
                     String d = (String) obj.get("first_statement");
                     String e = (String) obj.get("img_srcs");
                     String f = document.getString("word");
-                    int g = (int) obj.get("page_rank");
-                    int h = (int) obj.get("document_length");
+                    double g = 2.0; //(int) obj.get("page_rank");
+                    int h = 10;//(int) obj.get("document_length");
                     //    System.out.println(f);
                     toRanker.add(i, new DocumentWordEntry(a, b, c, d, e,f,g,h));
                 }
@@ -110,7 +110,7 @@ public class queryProcessor {
                         copy.remove(j); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
 
                     if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
-                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, toRanker.get(j).getImgSrc(), name,toRanker.get(j).getRank() , toRanker.get(j).getDocumentLength())); //Fill the array list that will be sent to the ranker
+                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, toRanker.get(j).getImgSrc(), name,toRanker.get(j).getRank() , toRanker.get(j).getDocLength())); //Fill the array list that will be sent to the ranker
                         count = 0 ; //Then clear all the that to fill from the begining
                         frequency = 0;
                         allStatements ="";
@@ -142,8 +142,8 @@ public class queryProcessor {
                     String d = (String) obj.get("first_statement");
                     String e = (String) obj.get("img_srcs");
                     String f = document.getString("word");
-                    int g = (int) obj.get("page_rank");
-                    int h = (int) obj.get("document_length");
+                    double g =2.0; // (int) obj.get("page_rank");
+                    int h = 10;//(int) obj.get("document_length");
                     System.out.println(d);
                     toRanker.add(i, new DocumentWordEntry(a, b, c, d, e, f,g,h));
                 }
