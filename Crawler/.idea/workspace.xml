@@ -155,27 +155,27 @@
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590076844166">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590076844166" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590076844166">
+    <state width="1493" height="221" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590388182082" />
+    <state width="1493" height="221" key="GridCell.Tab.1.center" timestamp="1590388182082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590076844166" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590076844166">
+    <state width="1493" height="221" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590388182082" />
+    <state width="1493" height="221" key="GridCell.Tab.1.left" timestamp="1590388182081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590076844166" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590076844166">
+    <state width="1493" height="221" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590388182081" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right" timestamp="1590388182082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590076844166" />
+    <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590388182082" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1585505701298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585505701298" />
-    <state x="477" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1589574901547">
+    <state x="477" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1590387018369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="267" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589574901547" />
+    <state x="477" y="267" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590387018369" />
     <state x="347" y="151" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590076139117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -196,9 +196,13 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
-        <watch expression="crawlerCollection.find(findQuery).count()" language="JAVA" />
-        <watch expression="doc" language="JAVA" />
-        <watch expression="cur.size()" language="JAVA" />
+        <watch expression="T.getTime()" language="JAVA" />
+        <watch expression="Visited.size()" language="JAVA" />
+        <watch expression="lastMod" language="JAVA" />
+        <watch expression="new Date().getHours()" language="JAVA" />
+        <watch expression="recrawlTime" language="JAVA" />
+        <watch expression="new Date().after (recrawlTime)" language="JAVA" />
+        <watch expression="new Date()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
