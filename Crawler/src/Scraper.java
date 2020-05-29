@@ -56,12 +56,9 @@ public class Scraper {
                     break;
                 }
             }
-
-            System.out.println(metaKeyWords + "      ");
             if (metaKeyWords.toLowerCase().contains("news") || metaKeyWords.toLowerCase().contains("movie") || metaKeyWords.toLowerCase().contains("tv") || metaKeyWords.toLowerCase().contains("radio") || metaKeyWords.toLowerCase().contains("music") || metaKeyWords.toLowerCase().contains("sport"))
                 importance = 1;
             Elements hyperLinks = htmlDocument.select("a[href]");
-            getDomain(url);
             for (Element link : hyperLinks) {
                 this.links.add(link.absUrl("href"));
             }
@@ -95,12 +92,21 @@ public class Scraper {
 
     private void robotRead(String url, Map<String, Vector<String>> forbiddenList, Map<String, Vector<String>> allowedList) throws IOException {
         boolean start = false;
-        String Domain = getDomain(url);
-        Document htmlDocument = Jsoup.connect(Domain + "/robots.txt").get();
-        String[] words = htmlDocument.text().split(" ");
         Vector<String> robotForAll = new Vector<>();
         Vector<String> forbidden = new Vector<>();
         Vector<String> allowed = new Vector<>();
+        String Domain = getDomain(url);
+        Document htmlDocument;
+        try {
+                htmlDocument = Jsoup.connect(Domain + "/robots.txt").get();
+        }
+        catch ( IOException ioe){
+            // no robot so forbidden paths vector is empty
+           forbiddenList.put(Domain,forbidden);
+           return;
+        }
+        String[] words = htmlDocument.text().split(" ");
+
         for (int i = 0; i < words.length; i++) {
             if (words[i].equals("User-agent:") && (words[i + 1].equals("*"))) {
                 start = true;
@@ -122,5 +128,24 @@ public class Scraper {
         forbiddenList.put(Domain, forbidden);
         allowedList.put(Domain, allowed);
 
+    }
+
+    public void Rescrape(Database DB, String url) {
+        try {
+
+            Document htmlDocument = Jsoup.connect(url).get();
+            Elements hyperLinks = htmlDocument.select("a[href]");
+            for (Element link : hyperLinks) {
+                this.links.add(link.absUrl("href"));
+            }
+            DB.updateLink(url);
+            DB.updateHref(getLinks(), url);
+        } catch (IOException ioe) {
+            System.out.println("Error in the HTTP request " + ioe);
+        } catch (PatternSyntaxException e) {
+            System.out.println("Regex error " + e);
+        } catch (IllegalArgumentException e) {
+
+        }
     }
 }
