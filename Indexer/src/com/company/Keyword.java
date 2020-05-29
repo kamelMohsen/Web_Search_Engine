@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -13,15 +15,18 @@ class Keyword implements Comparable<Keyword> {
     private final Set<String> terms = new HashSet<>();
     private int frequency;
     private String firstStatement;
-    private String imgSrc;
+    private List<String> imgSrcList;
 
 
-    public String getImgSrc() {
-        return imgSrc;
+    public List<String> getImgSrcList() {
+        return this.imgSrcList;
+    }
+    public String getImgSrc(int i) {
+        return imgSrcList.get(i);
     }
 
-    public void setImgSrc(String imgSrc) {
-        this.imgSrc = imgSrc;
+    public void addImgSrc(String imgSrc) {
+        this.imgSrcList.add(imgSrc);
     }
 
     public String getFirstStatement() {
@@ -36,7 +41,14 @@ class Keyword implements Comparable<Keyword> {
 
         this.stem = stem;
         this.firstStatement = firstStatement;
-        this.imgSrc = imgSrc;
+        this.imgSrcList = new LinkedList<>();
+        this.imgSrcList.add(imgSrc);
+    }
+    public Keyword(String stem,String firstStatement) {
+
+        this.stem = stem;
+        this.firstStatement = firstStatement;
+        this.imgSrcList = new LinkedList<>();
     }
     public void add(String term) {
         this.terms.add(term);

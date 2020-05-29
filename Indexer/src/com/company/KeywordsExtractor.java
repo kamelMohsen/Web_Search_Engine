@@ -29,9 +29,11 @@ class KeywordsExtractor {
     static List<Keyword> getKeywordsList(String fullText) throws IOException {
 
         TokenStream tokenStream = null;
-
+        TokenStream tokenStream1 = null;
+        String notEditedFullText = "";
 
         try {
+            notEditedFullText = fullText;
             // treat the dashed words, don't let separate them during the processing
             fullText = fullText.replaceAll("-+", "-0");
 
@@ -44,35 +46,46 @@ class KeywordsExtractor {
             StandardTokenizer stdToken = new StandardTokenizer();
             stdToken.setReader(new StringReader(fullText));
 
+            StandardTokenizer stdToken1 = new StandardTokenizer();
+            stdToken1.setReader(new StringReader(notEditedFullText));
+
             tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
             tokenStream.reset();
 
+            tokenStream1 = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken1))), EnglishAnalyzer.getDefaultStopSet());
+            tokenStream1.reset();
 
 
             List<Keyword> cardKeywords = new LinkedList<>();
 
             CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+            CharTermAttribute token1 = tokenStream1.getAttribute(CharTermAttribute.class);
 
             String wholeText = "";
             String [] splitTerms = null;
             String firstStatement = "";
             int counter = 0;
+
+            while(tokenStream1.incrementToken()){
+                String term = token1.toString();
+                wholeText += term+" ";
+            }
+
             while (tokenStream.incrementToken()) {
                 firstStatement = "";
                 String term = token.toString();
-                wholeText += " "+term;
                 String stem = getStemForm(term);
 
                 splitTerms = wholeText.split(" ");
 
-                int start = ((counter - 5 > 0) ? (counter - 5):0);
-                int end = ((counter + 5 < splitTerms.length - 1) ? (counter+5):splitTerms.length - 1);
+                int start = ((counter - 10 > 0) ? (counter - 10):0);
+                int end = ((counter + 10 < splitTerms.length - 1) ? (counter+10):splitTerms.length - 1);
                 for(int i = start; i <= end ; i++){
                     firstStatement += " " + splitTerms[i];
                 }
                 counter++;
                 if (stem != null) {
-                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement,""));
+                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement));
                     // treat the dashed words back, let look them pretty
                     cardKeyword.add(term.replaceAll("-0", "-"));
                 }
@@ -126,7 +139,7 @@ class KeywordsExtractor {
             while (tokenStream.incrementToken()) {
                 firstStatement = "";
                 String term = token.toString();
-                wholeText += " "+term;
+                wholeText += term + " ";
                 String stem = getStemForm(term);
 
                 splitTerms = wholeText.split(" ");

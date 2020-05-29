@@ -1,58 +1,84 @@
 package com.company;
 
-import org.jsoup.nodes.Element;
 
-import javax.swing.*;
-import javax.swing.text.html.HTML;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
+import java.awt.*;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
 
 import static java.lang.System.exit;
-import static java.lang.System.setErr;
 
-public class Indexer {
+public class Indexer  implements Runnable{
 
+    DataBase dataBase ;
+    final List<Link> linksList;
+    String url;
+    String ID;
+    double pageRank;
+    public Indexer(DataBase dataBase, List<Link> linksList) {
 
-    public static void main(String[] args)  {
-        DataBase dataBase = new DataBase();
-        long startTime = System.nanoTime();
+        this.dataBase = dataBase;
+        this.linksList = linksList;
 
-        List<Link> linksList = new LinkedList<>();
-        dataBase.getLinks(linksList);
-
-        for(int i =0;i<linksList.size();i++) {
-            index(linksList.get(i).getId(),linksList.get(i).getUrl(), dataBase);
-        }
-        long endTime   = System.nanoTime();
-        long totalTime = endTime - startTime;
-        System.out.println("Total time is : "+totalTime/1000000000);
     }
 
-    public static void index(String id, String url, DataBase dataBase){
+    public void startIndexing() {
+
+
+        while (true) {
+
+            synchronized (linksList) {
+                if(linksList.size()==0)
+                    break;
+                try {
+                    this.url = "";
+                    this.url = linksList.get(0).getUrl();
+                    this.ID = linksList.get(0).getId();
+                    this.pageRank = linksList.get(0).getPageRank();
+                    linksList.remove(0);
+                    System.out.println(linksList.size());
+                }catch(NullPointerException ignored)
+                {
+                }
+
+            }
+            index(this.ID,this.url,this.pageRank , dataBase);
+        }
+
+
+    }
+    public  void index(String ID, String url,double pageRank, DataBase dataBase){
 
         //Create HTMLPage object
-            HTMLPage newHtml = createHtmlPage(id,url);
+            HTMLPage newHtml = createHtmlPage(url,pageRank);
             if(newHtml.getParsedHtml() != null)
             {
             List<Keyword> keywordsList = findKeywords(newHtml);
             mergeImages(newHtml,keywordsList);
 
-            for(int i = 0 ;i<keywordsList.size();i++)
-            {
-                DocumentWordEntry documentWordElement = getDocumentWordElement(keywordsList.get(i).getStem(),keywordsList.get(i).getFrequency(),newHtml,keywordsList.get(i).getFirstStatement(),keywordsList.get(i).getImgSrc());
-                IndexItem newIndexEntry = new IndexItem(keywordsList.get(i).getStem(),documentWordElement);
-                dataBase.updateIndex(newIndexEntry);
-            }
+                keywordsList.forEach(keyword -> {
+                    DocumentWordEntry documentWordElement = getDocumentWordElement(keyword.getStem(), keyword.getFrequency(), newHtml, keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount());
+                    IndexItem newIndexEntry = new IndexItem(keyword.getStem(), documentWordElement);
+
+                    synchronized (dataBase) {
+                        if(newIndexEntry.getWord() == null){
+                            System.out.println("Null");
+                        }else{
+                            dataBase.updateIndex(newIndexEntry);
+                            //dataBase.setIndexed(ID);
+                            dataBase.updateWordDocsCount(newIndexEntry.getWord());
+
+                        }
+                    }
+                }
+                );
             }
     }
 
-    public static HTMLPage createHtmlPage(String id, String url)  {
+    public  HTMLPage createHtmlPage(String url,double pageRank)  {
         HTMLPage newHtml = null;
         try {
-            newHtml = new HTMLPage(id,url);
+            newHtml = new HTMLPage(url,pageRank);
         } catch (IOException e) {
             System.out.println("Failed Creating Html Page object");
             e.printStackTrace();
@@ -60,7 +86,7 @@ public class Indexer {
         }
             return newHtml;
     }
-    public static void mergeImages(HTMLPage htmlPage,List<Keyword> keywordsList){
+    public  void mergeImages(HTMLPage htmlPage,List<Keyword> keywordsList){
         List<Keyword> imageKeywordsList = null;
 
 
@@ -68,6 +94,7 @@ public class Indexer {
             for(int i = 0; i<htmlPage.getImgList().size(); i++){
                 try {
                     imageKeywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getImgList().get(i).getAltText(),htmlPage.getImgList().get(i).getSrc());
+
                 } catch (IOException e) {
                     System.out.println("Failed extracting words from image alt text");
                     e.printStackTrace();
@@ -77,16 +104,16 @@ public class Indexer {
             }
 
     }
-    public static void getMatches(List<Keyword> keywordsList,List<Keyword> imageKeywordsList) {
-        for(int i = 0; i < keywordsList.size(); i++){
-            for(int j = 0; j < imageKeywordsList.size(); j++){
-                if(keywordsList.get(i).getStem().equals(imageKeywordsList.get(j).getStem())){
-                    keywordsList.get(i).setImgSrc(imageKeywordsList.get(j).getImgSrc());
+    public  void getMatches(List<Keyword> keywordsList,List<Keyword> imageKeywordsList) {
+        for (Keyword keyword : keywordsList) {
+            for (Keyword value : imageKeywordsList) {
+                if (keyword.getStem().equals(value.getStem())) {
+                    keyword.addImgSrc(value.getImgSrc(0));
                 }
             }
         }
     }
-    public static List<Keyword> findKeywords(HTMLPage htmlPage) {
+    public  List<Keyword> findKeywords(HTMLPage htmlPage) {
         List<Keyword> keywordsList = null;
         try {
             keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getText() + htmlPage.getTitle());
@@ -99,9 +126,8 @@ public class Indexer {
         return keywordsList;
     }
 
-    public static DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, String imageSrc) {
+    public  DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, List<String> imageSrcList, String title, double pageRank, int wordsCount) {
 
-        DocumentWordEntry newDocumentWordEntry = null;
         List<Keyword> keywordsListTitle = null;
 
         try {
@@ -112,17 +138,14 @@ public class Indexer {
             exit(0);
         }
 
-            newDocumentWordEntry = new DocumentWordEntry(htmlPage.getId(),frequency,inTitle(word,keywordsListTitle),firstStatement,imageSrc);
 
-
-        return newDocumentWordEntry;
+        return new DocumentWordEntry(htmlPage.getUrl(), frequency, inTitle(word, keywordsListTitle), firstStatement, imageSrcList, title, pageRank, wordsCount);
     }
 
-    public static boolean inTitle(String word, List<Keyword> keywordsList){
+    public  boolean inTitle(String word, List<Keyword> keywordsList){
 
-        for (int i = 0; i < keywordsList.size(); i++) {
-            if(keywordsList.get(i).getStem().equals(word))
-            {
+        for (Keyword keyword : keywordsList) {
+            if (keyword.getStem().equals(word)) {
                 return true;
             }
         }
@@ -130,7 +153,8 @@ public class Indexer {
     }
 
 
-
-
-
+    @Override
+    public void run() {
+            startIndexing();
+    }
 }

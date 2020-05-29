@@ -60,7 +60,7 @@ public class Database {
                     .append("Visited", 0)
                     .append("indexed", 0)
                     .append("importance",0)
-                    .append("PageRank",0.0);
+                    .append("PageRank",(double)0.0);
 
 
             crawlerCollection.insert(crawlerEntry);
@@ -107,7 +107,7 @@ public class Database {
                     .append("Visited", 1)
                     .append("indexed", 0)
                     .append("importance",importance)
-                    .append("PageRank",0.0);
+                    .append("PageRank",(double) 0.0);
 
 
             crawlerCollection.insert(crawlerEntry);

@@ -3,10 +3,22 @@ package com.company;
 public class Link {
     private String url;
     private String id;
+    private double pageRank;
 
-    public Link(String url, String id) {
+
+    public Link(String url, String id,double pageRank) {
         this.url = url;
         this.id = id;
+        this.pageRank = pageRank;
+    }
+
+
+    public double getPageRank() {
+        return pageRank;
+    }
+
+    public void setPageRank(double pageRank) {
+        this.pageRank = pageRank;
     }
 
     public String getUrl() {
