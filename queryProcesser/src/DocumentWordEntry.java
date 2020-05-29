@@ -10,7 +10,7 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double totalRank;
     private double RelevanceRank;
     private String url;
-    
+    private String title;
     private String docID;
     private int frequency;
     private boolean inTitle;
@@ -100,24 +100,23 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
         this.noOfTotalDocuments = noOfTotalDocuments;
     }
 
-    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement, String imgSrc
-    , String name, double PageRank, int PageLength) {
+    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement,String name, double PageRank, int PageLength ,String title) {
         this.docID = docID;
         this.frequency = frequency;
         this.inTitle = inTitle;
         this.firstStatement = firstStatement;
-        this.imgSrc = imgSrc;
+        //this.imgSrc = imgSrc;
         this.name = name;
         //this.rank = PageRank;
-
         this.docLength = PageLength;
+        this.title = title;
         MongoClient mongoMan = new MongoClient("localhost", 27017);
         MongoDatabase database = mongoMan.getDatabase("CrawlerDB");
        MongoCollection<Document> linksCollection = database.getCollection("Links");
         this.noOfTotalDocuments = linksCollection.countDocuments();
 //        MongoCursor<Document> cur = linksCollection.find(eq("_id", docID)).cursor();
         //double pageRank = (double) cur.next().get("PageRank");
-        this.rank = 0;
+        this.rank = PageRank;
         this.tf = (double) frequency/docLength;
 
     }
@@ -129,6 +128,9 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
 
     public String getImgSrc() {
         return imgSrc;
+    }
+    public String getTitle() {
+        return title;
     }
 
     public void setImgSrc(String imgSrc) {

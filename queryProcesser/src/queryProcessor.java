@@ -61,20 +61,21 @@ public class queryProcessor {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
                 //System.out.println(document);
-                ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
-                for (Document obj : allWebPages) {
-                    System.out.println(obj);
-                    String a = (String) obj.get("doc_id");
-                    int b = (int) obj.get("word_frequency");
-                    boolean c = (boolean) obj.get("is_in_title");
-                    String d = (String) obj.get("first_statement");
-                    String e = (String) obj.get("img_srcs");
+               // ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
+                //for (Document obj : allWebPages) {
+                    System.out.println(document);
+                    String a = (String) document.get("doc_id");
+                    int b = (int) document.get("word_frequency");
+                    boolean c = (boolean) document.get("is_in_title");
+                    String d = (String) document.get("first_statement");
+                    String e = (String) document.get("img_srcs");
                     String f = document.getString("word");
-                    double g = 2.0; //(int) obj.get("page_rank");
-                    int h = 10;//(int) obj.get("document_length");
+                    double g = (double) document.get("page_rank");
+                    int h = (int) document.get("total_words_count");
+                    String j = document.getString("title");
                     //    System.out.println(f);
-                    toRanker.add(i, new DocumentWordEntry(a, b, c, d, e,f,g,h));
-                }
+                    toRanker.add(i, new DocumentWordEntry(a, b, c, d,f,g,h,j));
+               // }
             }
         }
         //when we reach here we have a ready array list then the coming part is adjustments for phrase search
@@ -110,7 +111,7 @@ public class queryProcessor {
                         copy.remove(j); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
 
                     if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
-                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, toRanker.get(j).getImgSrc(), name,toRanker.get(j).getRank() , toRanker.get(j).getDocLength())); //Fill the array list that will be sent to the ranker
+                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, name,toRanker.get(j).getRank() , toRanker.get(j).getDocLength(),toRanker.get(j).getTitle())); //Fill the array list that will be sent to the ranker
                         count = 0 ; //Then clear all the that to fill from the begining
                         frequency = 0;
                         allStatements ="";
@@ -128,67 +129,31 @@ public class queryProcessor {
     public ArrayList<DocumentWordEntry> nonPhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection) throws IOException {
         ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
         for (int i = 0; i < length; i++) {
-            //  List<Document> documents = (List<Document>) collection.find(Filters.eq("nickName", "Saraaaa")).into(new ArrayList<Document>());
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
-            //4. Iterate and print to check
-
             for (Document document : documents) {
                 System.out.println(document);
-                ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
-                for (Document obj : allWebPages) {
-                    String a = (String) obj.get("doc_id");
-                    int b = (int) obj.get("word_frequency");
-                    boolean c = (boolean) obj.get("is_in_title");
-                    String d = (String) obj.get("first_statement");
-                    String e = (String) obj.get("img_srcs");
-                    String f = document.getString("word");
-                    double g =2.0; // (int) obj.get("page_rank");
-                    int h = 10;//(int) obj.get("document_length");
+              //  ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
+               // for (Document obj : allWebPages) {
+                    String a = (String) document.get("doc_url");
+                    int b = (int) document.get("word_frequency");
+                    boolean c = (boolean) document.get("is_in_title");
+                    String d = (String) document.get("first_statement");
+                    //String e = (String) document.get("img_srcs");
+                    String f = (String) document.get("word");
+                    double g = (double) document.get("page_rank");
+                    int h = (int) document.get("total_words_count");
+                     String j = document.getString("title");
                     System.out.println(d);
-                    toRanker.add(i, new DocumentWordEntry(a, b, c, d, e, f,g,h));
-                }
+                    toRanker.add(i, new DocumentWordEntry(a, b, c, d, f,g,h,j));
+               // }
             }
-
         }
         return toRanker;
     }
 
-    //5. build results from to be sent to the interface and be displayed in case of list
-    public Result[] formResult(ArrayList<Document> documents, List<String> queryInput) throws IOException {
-        Result[] results = new Result[documents.size()];
-        int i = 0;
-        for (Document d : documents) {
-            int id = (int) d.get("_id");
-            String url = d.getString("url");
-            String snip = helpingClass.getSnippet(id, url, queryInput);
-            results[i] = new Result(id, ((double) d.get("score")), url);
-            // results[i].setTitle(helpingClass.htmlTitle(pagesPath+id+".html"));
-            results[i].setSnippet(snip);
-            System.out.println(snip);
-            i++;
 
-        }
-        return results;
-    }
 
-    //6. build results from to be sent to the interface and be displayed in case of string
-    public Result[] formResult(ArrayList<Document> documents, String queryInput) throws IOException {
-        Result[] results = new Result[documents.size()];
-        int i = 0;
-        for (Document d : documents) {
-            int id = (int) d.get("_id");
-            String url = d.getString("url");
-            String snip = helpingClass.getExactSnippet(id, d.getString("url"), queryInput);
-            results[i] = new Result(id, ((double) d.get("score")), url);
-            // results[i].setTitle(helpingClass.htmlTitle(pagesPath+id+".html"));
-            results[i].setSnippet(snip);
-            i++;
-
-        }
-        return results;
-    }
-
-} //class
+} //end class
 
 
 
