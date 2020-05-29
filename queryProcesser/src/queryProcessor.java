@@ -62,7 +62,7 @@ public class queryProcessor {
             for (Document document : documents) {
                 System.out.println(document);
 
-                String a = (String) document.get("doc_id");
+                String a = (String) document.get("doc_url");
                 int b = (int) document.get("word_frequency");
                 boolean c = (boolean) document.get("is_in_title");
                 String d = (String) document.get("first_statement");
@@ -87,7 +87,7 @@ public class queryProcessor {
         String name = "";
 
         //First, get id we want to search for and find the length of the all the possible documents selected
-        String id = toRanker.get(toRanker.size()-1).getDocID();
+        String id = toRanker.get(toRanker.size()-1).getUrl();
         int countList = toRanker.size();
 
         //Second, Make a copy to keep track of all documents and make sure that we searched for all documents
@@ -99,7 +99,7 @@ public class queryProcessor {
             for (int i = 0; i < finalStemmedArray.length; i++) { //for loop on all the words in the input search query
                 for (int j = 0; j < countList; j++) { //Then a for loop on all the possible web pages figured out in step one
 
-                    if (id == toRanker.get(j).getDocID() && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
+                    if (id == toRanker.get(j).getUrl() && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
                         count++;
 //                        frequency = frequency + toRanker.get(j).getFrequency(); // add all the frequencies
 //                        allStatements = allStatements + toRanker.get(j).getFirstStatement(); //All this is to extract the data
@@ -134,9 +134,9 @@ public class queryProcessor {
         for (int i = 0; i < length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
-                System.out.println(document);
+                System.out.println(document)  ;
 
-                String a = (String) document.get("doc_id");
+                String a = (String) document.get("doc_url");
                 int b = (int) document.get("word_frequency");
                 boolean c = (boolean) document.get("is_in_title");
                 String d = (String) document.get("first_statement");

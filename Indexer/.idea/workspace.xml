@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4f4f407-087d-4281-8de9-ce9335eea990" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Crawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Crawler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Scraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Scraper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crawler/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/src/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../queryProcesser/Interface by Yara.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/Interface by Yara.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../queryProcesser/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-9.0.35-windows-x64/apache-tomcat-9.0.35/webapps/ROOT/WEB-INF/classes/suggestions.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -11,7 +11,6 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double RelevanceRank;
     private String url;
     private String title;
-    private String docID;
     private int frequency;
     private boolean inTitle;
     private String firstStatement;
@@ -25,8 +24,8 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double noOfTotalDocuments;
 
 
-    public DocumentWordEntry(String docID, int frequency, boolean inTitle, String firstStatement,String name, String imgSrc, double PageRank, int PageLength ,String title,double tf,double idf) {
-        this.docID = docID;
+    public DocumentWordEntry(String url, int frequency, boolean inTitle, String firstStatement,String name, String imgSrc, double PageRank, int PageLength ,String title,double tf,double idf) {
+        this.url = url;
         this.frequency = frequency;
         this.inTitle = inTitle;
         this.firstStatement = firstStatement;
@@ -141,13 +140,7 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
         this.firstStatement = firstStatement;
     }
 
-    public String getDocID() {
-        return docID;
-    }
 
-    public void setDocID(String docID) {
-        this.docID = docID;
-    }
 
     public int getFrequency() {
         return frequency;
