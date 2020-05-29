@@ -1,26 +1,18 @@
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import com.mongodb.client.MongoDatabase;
-import opennlp.tools.stemmer.PorterStemmer;
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import com.mongodb.*;
-import com.mongodb.client.FindIterable;
+import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
 import opennlp.tools.stemmer.PorterStemmer;
-import com.mongodb.client.MongoDatabase;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import opennlp.tools.tokenize.WhitespaceTokenizer;
 import org.bson.Document;
-import com.mongodb.DB;
-import  com.mongodb.DBCursor;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Interface extends HttpServlet {
@@ -35,8 +27,8 @@ public class Interface extends HttpServlet {
     {
         //0. Retrieve data
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-        Yara = mongoClient.getDatabase("index");
-        MongoCollection<Document> collection = Yara.getCollection("index_table");
+        Yara = mongoClient.getDatabase("indexDB");
+        MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
 
         //1.To extract the text entered by the user
         userInput = request.getParameter("textbox");

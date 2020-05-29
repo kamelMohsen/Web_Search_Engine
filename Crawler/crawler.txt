@@ -5,7 +5,7 @@ import java.util.*;
 @SuppressWarnings("ALL")
 public class Crawler implements Runnable{
 
-    private int maxPages = 50;
+    private int maxPages = 500;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;
@@ -37,18 +37,18 @@ public class Crawler implements Runnable{
         String currentUrl = null;
 
         while (true) {
-            if (Thread.currentThread().getName().equals("0")) {
-                queue.clear();
-                if(turn == 0) {
-                    DB.getVisited(queue);
-                    turn = 1;
-                }else {
-                    DB.getImportant(queue);
-                    turn = 0;
+                if (Thread.currentThread().getName().equals("0")) {
+                    queue.clear();
+                    if(turn == 0) {
+                        DB.getVisited(queue);
+                        turn = 1;
+                    }else {
+                        DB.getImportant(queue);
+                        turn = 0;
+                    }
+                    DB.getDate(recrawlTime);
                 }
-                DB.getDate(recrawlTime);
-            }
-            while((new Date().after (recrawlTime)));
+                while((new Date().after (recrawlTime)));
             while (true ) {  // recrawl every 4 hours
 
                 synchronized (queue) {
@@ -104,12 +104,12 @@ public class Crawler implements Runnable{
         DB.updateDate(time);
     }
     public static void main(String[] args) throws InterruptedException {
-        Set<String> Visited = new HashSet<String>();
-        List<String> queue = new LinkedList<String>();
+       Set<String> Visited = new HashSet<String>();
+       List<String> queue = new LinkedList<String>();
         Map<String,Vector<String>> forbiddenList=new HashMap<String, Vector<String>>();
         Map<String,Vector<String>> allowedList=new HashMap<String, Vector<String>>();
 
-        Thread t1 = null;
+       Thread t1 = null;
 
         Database DB = new Database();
         DB.getQueue(queue);
@@ -119,12 +119,12 @@ public class Crawler implements Runnable{
             readSeedList(queue);
 
         }
-        for(int i = 0 ;i< 8; i++) {
-            t1 = new Thread(new Crawler(DB,Visited, queue,forbiddenList,allowedList, i));
-            String name = Integer.toString(i);
-            t1.setName(name);
-            t1.start();
-        }
+       for(int i = 0 ;i< 8; i++) {
+           t1 = new Thread(new Crawler(DB,Visited, queue,forbiddenList,allowedList, i));
+           String name = Integer.toString(i);
+           t1.setName(name);
+           t1.start();
+       }
 
     }
 

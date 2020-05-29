@@ -28,9 +28,9 @@ public class queryProcessor {
     public queryProcessor() {
         try {
             mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-            Yara = mongoClient.getDatabase("Yara");
+            Yara = mongoClient.getDatabase("indexDB");
             //2. Retrieve data from the collection(table) and put it in vector of documents
-            MongoCollection<Document> collection = Yara.getCollection("firstTable");
+            MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
 
         } catch (Exception e) {
             System.out.println(e);
@@ -101,9 +101,9 @@ public class queryProcessor {
 
                     if (id == toRanker.get(j).getDocID() && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
                         count++;
-                        frequency = frequency + toRanker.get(j).getFrequency(); // add all the frequencies
-                        allStatements = allStatements + toRanker.get(j).getFirstStatement(); //All this is to extract the data
-                        name = name + toRanker.get(j).getName();
+//                        frequency = frequency + toRanker.get(j).getFrequency(); // add all the frequencies
+//                        allStatements = allStatements + toRanker.get(j).getFirstStatement(); //All this is to extract the data
+//                        name = name + toRanker.get(j).getName();
                         continue;
                     }
 
@@ -111,7 +111,10 @@ public class queryProcessor {
                         copy.remove(j); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
 
                     if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
-                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, name,toRanker.get(j).getImgSrc(),toRanker.get(j).getRank() , toRanker.get(j).getDocLength(),toRanker.get(j).getTitle(),toRanker.get(j).getTf(),toRanker.get(j).getIdf())); //Fill the array list that will be sent to the ranker
+                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, toRanker.get(j).getFrequency(), toRanker.get(j).isInTitle()
+                                , allStatements, name,toRanker.get(j).getImgSrc(),toRanker.get(j).getRank() ,
+                                toRanker.get(j).getDocLength(),toRanker.get(j).getTitle(),toRanker.get(j).getTf(),
+                                toRanker.get(j).getIdf())); //Fill the array list that will be sent to the ranker
                         count = 0 ; //Then clear all the that to fill from the begining
                         frequency = 0;
                         allStatements ="";
