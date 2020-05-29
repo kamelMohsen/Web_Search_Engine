@@ -52,8 +52,9 @@ class KeywordsExtractor {
             tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
             tokenStream.reset();
 
-            tokenStream1 = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken1))), EnglishAnalyzer.getDefaultStopSet());
+            tokenStream1 = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(stdToken1)), EnglishAnalyzer.getDefaultStopSet());
             tokenStream1.reset();
+
 
 
             List<Keyword> cardKeywords = new LinkedList<>();

@@ -23,9 +23,9 @@ public class DataBase {
         indexDB = mongoClient.getDB("indexDB");
         crawlerDB = mongoClient.getDB("CrawlerDB");
         freqDB = mongoClient.getDB("frequenciesDB");
-        indexCollection = indexDB.getCollection("wikipedia_50_pages_try_1");
+        indexCollection = indexDB.getCollection("index_table");
         crawlerCollection = crawlerDB.getCollection("Links");
-        freqCollection = freqDB.getCollection("wikipedia_50_pages_try_1");
+        freqCollection = freqDB.getCollection("frequency_table");
 
 
         indexCollection.createIndex(new BasicDBObject("word", 1).append("doc_url",1),"indexEntry",true);
@@ -46,7 +46,7 @@ public class DataBase {
     }
     //deals with crawler data base
     public void getLinks(List<Link> linksList){
-        DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0).append("Visited",1));
+        DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0));//.append("Visited",1));
         int size = cur.size();
         for(int i = 0 ;i< size;i++) {
             DBObject doc = cur.next();
