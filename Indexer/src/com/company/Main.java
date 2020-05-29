@@ -12,7 +12,6 @@ public class Main {
         List<Link> linksList;
         linksList = new LinkedList<>();
         dataBase.getLinks(linksList);
-        System.out.println(linksList.size());
         long startTime = System.nanoTime();
         Thread t1;
         List<Thread> threadsList = new LinkedList<>();
@@ -26,9 +25,22 @@ public class Main {
             thread.join();
         }
 
-
         long endTime = System.nanoTime();
         long totalTime = endTime - startTime;
-        System.out.println("Total time is : " + totalTime / 1000000000);
+        System.out.println("Total time indexing : " + totalTime / 1000000000);
+
+        threadsList.clear();
+        linksList.clear();
+        dataBase.getLinks(linksList);
+
+        startTime = System.nanoTime();
+
+        Normalizer normalizer = new Normalizer(dataBase,linksList,linksList.size());
+        normalizer.startNormalizing();
+
+        endTime = System.nanoTime();
+        totalTime = endTime - startTime;
+        System.out.println("Total time normalizing : " + totalTime / 1000000000);
+
     }
 }

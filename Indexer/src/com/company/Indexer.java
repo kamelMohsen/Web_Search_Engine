@@ -14,7 +14,7 @@ public class Indexer  implements Runnable{
     final List<Link> linksList;
     String url;
     String ID;
-
+    double pageRank;
     public Indexer(DataBase dataBase, List<Link> linksList) {
 
         this.dataBase = dataBase;
@@ -34,7 +34,7 @@ public class Indexer  implements Runnable{
                     this.url = "";
                     this.url = linksList.get(0).getUrl();
                     this.ID = linksList.get(0).getId();
-
+                    this.pageRank = linksList.get(0).getPageRank();
                     linksList.remove(0);
                     System.out.println(linksList.size());
                 }catch(NullPointerException ignored)
@@ -42,15 +42,15 @@ public class Indexer  implements Runnable{
                 }
 
             }
-            index(this.ID,this.url , dataBase);
+            index(this.ID,this.url,this.pageRank , dataBase);
         }
 
 
     }
-    public  void index(String ID, String url, DataBase dataBase){
+    public  void index(String ID, String url,double pageRank, DataBase dataBase){
 
         //Create HTMLPage object
-            HTMLPage newHtml = createHtmlPage(url);
+            HTMLPage newHtml = createHtmlPage(url,pageRank);
             if(newHtml.getParsedHtml() != null)
             {
             List<Keyword> keywordsList = findKeywords(newHtml);
@@ -61,19 +61,24 @@ public class Indexer  implements Runnable{
                     IndexItem newIndexEntry = new IndexItem(keyword.getStem(), documentWordElement);
 
                     synchronized (dataBase) {
+                        if(newIndexEntry.getWord() == null){
+                            System.out.println("Null");
+                        }else{
+                            dataBase.updateIndex(newIndexEntry);
+                            //dataBase.setIndexed(ID);
+                            dataBase.updateWordDocsCount(newIndexEntry.getWord());
 
-                        dataBase.updateIndex(newIndexEntry);
-                        //dataBase.setIndexed(ID);
-
+                        }
                     }
-                });
+                }
+                );
             }
     }
 
-    public  HTMLPage createHtmlPage(String url)  {
+    public  HTMLPage createHtmlPage(String url,double pageRank)  {
         HTMLPage newHtml = null;
         try {
-            newHtml = new HTMLPage(url,0.0);
+            newHtml = new HTMLPage(url,pageRank);
         } catch (IOException e) {
             System.out.println("Failed Creating Html Page object");
             e.printStackTrace();

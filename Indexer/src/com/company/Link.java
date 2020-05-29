@@ -6,9 +6,10 @@ public class Link {
     private double pageRank;
 
 
-    public Link(String url, String id) {
+    public Link(String url, String id,double pageRank) {
         this.url = url;
         this.id = id;
+        this.pageRank = pageRank;
     }
 
 

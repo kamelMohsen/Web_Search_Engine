@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Crawler implements Runnable{
 
-    private int maxPages = 550;
+    private int maxPages = 50;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;
