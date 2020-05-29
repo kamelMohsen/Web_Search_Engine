@@ -2,7 +2,6 @@ import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import opennlp.tools.stemmer.PorterStemmer;
-
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
@@ -88,7 +87,7 @@ public class Interface extends HttpServlet {
         //7.  print the results on screen
 
         //-set page content
-        response.setContentType("application/json");
+        response.setContentType("text/html");
         //-Design the page
         PrintWriter out = response.getWriter();
         String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
