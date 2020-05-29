@@ -15,7 +15,7 @@ import org.bson.Document;
 import com.mongodb.DB;
 import  com.mongodb.DBCursor;
 
-
+ @SuppressWarnings("ALL")
 public class queryProcessor {
     //Data Members
     static PorterStemmer porterStemmer = new PorterStemmer();
@@ -31,7 +31,7 @@ public class queryProcessor {
             Yara = mongoClient.getDatabase("Yara");
             //2. Retrieve data from the collection(table) and put it in vector of documents
             MongoCollection<Document> collection = Yara.getCollection("firstTable");
-            System.out.println("Yaryora shatoraa");
+
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -60,22 +60,22 @@ public class queryProcessor {
         for (int i = 0; i < finalStemmedArray.length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
-                //System.out.println(document);
-               // ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
-                //for (Document obj : allWebPages) {
-                    System.out.println(document);
-                    String a = (String) document.get("doc_id");
-                    int b = (int) document.get("word_frequency");
-                    boolean c = (boolean) document.get("is_in_title");
-                    String d = (String) document.get("first_statement");
-                    String e = (String) document.get("img_srcs");
-                    String f = document.getString("word");
-                    double g = (double) document.get("page_rank");
-                    int h = (int) document.get("total_words_count");
-                    String j = document.getString("title");
-                    //    System.out.println(f);
-                    toRanker.add(i, new DocumentWordEntry(a, b, c, d,f,g,h,j));
-               // }
+                System.out.println(document);
+
+                String a = (String) document.get("doc_id");
+                int b = (int) document.get("word_frequency");
+                boolean c = (boolean) document.get("is_in_title");
+                String d = (String) document.get("first_statement");
+                //String e = (String) document.get("img_srcs");
+                String e = "Sora";
+                String f = document.getString("word");
+                double g = (double) document.get("page_rank");
+                int h = (int) document.get("total_words_count");
+                String j = document.getString("title");
+                double k =  (double)document.get("tf");
+                double l =  (double)document.get("idf");
+                toRanker.add(i, new DocumentWordEntry(a, b, c, d,e,f,g,h,j,k,l));
+
             }
         }
         //when we reach here we have a ready array list then the coming part is adjustments for phrase search
@@ -111,7 +111,7 @@ public class queryProcessor {
                         copy.remove(j); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
 
                     if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
-                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, name,toRanker.get(j).getRank() , toRanker.get(j).getDocLength(),toRanker.get(j).getTitle())); //Fill the array list that will be sent to the ranker
+                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, frequency, true, allStatements, name,toRanker.get(j).getImgSrc(),toRanker.get(j).getRank() , toRanker.get(j).getDocLength(),toRanker.get(j).getTitle(),toRanker.get(j).getTf(),toRanker.get(j).getIdf())); //Fill the array list that will be sent to the ranker
                         count = 0 ; //Then clear all the that to fill from the begining
                         frequency = 0;
                         allStatements ="";
@@ -132,19 +132,21 @@ public class queryProcessor {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
                 System.out.println(document);
-              //  ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("documents_" + document.get("word"));//has all info need to be parsed
-               // for (Document obj : allWebPages) {
-                    String a = (String) document.get("doc_url");
-                    int b = (int) document.get("word_frequency");
-                    boolean c = (boolean) document.get("is_in_title");
-                    String d = (String) document.get("first_statement");
-                    //String e = (String) document.get("img_srcs");
-                    String f = (String) document.get("word");
-                    double g = (double) document.get("page_rank");
-                    int h = (int) document.get("total_words_count");
-                     String j = document.getString("title");
-                    System.out.println(d);
-                    toRanker.add(i, new DocumentWordEntry(a, b, c, d, f,g,h,j));
+
+                String a = (String) document.get("doc_id");
+                int b = (int) document.get("word_frequency");
+                boolean c = (boolean) document.get("is_in_title");
+                String d = (String) document.get("first_statement");
+                //String e = (String) document.get("img_srcs");
+                String e = "Sora";
+                String f = document.getString("word");
+                double g = (double) document.get("page_rank");
+                int h = (int) document.get("total_words_count");
+                String j = document.getString("title");
+                double k =  (double)document.get("tf");
+                double l =  (double)document.get("idf");
+
+                    toRanker.add(i, new DocumentWordEntry(a, b, c, d,e,f,g,h,j,k,l));
                // }
             }
         }
