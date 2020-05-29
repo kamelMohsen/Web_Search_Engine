@@ -1,7 +1,11 @@
 package com.company;
+import org.apache.tika.langdetect.OptimaizeLangDetector;
+import org.apache.tika.language.detect.LanguageDetector;
+import org.apache.tika.language.detect.LanguageResult;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.UncheckedIOException;
+import org.jsoup.UnsupportedMimeTypeException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -11,6 +15,7 @@ import org.jsoup.select.NodeVisitor;
 
 import javax.net.ssl.SSLException;
 
+import java.net.MalformedURLException;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 
@@ -18,6 +23,7 @@ import java.net.SocketTimeoutException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.UnknownHostException;
 import java.util.*;
 import java.util.List;
 
@@ -44,17 +50,17 @@ public class HTMLPage {
             this.url = url;
 
             // Extract title
-            this.title = parsedHtml.title().toLowerCase().replaceAll("[^a-z0-9]", " ");
+            this.title = parsedHtml.title();
 
             String alt;
             String src;
 
             for(Element metaTag: parsedHtml.getElementsByTag("img")) {
 
-                alt = metaTag.attr("alt").toLowerCase();
+                alt = metaTag.attr("alt");
 
 
-                src = metaTag.attr("src").toLowerCase();
+                src = metaTag.attr("src");
 
 
                 if(!alt.equals("") && !src.equals("")) {
@@ -70,7 +76,7 @@ public class HTMLPage {
                 @Override
                 public void head(Node node, int i) {
                     if (node instanceof TextNode && !((TextNode) node).isBlank()) {
-                        parsedText.append(((TextNode) node).text().toLowerCase())
+                        parsedText.append(((TextNode) node).text())
                                 .append(" ");
                         wordsCount++;
                     }
@@ -81,11 +87,17 @@ public class HTMLPage {
 
                 }
             });
+
             this.text = parsedText.toString();
+            LanguageDetector detector = new OptimaizeLangDetector().loadModels();
+            LanguageResult result = detector.detect(this.text);
+
+            if(!result.getLanguage().equals("en") || this.wordsCount < 100){
+                this.parsedHtml = null;
+            }
 
 
-
-        }catch (HttpStatusException | SSLException | SocketException | SocketTimeoutException | UncheckedIOException ignored)
+        }catch (Exception ignored)
         {
 
         }
