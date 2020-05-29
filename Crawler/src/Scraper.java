@@ -7,9 +7,10 @@ import java.net.MalformedURLException;
 
 import java.io.IOException;
 import java.util.*;
-import java.util.regex.Pattern;
+
 import java.util.regex.PatternSyntaxException;
 
+@SuppressWarnings("ALL")
 public class Scraper {
 
     public List<String> links = new LinkedList<String>();
@@ -131,6 +132,7 @@ public class Scraper {
     }
 
     public void Rescrape(Database DB, String url) {
+
         try {
 
             Document htmlDocument = Jsoup.connect(url).get();

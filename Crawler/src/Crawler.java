@@ -1,9 +1,11 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
-
+@SuppressWarnings("ALL")
 public class Crawler implements Runnable{
 
-    private int maxPages = 50;
+    private int maxPages = 500;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;
@@ -113,7 +115,9 @@ public class Crawler implements Runnable{
         DB.getQueue(queue);
         DB.getVisited(Visited);
         if (Visited.size() == 0 && queue.size() == 0) {
-            queue.add("https://www.bbc.com/");
+
+            readSeedList(queue);
+
         }
        for(int i = 0 ;i< 8; i++) {
            t1 = new Thread(new Crawler(DB,Visited, queue,forbiddenList,allowedList, i));
@@ -121,27 +125,31 @@ public class Crawler implements Runnable{
            t1.setName(name);
            t1.start();
        }
-//        Date date = new Date();
-//        Date date2 = new Date();//= new Date();
-//        DB.getDate(date2);
-//        System.out.println(date2);
-//        List<String> queue1 = new LinkedList<String>();
 
-        //date2.setHours(date2.getHours()+4);
-//        date2.setMinutes(date2.getMinutes()+1);
-//        while (!date2.equals(date)){
-//            date = new Date();
-//            System.out.println("the time has come");
-//        }
-//        // seedlist from txt file
-        //
+    }
+
+
+
+    public static void readSeedList(List<String> queue){
+        try {
+            File myObj = new File("seed_list.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                queue.add(data);
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred while reading seed list.");
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void run() {
         crawl();
 
-
         recrawl();
+
     }
 }

@@ -1,13 +1,11 @@
 import com.mongodb.*;
-import netscape.javascript.JSObject;
 import org.bson.types.ObjectId;
 
-import java.net.URL;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
-import java.util.Vector;
 
+@SuppressWarnings("ALL")
 public class Database {
     MongoClient mongoClient;
     DB crawlerDB;
@@ -20,7 +18,7 @@ public class Database {
         crawlerDB = mongoClient.getDB("CrawlerDB");
         crawlerCollection = crawlerDB.getCollection("Links");
         hrefCollection = crawlerDB.getCollection("hrefs");
-        System.out.println("entered ");
+
     }
     void updateHref(List<String> Link,String baseURL){
 
@@ -61,7 +59,8 @@ public class Database {
             BasicDBObject crawlerEntry = new BasicDBObject("URL", Link.get(i))
                     .append("Visited", 0)
                     .append("indexed", 0)
-                    .append("importance",0);
+                    .append("importance",0)
+                    .append("PageRank",0.0);
 
 
             crawlerCollection.insert(crawlerEntry);
@@ -81,6 +80,7 @@ public class Database {
             Date T = (Date) doc.get("Date");
             time.setTime(T.getTime());
             time.setHours(time.getHours()+4);
+
 
         }
     }
@@ -106,7 +106,8 @@ public class Database {
             BasicDBObject crawlerEntry = new BasicDBObject("URL", Link)
                     .append("Visited", 1)
                     .append("indexed", 0)
-                    .append("importance",importance);
+                    .append("importance",importance)
+                    .append("PageRank",0.0);
 
 
             crawlerCollection.insert(crawlerEntry);
@@ -152,7 +153,9 @@ public class Database {
     }
     void updateLink(String URL){
         DBObject findQuery = new BasicDBObject("URL", URL);
-        DBObject objQuery = new BasicDBObject("indexed", 0);
+        DBObject objQuery = new BasicDBObject("indexed", 0)
+                .append("PageRank",0.0);
+
         DBObject updateQuery = new BasicDBObject("$set",objQuery );
         crawlerCollection.update(findQuery, updateQuery);
     }
