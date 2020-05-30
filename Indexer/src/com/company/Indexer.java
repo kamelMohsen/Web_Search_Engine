@@ -57,7 +57,7 @@ public class Indexer  implements Runnable{
             mergeImages(newHtml,keywordsList);
 
                 keywordsList.forEach(keyword -> {
-                    DocumentWordEntry documentWordElement = getDocumentWordElement(keyword.getStem(), keyword.getFrequency(), newHtml, keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount());
+                    DocumentWordEntry documentWordElement = new DocumentWordEntry(newHtml.getUrl(), keyword.getFrequency(), keyword.isInTitle(), keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount(),keyword.isInHeader(),keyword.isInUrl());
                     IndexItem newIndexEntry = new IndexItem(keyword.getStem(), documentWordElement);
 
                     synchronized (dataBase) {
@@ -116,7 +116,7 @@ public class Indexer  implements Runnable{
     public  List<Keyword> findKeywords(HTMLPage htmlPage) {
         List<Keyword> keywordsList = null;
         try {
-            keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getText() + htmlPage.getTitle());
+            keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getHtmlElements());
         } catch (IOException e) {
             System.out.println("Failed extracting words from html page");
             e.printStackTrace();
@@ -126,31 +126,6 @@ public class Indexer  implements Runnable{
         return keywordsList;
     }
 
-    public  DocumentWordEntry getDocumentWordElement(String word,int frequency, HTMLPage htmlPage, String firstStatement, List<String> imageSrcList, String title, double pageRank, int wordsCount) {
-
-        List<Keyword> keywordsListTitle = null;
-
-        try {
-            keywordsListTitle = KeywordsExtractor.getKeywordsList(htmlPage.getTitle());
-        } catch (IOException e) {
-            System.out.println("Failed extracting words from html title");
-            e.printStackTrace();
-            exit(0);
-        }
-
-
-        return new DocumentWordEntry(htmlPage.getUrl(), frequency, inTitle(word, keywordsListTitle), firstStatement, imageSrcList, title, pageRank, wordsCount);
-    }
-
-    public  boolean inTitle(String word, List<Keyword> keywordsList){
-
-        for (Keyword keyword : keywordsList) {
-            if (keyword.getStem().equals(word)) {
-                return true;
-            }
-        }
-        return false;
-    }
 
 
     @Override

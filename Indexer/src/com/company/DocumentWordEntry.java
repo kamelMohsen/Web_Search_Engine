@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.List;
-
+@SuppressWarnings("All")
 public class DocumentWordEntry {
     private String docURL;
     private int frequency;
@@ -11,8 +11,10 @@ public class DocumentWordEntry {
     private String title;
     private double pageRank;
     private int  wordsCount;
+    private boolean inHeader;
+    private boolean inUrl;
 
-    public DocumentWordEntry(String docURL, int frequency, boolean inTitle, String firstStatement, List<String> imgSrc, String title, double pageRank, int wordsCount) {
+    public DocumentWordEntry(String docURL, int frequency, boolean inTitle, String firstStatement, List<String> imgSrc, String title, double pageRank, int wordsCount,boolean inHeader,boolean inUrl) {
         this.docURL = docURL;
         this.frequency = frequency;
         this.inTitle = inTitle;
@@ -21,10 +23,24 @@ public class DocumentWordEntry {
         this.title = title;
         this.pageRank = pageRank;
         this.wordsCount = wordsCount;
+        this.inHeader = inHeader;
+        this.inUrl= inUrl;
     }
 
 
     // Setters & Getters
+
+    public boolean isInUrl() {
+        return inUrl;
+    }
+
+    public boolean isInHeader() {
+        return inHeader;
+    }
+
+    public void setInHeader(boolean inHeader) {
+        this.inHeader = inHeader;
+    }
 
     public String getDocURL() {
         return docURL;

@@ -26,7 +26,7 @@ public class Interface extends HttpServlet {
         //0. Retrieve data
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         Yara = mongoClient.getDatabase("indexDB");
-        MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
+        MongoCollection<Document> collection = Yara.getCollection("index_table");
 
         //1.To extract the text entered by the user
         userInput = request.getParameter("textbox");
@@ -83,7 +83,7 @@ public class Interface extends HttpServlet {
                 "<html>\n" +
                 "<head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"></head>\n" +
                 "<body bgcolor=\"#f0f0f0\">\n" ;
-        for(int i=0;i<50;i++)
+        for(int i=0;i<docs.size();i++)
         {
 
                     docType += "<b><a href="+ docs.get(i).getUrl()+">" +"<font size=\"5\">"+ docs.get(i).getTitle()+"</font>"+"</a></b><br>"+"<font color=\"green\">\n"+ docs.get(i).getUrl()+"</font><br>\n";

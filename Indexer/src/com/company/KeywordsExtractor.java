@@ -13,85 +13,69 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.*;
-
+@SuppressWarnings("All")
 /**
  * Keywords extractor functionality handler
  */
 class KeywordsExtractor {
 
-    /**
-     * Get list of keywords with stem form, frequency rank, and terms dictionary
-     *
-     * @param fullText
-     * @return List<Keyword>, which contains keywords cards
-     * @throws IOException
-     */
-    static List<Keyword> getKeywordsList(String fullText) throws IOException {
+
+    static List<Keyword> getKeywordsList(List<HTMLElement> htmlElements) throws IOException {
 
         TokenStream tokenStream = null;
-        TokenStream tokenStream1 = null;
-        String notEditedFullText = "";
+        String Url = htmlElements.get(0).getElement();
 
         try {
-            notEditedFullText = fullText;
-            // treat the dashed words, don't let separate them during the processing
-            fullText = fullText.replaceAll("-+", "-0");
-
-            // replace any punctuation char but apostrophes and dashes with a space
-            fullText = fullText.replaceAll("[\\p{Punct}&&[^'-]]+", " ");
-
-            // replace most common English contractions
-            fullText = fullText.replaceAll("(?:'(?:[tdsm]|[vr]e|ll))+\\b", "");
-
-            StandardTokenizer stdToken = new StandardTokenizer();
-            stdToken.setReader(new StringReader(fullText));
-
-            StandardTokenizer stdToken1 = new StandardTokenizer();
-            stdToken1.setReader(new StringReader(notEditedFullText));
-
-            tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
-            tokenStream.reset();
-
-            tokenStream1 = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(stdToken1)), EnglishAnalyzer.getDefaultStopSet());
-            tokenStream1.reset();
-
-
-
             List<Keyword> cardKeywords = new LinkedList<>();
+            for(int i = 1 ; i< htmlElements.size() ; i++) {
 
-            CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
-            CharTermAttribute token1 = tokenStream1.getAttribute(CharTermAttribute.class);
 
-            String wholeText = "";
-            String [] splitTerms = null;
-            String firstStatement = "";
-            int counter = 0;
+                boolean inTitle = false;
+                boolean inHeader = false;
 
-            while(tokenStream1.incrementToken()){
-                String term = token1.toString();
-                wholeText += term+" ";
-            }
-
-            while (tokenStream.incrementToken()) {
-                firstStatement = "";
-                String term = token.toString();
-                String stem = getStemForm(term);
-
-                splitTerms = wholeText.split(" ");
-
-                int start = ((counter - 10 > 0) ? (counter - 10):0);
-                int end = ((counter + 10 < splitTerms.length - 1) ? (counter+10):splitTerms.length - 1);
-                for(int i = start; i <= end ; i++){
-                    firstStatement += " " + splitTerms[i];
+                if(htmlElements.get(i).getType().equals("title")){
+                    inTitle = true;
                 }
-                counter++;
-                if (stem != null) {
-                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement));
-                    // treat the dashed words back, let look them pretty
-                    cardKeyword.add(term.replaceAll("-0", "-"));
+                if(htmlElements.get(i).getType().equals("header")){
+                    inHeader = true;
+                }
+                // treat the dashed words, don't let separate them during the processing
+                String fullText = htmlElements.get(i).getElement();
+
+                fullText = fullText.replaceAll("-+", "-0");
+
+                // replace any punctuation char but apostrophes and dashes with a space
+                fullText = fullText.replaceAll("[\\p{Punct}&&[^'-]]+", " ");
+
+                // replace most common English contractions
+                fullText = fullText.replaceAll("(?:'(?:[tdsm]|[vr]e|ll))+\\b", "");
+
+                StandardTokenizer stdToken = new StandardTokenizer();
+                stdToken.setReader(new StringReader(fullText));
+
+                tokenStream = new StopFilter(new ASCIIFoldingFilter(new ClassicFilter(new LowerCaseFilter(stdToken))), EnglishAnalyzer.getDefaultStopSet());
+                tokenStream.reset();
+
+
+                CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
+
+
+                while (tokenStream.incrementToken()) {
+
+                    String term = token.toString();
+                    boolean inUrl = false;
+                    if(Url.toLowerCase().split(term).length>1){
+                        inUrl =true;
+                    }
+                    String stem = getStemForm(term);
+
+                    if (stem != null) {
+                        Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"), htmlElements.get(i).getElement(),inTitle,inHeader,inUrl));
+                        // treat the dashed words back, let look them pretty
+                        cardKeyword.add(term.replaceAll("-0", "-"));
+                    }
                 }
             }
-
             // reverse sort by frequency
             Collections.sort(cardKeywords);
 
@@ -106,12 +90,21 @@ class KeywordsExtractor {
             }
         }
     }
+
+
+
+
+
+
+
+    // Just for images
     static List<Keyword> getKeywordsList(String fullText,String imgSrc) throws IOException {
 
         TokenStream tokenStream = null;
 
 
         try {
+
             // treat the dashed words, don't let separate them during the processing
             fullText = fullText.replaceAll("-+", "-0");
 
@@ -133,26 +126,15 @@ class KeywordsExtractor {
 
             CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
 
-            String wholeText = "";
-            String [] splitTerms = null;
-            String firstStatement = "";
-            int counter = 0;
+
             while (tokenStream.incrementToken()) {
-                firstStatement = "";
+
                 String term = token.toString();
-                wholeText += term + " ";
                 String stem = getStemForm(term);
 
-                splitTerms = wholeText.split(" ");
 
-                int start = ((counter - 5 > 0) ? (counter - 5):0);
-                int end = ((counter + 5 < splitTerms.length - 1) ? (counter+5):splitTerms.length - 1);
-                for(int i = start; i <= end ; i++){
-                    firstStatement += " " + splitTerms[i];
-                }
-                counter++;
                 if (stem != null) {
-                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStatement,imgSrc));
+                    Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),"",imgSrc));
                     // treat the dashed words back, let look them pretty
                     cardKeyword.add(term.replaceAll("-0", "-"));
                 }

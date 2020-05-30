@@ -8,7 +8,7 @@ import org.bson.types.ObjectId;
 import java.util.List;
 
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings("All")
 public class DataBase {
     MongoClient mongoClient ;
     DB indexDB ;
@@ -46,7 +46,7 @@ public class DataBase {
     }
     //deals with crawler data base
     public void getLinks(List<Link> linksList){
-        DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0));//.append("Visited",1));
+        DBCursor cur =  crawlerCollection.find(new BasicDBObject("indexed", 0).append("Visited",1));
         int size = cur.size();
         for(int i = 0 ;i< size;i++) {
             DBObject doc = cur.next();
@@ -92,16 +92,22 @@ public class DataBase {
 
             dblImgs.add(new BasicDBObject("img_Src",indexItem.getDocumentWordElement().getImgSrc(i)));
         }
+        String someString = indexItem.getDocumentWordElement().getdocURL();
+        long count = someString.chars().filter(ch -> ch == '/').count();
 
+        double url_length = (double)((double) 2/(double)(count-2));
         indexCollection.insert(new BasicDBObject("word", indexItem.getWord()).append("doc_url", indexItem.getDocumentWordElement().getdocURL())
-                .append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
-                .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
-                .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
                 .append("title", indexItem.getDocumentWordElement().getTitle())
-                .append("page_rank", (double) indexItem.getDocumentWordElement().getPageRank())
+                .append("first_statement", indexItem.getDocumentWordElement().getFirstStatement())
+                .append("word_frequency", indexItem.getDocumentWordElement().getFrequency())
+                .append("is_in_url", indexItem.getDocumentWordElement().isInUrl())
+                .append("is_in_title", indexItem.getDocumentWordElement().isInTitle())
+                .append("is_in_header", indexItem.getDocumentWordElement().isInHeader())
                 .append("total_words_count", indexItem.getDocumentWordElement().getWordsCount())
+                .append("page_rank", (double) indexItem.getDocumentWordElement().getPageRank())
                 .append("tf", ((double) indexItem.getDocumentWordElement().getFrequency() / (double) indexItem.getDocumentWordElement().getWordsCount()))
                 .append("idf", (double) 0)
+                .append("url_length", url_length)
                 .append("img_srcs", dblImgs));
     }
 

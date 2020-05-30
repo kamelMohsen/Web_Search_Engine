@@ -108,7 +108,7 @@ public class Scraper {
         }
         String[] words = htmlDocument.text().split(" ");
 
-        for (int i = 0; i < words.length; i++) {
+        for (int i = 0; i < words.length-2; i++) {
             if (words[i].equals("User-agent:") && (words[i + 1].equals("*"))) {
                 start = true;
                 i += 2;

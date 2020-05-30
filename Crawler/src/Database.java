@@ -18,6 +18,7 @@ public class Database {
         crawlerDB = mongoClient.getDB("CrawlerDB");
         crawlerCollection = crawlerDB.getCollection("Links");
         hrefCollection = crawlerDB.getCollection("hrefs");
+        crawlerCollection.createIndex("URL");
 
     }
     void updateHref(List<String> Link,String baseURL){

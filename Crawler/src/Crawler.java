@@ -5,7 +5,7 @@ import java.util.*;
 @SuppressWarnings("ALL")
 public class Crawler implements Runnable{
 
-    private int maxPages = 50;
+    private int maxPages = 10000;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;
@@ -86,8 +86,14 @@ public class Crawler implements Runnable{
             synchronized (queue) {
                 if(!queue.isEmpty()) {
                     synchronized ( Visited) {
-                        String nextUrl = queue.remove(0);
-                        currentUrl = Visited.contains(nextUrl) ? null : nextUrl;
+                        try {
+                            Collections.shuffle(queue);
+                            String nextUrl = queue.remove(0);
+                            currentUrl = Visited.contains(nextUrl) ? null : nextUrl;
+
+                        }catch (Exception ignored){
+
+                        }
                         if(currentUrl != null) {
                             Visited.add(currentUrl);
                         }

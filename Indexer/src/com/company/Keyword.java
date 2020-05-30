@@ -8,6 +8,7 @@ import java.util.Set;
 /**
  * Keyword card with stem form, terms dictionary and frequency rank
  */
+@SuppressWarnings("All")
 class Keyword implements Comparable<Keyword> {
 
 
@@ -15,8 +16,63 @@ class Keyword implements Comparable<Keyword> {
     private final Set<String> terms = new HashSet<>();
     private int frequency;
     private String firstStatement;
+    private boolean inTitle;
+    private boolean inHeader;
+    private boolean inUrl;
     private List<String> imgSrcList;
 
+
+
+
+    public Keyword(String stem,String firstStatement, String imgSrc) {
+
+        this.stem = stem;
+        this.firstStatement = firstStatement;
+        this.imgSrcList = new LinkedList<>();
+        this.imgSrcList.add(imgSrc);
+    }
+    public Keyword(String stem,String firstStatement, boolean inTitle,boolean inHeader,boolean inUrl) {
+
+        this.stem = stem;
+        this.firstStatement = firstStatement;
+        this.imgSrcList = new LinkedList<>();
+        this.inHeader = inHeader;
+        this.inTitle = inTitle;
+        this.inUrl = inUrl;
+    }
+
+
+    public boolean isInUrl() {
+        return inUrl;
+    }
+
+    public void setInUrl(boolean inUrl) {
+        this.inUrl = inUrl;
+    }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
+    }
+
+    public boolean isInTitle() {
+        return inTitle;
+    }
+
+    public void setInTitle(boolean inTitle) {
+        this.inTitle = inTitle;
+    }
+
+    public boolean isInHeader() {
+        return inHeader;
+    }
+
+    public void setInHeader(boolean inHeader) {
+        this.inHeader = inHeader;
+    }
+
+    public void setImgSrcList(List<String> imgSrcList) {
+        this.imgSrcList = imgSrcList;
+    }
 
     public List<String> getImgSrcList() {
         return this.imgSrcList;
@@ -35,20 +91,6 @@ class Keyword implements Comparable<Keyword> {
 
     public void setFirstStatement(String firstStatement) {
         this.firstStatement = firstStatement;
-    }
-
-    public Keyword(String stem,String firstStatement, String imgSrc) {
-
-        this.stem = stem;
-        this.firstStatement = firstStatement;
-        this.imgSrcList = new LinkedList<>();
-        this.imgSrcList.add(imgSrc);
-    }
-    public Keyword(String stem,String firstStatement) {
-
-        this.stem = stem;
-        this.firstStatement = firstStatement;
-        this.imgSrcList = new LinkedList<>();
     }
     public void add(String term) {
         this.terms.add(term);

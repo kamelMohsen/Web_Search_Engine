@@ -30,7 +30,7 @@ public class queryProcessor {
             mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
             Yara = mongoClient.getDatabase("indexDB");
             //2. Retrieve data from the collection(table) and put it in vector of documents
-            MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
+            MongoCollection<Document> collection = Yara.getCollection("index_table");
 
         } catch (Exception e) {
             System.out.println(e);

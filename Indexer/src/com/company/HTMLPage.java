@@ -1,49 +1,40 @@
 package com.company;
+
 import org.apache.tika.langdetect.OptimaizeLangDetector;
 import org.apache.tika.language.detect.LanguageDetector;
 import org.apache.tika.language.detect.LanguageResult;
-import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
-import org.jsoup.UncheckedIOException;
-import org.jsoup.UnsupportedMimeTypeException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Node;
-import org.jsoup.nodes.TextNode;
-
-import org.jsoup.select.NodeVisitor;
-
-import javax.net.ssl.SSLException;
-
-import java.net.MalformedURLException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
-
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.UnknownHostException;
-import java.util.*;
+import java.util.LinkedList;
 import java.util.List;
-
+@SuppressWarnings("All")
 public class HTMLPage {
 
     private String url;
     private Document parsedHtml;
     private String title;
     private double pageRank;
-    private String text;
+    private List<HTMLElement> htmlElements;
+    String text;
     private int wordsCount;
     private List<ImageContainer> imgList;
 
 
+
     //Constructor that makes HtmlPage with initialized info
     public HTMLPage( String url, double pageRank) throws IOException {
+
         this.imgList = new LinkedList<>();
         this.text = "";
+        this.htmlElements = new LinkedList<HTMLElement>();
         this.pageRank = pageRank;
         this.wordsCount =0;
+
         try {
             parsedHtml = Jsoup.connect(url).get();
             StringBuilder parsedText = new StringBuilder();
@@ -51,48 +42,95 @@ public class HTMLPage {
 
             // Extract title
             this.title = parsedHtml.title();
-
             String alt;
             String src;
+            String lang = parsedHtml.getElementsByTag("html").attr("lang");
 
+            // Extracting Images
             for(Element metaTag: parsedHtml.getElementsByTag("img")) {
-
                 alt = metaTag.attr("alt");
-
-
                 src = metaTag.attr("src");
-
-
                 if(!alt.equals("") && !src.equals("")) {
                     ImageContainer imageContainer = new ImageContainer(alt,src);
                     imgList.add(imageContainer);
                 }
             }
 
+            // Extract headers and add title and url
+            this.htmlElements.add(new HTMLElement(this.url,"url"));
 
+            this.htmlElements.add(new HTMLElement(parsedHtml.title(),"title"));
+            this.text += parsedHtml.title()+" ";
 
-            // Extract text
-            parsedHtml.body().traverse(new NodeVisitor() {
-                @Override
-                public void head(Node node, int i) {
-                    if (node instanceof TextNode && !((TextNode) node).isBlank()) {
-                        parsedText.append(((TextNode) node).text())
-                                .append(" ");
-                        wordsCount++;
-                    }
-                }
+            for(Element header : parsedHtml.getElementsByTag("h1")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("h2")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("h3")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("h4")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("h5")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("h6")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("th")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                this.text += header.text()+" ";
+            }
 
-                @Override
-                public void tail(Node node, int i) {
+            // Extract rest of the site
+            for(Element header : parsedHtml.getElementsByTag("p")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"paragraph"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("b")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"bold"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("i")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"italic"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("small")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"small"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("ol")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"ordered_list"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("ul")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"unordered_list"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("td")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"table_column"));
+                this.text += header.text()+" ";
+            }
+            for(Element header : parsedHtml.getElementsByTag("tr")) {
+                this.htmlElements.add(new HTMLElement(header.text(),"table_row"));
+                this.text += header.text()+" ";
+            }
 
-                }
-            });
+            this.wordsCount = this.text.split("\\s+").length;
 
-            this.text = parsedText.toString();
             LanguageDetector detector = new OptimaizeLangDetector().loadModels();
             LanguageResult result = detector.detect(this.text);
 
-            if(!result.getLanguage().equals("en") || this.wordsCount < 100){
+            if(!result.getLanguage().equals("en") || this.wordsCount < 100 || !lang.equals("en")){
                 this.parsedHtml = null;
             }
 
@@ -105,7 +143,9 @@ public class HTMLPage {
     }
 
    // Setters & Getters
-
+   public List<HTMLElement> getHtmlElements() {
+       return htmlElements;
+   }
     public double getPageRank() {
         return pageRank;
     }

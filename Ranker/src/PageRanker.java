@@ -7,6 +7,7 @@ import com.mongodb.client.model.Filters;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 
+
 import static com.mongodb.client.model.Filters.eq;
 
 import java.sql.Connection;
@@ -15,7 +16,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("ALL")
 public class PageRanker  {
     private static final String DATABASE_NAME = "CrawlerDB";
     private static final String LINKS_COLLECTION_NAME = "Links"; //write crawler table name here
@@ -25,7 +26,7 @@ public class PageRanker  {
     public static void calculatePageRank(MongoDatabase database) {
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);
-        long noOfDocuments = linksCollection.countDocuments();
+        long noOfDocuments = linksCollection.count();
         BasicDBObject resetQuery = new BasicDBObject();
 
         BasicDBObject resetDocument = new BasicDBObject();
@@ -34,26 +35,26 @@ public class PageRanker  {
         BasicDBObject resetObject = new BasicDBObject();
         resetObject.put("$set", resetDocument); // (3)
         linksCollection.updateMany(resetQuery, resetObject);
-        for (int i = 0; i < noOfIterations; i++) {
-            MongoCursor<Document> linksCur = linksCollection.find(eq("Visited", 1)).cursor();
+        for (int i = 0; i < 1; i++) {
+            MongoCursor<Document> linksCur = linksCollection.find(eq("Visited", 1)).iterator();
             int documentCount = 0;
-            while (linksCur.hasNext()) {
+            while (linksCur!=null && linksCur.hasNext()) {
                 ArrayList<URLRank> list = new ArrayList<URLRank>();
                 documentCount++;
                 Document current = linksCur.next();
                 ObjectId id = (ObjectId) current.get("_id");
                 String str = id.toString();
-                MongoCursor<Document> hrefsCur = hrefsCollection.find(eq("refTo", str)).cursor(); //the links that refer to my link
+                MongoCursor<Document> hrefsCur = hrefsCollection.find(eq("refTo", str)).iterator(); //the links that refer to my link
                 while (hrefsCur.hasNext()) {
                     Document hrefsCurrent = hrefsCur.next();
                     String hrefCounter = (String) hrefsCurrent.get("URL"); //get link that referred to my original link
-                    MongoCursor<Document> linkCounter = hrefsCollection.find(eq("URL", hrefCounter)).cursor(); //
+                    MongoCursor<Document> linkCounter = hrefsCollection.find(eq("URL", hrefCounter)).iterator(); //
                     int counter = 0;
                     while (linkCounter.hasNext()) {
                         Document dummy = linkCounter.next();
                         counter++;
                     }
-                    MongoCursor<Document> myUrl = linksCollection.find(eq("URL", hrefCounter)).cursor();
+                    MongoCursor<Document> myUrl = linksCollection.find(eq("URL", hrefCounter)).iterator();
                     double pageRank = (double) myUrl.next().get("PageRank");
                     list.add(new URLRank(pageRank, counter));
                 }

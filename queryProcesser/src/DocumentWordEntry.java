@@ -166,7 +166,7 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     }
 
     public void calculateTotalRank(){
-        double wordInTitle = inTitle? 0.5 : 0;
+        double wordInTitle = inTitle? 2 : 0;
         double tfidf = tf*idf;
         this.RelevanceRank = wordInTitle + tfidf;
         this.totalRank = RelevanceRank + rank;
