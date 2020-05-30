@@ -19,6 +19,7 @@ public class Database {
         crawlerCollection = crawlerDB.getCollection("Links");
         hrefCollection = crawlerDB.getCollection("hrefs");
         crawlerCollection.createIndex("URL");
+        hrefCollection.createIndex("URL");
 
     }
     void updateHref(List<String> Link,String baseURL){
