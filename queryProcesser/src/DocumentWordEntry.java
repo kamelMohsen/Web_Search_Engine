@@ -24,7 +24,7 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double noOfTotalDocuments;
 
 
-    public DocumentWordEntry(String url, int frequency, boolean inTitle, String firstStatement,String name, String imgSrc, double PageRank, int PageLength ,String title,double tf,double idf) {
+    public DocumentWordEntry(String url, int frequency, boolean inTitle, String firstStatement,String imgSrc,String name,  double PageRank, int PageLength ,String title,double tf,double idf) {
         this.url = url;
         this.frequency = frequency;
         this.inTitle = inTitle;

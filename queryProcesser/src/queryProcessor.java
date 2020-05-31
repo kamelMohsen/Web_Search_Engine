@@ -4,13 +4,13 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
-import opennlp.tools.stemmer.PorterStemmer;
+//import opennlp.tools.stemmer.PorterStemmer;
 import com.mongodb.client.MongoDatabase;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
+//import java.util.LinkedHashMap;
 import java.util.List;
-import opennlp.tools.tokenize.WhitespaceTokenizer;
+//import opennlp.tools.tokenize.WhitespaceTokenizer;
 import org.bson.Document;
 import com.mongodb.DB;
 import  com.mongodb.DBCursor;
@@ -18,7 +18,7 @@ import  com.mongodb.DBCursor;
  @SuppressWarnings("ALL")
 public class queryProcessor {
     //Data Members
-    static PorterStemmer porterStemmer = new PorterStemmer();
+    //static PorterStemmer porterStemmer = new PorterStemmer();
     static public MongoDatabase Yara;
     static public DBCollection collection;
     public MongoClient mongoClient;
@@ -28,9 +28,11 @@ public class queryProcessor {
     public queryProcessor() {
         try {
             mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
-            Yara = mongoClient.getDatabase("indexDB");
+            //Yara = mongoClient.getDatabase("indexDB");
+            Yara = mongoClient.getDatabase("Yara");
             //2. Retrieve data from the collection(table) and put it in vector of documents
-            MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
+            MongoCollection<Document> collection = Yara.getCollection("firstTable");
+            //MongoCollection<Document> collection = Yara.getCollection("wikipedia_50_pages_try_1");
 
         } catch (Exception e) {
             System.out.println(e);
@@ -60,8 +62,6 @@ public class queryProcessor {
         for (int i = 0; i < finalStemmedArray.length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
-                System.out.println(document);
-
                 String a = (String) document.get("doc_url");
                 int b = (int) document.get("word_frequency");
                 boolean c = (boolean) document.get("is_in_title");
@@ -79,52 +79,60 @@ public class queryProcessor {
             }
         }
         //when we reach here we have a ready array list then the coming part is adjustments for phrase search
-
         int count = 0;
         int y =0 ; //index for new arraylist
-        int frequency = 0 ;
-        String allStatements = "" ;
-        String name = "";
 
         //First, get id we want to search for and find the length of the all the possible documents selected
-        String id = toRanker.get(toRanker.size()-1).getUrl();
-        int countList = toRanker.size();
+       // String id = toRanker.get(toRanker.size()-1).getUrl();
+
 
         //Second, Make a copy to keep track of all documents and make sure that we searched for all documents
-        ArrayList<DocumentWordEntry> copy = (ArrayList<DocumentWordEntry>) toRanker.clone(); //just a copy to keep track , we need to make it with same type and that was a mistake here
+       ArrayList<DocumentWordEntry> copy = (ArrayList<DocumentWordEntry>) toRanker.clone(); //just a copy to keep track , we need to make it with same type and that was a mistake here
+//        System.out.println(copy);
+//       if (!copy.isEmpty())
+//        {
+//            System.out.println(copy.size());
+//            System.out.println(toRanker.size());
+//            System.out.println(countList);
+//
+//        }
+        for (int i = 0 ; i < finalStemmedArray.length ; i++)
+        {
+            System.out.println(finalStemmedArray[i]);
+        }
+        System.out.println(toRanker.get(0).getName());
 
-        if(!copy.isEmpty()) { // Make sure the copy array is not empty
-
+        String id = toRanker.get(toRanker.size()-1).getUrl(); //initialization
+        while (!toRanker.isEmpty()) { // Make sure the copy array is not empty
             //Target is to get all docs with this id (one id) + 3 different words
             for (int i = 0; i < finalStemmedArray.length; i++) { //for loop on all the words in the input search query
-                for (int j = 0; j < countList; j++) { //Then a for loop on all the possible web pages figured out in step one
+                for (int j = 0; j < toRanker.size(); j++) { //Then a for loop on all the possible web pages figured out in step one
 
                     if (id == toRanker.get(j).getUrl() && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
                         count++;
-//                        frequency = frequency + toRanker.get(j).getFrequency(); // add all the frequencies
-//                        allStatements = allStatements + toRanker.get(j).getFirstStatement(); //All this is to extract the data
-//                        name = name + toRanker.get(j).getName();
-                        continue;
-                    }
+                        if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
+                            phraseSearchToRanker.add(y, new DocumentWordEntry(id, toRanker.get(j).getFrequency(), toRanker.get(j).isInTitle()
+                                    , toRanker.get(j).getFirstStatement(),  toRanker.get(j).getImgSrc(), toRanker.get(j).getName(),toRanker.get(j).getRank(),
+                                    toRanker.get(j).getDocLength(), toRanker.get(j).getTitle(), toRanker.get(j).getTf(),
+                                    toRanker.get(j).getIdf())); //Fill the array list that will be sent to the ranker
+                            y++; //advance the counter
+                            count = 0; //Then clear all the that to fill from the begining
 
-                    if(copy.size() >1)
-                        copy.remove(j); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
+                        } //close if for adding to the list
+                    } //closing condition
+                } //inner for
 
-                    if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
-                        phraseSearchToRanker.add(y, new DocumentWordEntry(id, toRanker.get(j).getFrequency(), toRanker.get(j).isInTitle()
-                                , allStatements, name,toRanker.get(j).getImgSrc(),toRanker.get(j).getRank() ,
-                                toRanker.get(j).getDocLength(),toRanker.get(j).getTitle(),toRanker.get(j).getTf(),
-                                toRanker.get(j).getIdf())); //Fill the array list that will be sent to the ranker
-                        count = 0 ; //Then clear all the that to fill from the begining
-                        frequency = 0;
-                        allStatements ="";
-                        name = "" ;
-                    }
+                //for(int p = 0 ; p < toRanker.size() ; p++) {
+                  //  if (toRanker.size() > 1 && id == toRanker.get(p).getUrl()) {
+                        toRanker.remove(toRanker.size()-1); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
+                   // }
+               if(!toRanker.isEmpty())
+                    id = toRanker.get(toRanker.size()-1).getUrl(); //update
+            }//outer for
 
-                } //close inner for
+            } //close outer while
+        System.out.println(phraseSearchToRanker.size());
 
-            } //close outer for
-        }//close the first if condition
         return  phraseSearchToRanker ;
     }
 
@@ -134,7 +142,7 @@ public class queryProcessor {
         for (int i = 0; i < length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
-                System.out.println(document)  ;
+              //  System.out.println(document)  ;
 
                 String a = (String) document.get("doc_url");
                 int b = (int) document.get("word_frequency");
@@ -155,10 +163,9 @@ public class queryProcessor {
         }
         return toRanker;
     }
+ } //end class
 
 
-
-} //end class
 
 
 
