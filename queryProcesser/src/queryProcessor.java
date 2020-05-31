@@ -1,4 +1,4 @@
- //imports
+//imports
 import com.mongodb.*;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
@@ -15,7 +15,7 @@ import org.bson.Document;
 import com.mongodb.DB;
 import  com.mongodb.DBCursor;
 
- @SuppressWarnings("ALL")
+@SuppressWarnings("ALL")
 public class queryProcessor {
     //Data Members
     //static PorterStemmer porterStemmer = new PorterStemmer();
@@ -83,11 +83,11 @@ public class queryProcessor {
         int y =0 ; //index for new arraylist
 
         //First, get id we want to search for and find the length of the all the possible documents selected
-       // String id = toRanker.get(toRanker.size()-1).getUrl();
+        // String id = toRanker.get(toRanker.size()-1).getUrl();
 
 
         //Second, Make a copy to keep track of all documents and make sure that we searched for all documents
-       ArrayList<DocumentWordEntry> copy = (ArrayList<DocumentWordEntry>) toRanker.clone(); //just a copy to keep track , we need to make it with same type and that was a mistake here
+        ArrayList<DocumentWordEntry> copy = (ArrayList<DocumentWordEntry>) toRanker.clone(); //just a copy to keep track , we need to make it with same type and that was a mistake here
 //        System.out.println(copy);
 //       if (!copy.isEmpty())
 //        {
@@ -108,7 +108,7 @@ public class queryProcessor {
             for (int i = 0; i < finalStemmedArray.length; i++) { //for loop on all the words in the input search query
                 for (int j = 0; j < toRanker.size(); j++) { //Then a for loop on all the possible web pages figured out in step one
 
-                    if (id == toRanker.get(j).getUrl() && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
+                    if (toRanker.get(j).getUrl().equals(id) && toRanker.get(j).getName().equals(finalStemmedArray[i])) { //if same id we are searching for and same word in the search query add one pint to count
                         count++;
                         if (count == finalStemmedArray.length) { //if this condition is achieved then the doc id repeated for the all the words
                             phraseSearchToRanker.add(y, new DocumentWordEntry(id, toRanker.get(j).getFrequency(), toRanker.get(j).isInTitle()
@@ -123,14 +123,14 @@ public class queryProcessor {
                 } //inner for
 
                 //for(int p = 0 ; p < toRanker.size() ; p++) {
-                  //  if (toRanker.size() > 1 && id == toRanker.get(p).getUrl()) {
-                        toRanker.remove(toRanker.size()-1); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
-                   // }
-               if(!toRanker.isEmpty())
+                //  if (toRanker.size() > 1 && id == toRanker.get(p).getUrl()) {
+                toRanker.remove(toRanker.size()-1); //we should remove anyway the id that we searched for , bec stopping condition is to stop when the arraylist is finished
+                // }
+                if(!toRanker.isEmpty())
                     id = toRanker.get(toRanker.size()-1).getUrl(); //update
             }//outer for
 
-            } //close outer while
+        } //close outer while
         System.out.println(phraseSearchToRanker.size());
 
         return  phraseSearchToRanker ;
@@ -142,7 +142,7 @@ public class queryProcessor {
         for (int i = 0; i < length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
-              //  System.out.println(document)  ;
+                //  System.out.println(document)  ;
 
                 String a = (String) document.get("doc_url");
                 int b = (int) document.get("word_frequency");
@@ -157,15 +157,10 @@ public class queryProcessor {
                 double k =  (double)document.get("tf");
                 double l =  (double)document.get("idf");
 
-                    toRanker.add(i, new DocumentWordEntry(a, b, c, d,e,f,g,h,j,k,l));
-               // }
+                toRanker.add(i, new DocumentWordEntry(a, b, c, d,e,f,g,h,j,k,l));
+                // }
             }
         }
         return toRanker;
     }
- } //end class
-
-
-
-
-
+} //end class

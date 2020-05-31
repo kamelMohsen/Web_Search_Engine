@@ -145,8 +145,9 @@ public class Interface extends HttpServlet {
 
         if(docs.isEmpty())
             System.out.println("No matching results found");
-        for (DocumentWordEntry dd : docs) {
-          //  System.out.println("before");
+
+    for (DocumentWordEntry dd : docs) {
+        System.out.println(docs.size());
             System.out.println(dd.getUrl());
             System.out.println(dd.getName());
            //  System.out.println("after");
