@@ -5,7 +5,7 @@ import java.util.*;
 @SuppressWarnings("ALL")
 public class Crawler implements Runnable{
 
-    private int maxPages = 10000;
+    private int maxPages = 20000;
     private Set<String> Visited;
     private List<String> queue;
     Map<String,Vector<String>> forbiddenList;

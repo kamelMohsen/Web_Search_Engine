@@ -16,17 +16,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("ALL")
 public class PageRanker  {
     private static final String DATABASE_NAME = "CrawlerDB";
     private static final String LINKS_COLLECTION_NAME = "Links"; //write crawler table name here
     private static final String HREFS_COLLECTION_NAME = "hrefs";
     private static final double dampingFactor = 0.85;
     private static final double invDampingFactor = 1-dampingFactor;
-    private static final int noOfIterations = 30;
+    private static final int noOfIterations = 2;
     public static void calculatePageRank(MongoDatabase database) {
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);
-        long noOfDocuments = linksCollection.countDocuments();
+        long noOfDocuments = linksCollection.count();
         long previous = System.currentTimeMillis();
         BasicDBObject resetQuery = new BasicDBObject();
         BasicDBObject resetDocument = new BasicDBObject();
@@ -37,13 +38,14 @@ public class PageRanker  {
         System.out.print("time taken to set initial pageranks = ");
        // System.out.println(System.currentTimeMillis()-previous);
         previous = System.currentTimeMillis();
-        MongoCursor<Document> holder = linksCollection.find(eq("Visited", 1)).cursor();
+        MongoCursor<Document> holder = linksCollection.find(eq("Visited", 1)).iterator();
         //System.out.println("time for retrieving visited links = ");
         //System.out.println(System.currentTimeMillis()-previous);
         previous = System.currentTimeMillis();
         for (int i = 0; i < noOfIterations; i++) {
-            MongoCursor<Document> linksCur = linksCollection.find(eq("Visited", 1)).cursor();;
+            MongoCursor<Document> linksCur = linksCollection.find(eq("Visited", 1)).iterator();;
             int documentCount = 0;
+            System.out.println("Iteration : "+ i);
             while (linksCur.hasNext()) {
                 ArrayList<URLRank> list = new ArrayList<URLRank>();
                 documentCount++;
@@ -55,7 +57,7 @@ public class PageRanker  {
                 //System.out.println(System.currentTimeMillis() - previous);
                 String str = id.toString();
                 previous = System.currentTimeMillis();
-                MongoCursor<Document> hrefsCur = hrefsCollection.find(eq("refTo", str)).cursor(); //the links that refer to my link
+                MongoCursor<Document> hrefsCur = hrefsCollection.find(eq("refTo", str)).iterator(); //the links that refer to my link
                 //System.out.println("Time taken to retrieve list of inbound links.");
                // System.out.println(System.currentTimeMillis() - previous);
                 previous = System.currentTimeMillis();
@@ -64,7 +66,7 @@ public class PageRanker  {
                     String hrefCounter = (String) hrefsCurrent.get("URL"); //get link that referred to my original link
                     long withinLoop = System.currentTimeMillis();
                     /////////////////////////////////////////
-                    MongoCursor<Document> linkCounter = hrefsCollection.find(eq("URL", hrefCounter)).cursor(); //
+                    MongoCursor<Document> linkCounter = hrefsCollection.find(eq("URL", hrefCounter)).iterator(); //
                     /////////////////////////////////////////////
                    // System.out.println("time taken to retrieve list of reffering documents");
                     //System.out.println(System.currentTimeMillis() - withinLoop);

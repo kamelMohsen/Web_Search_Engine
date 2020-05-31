@@ -23,9 +23,9 @@ public class DataBase {
         indexDB = mongoClient.getDB("indexDB");
         crawlerDB = mongoClient.getDB("CrawlerDB");
         freqDB = mongoClient.getDB("frequenciesDB");
-        indexCollection = indexDB.getCollection("index_table");
         crawlerCollection = crawlerDB.getCollection("Links");
-        freqCollection = freqDB.getCollection("frequency_table");
+        indexCollection = indexDB.getCollection("index_table_13k");
+        freqCollection = freqDB.getCollection("frequency_table_13k");
 
 
         indexCollection.createIndex(new BasicDBObject("word", 1).append("doc_url",1),"indexEntry",true);
