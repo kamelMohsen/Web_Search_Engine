@@ -31,7 +31,7 @@ public class queryProcessor {
             mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
             Yara = mongoClient.getDatabase("indexDB");
             //2. Retrieve data from the collection(table) and put it in vector of documents
-            MongoCollection<Document> collection = Yara.getCollection("index_table");
+            MongoCollection<Document> collection = Yara.getCollection("index_table_13k");
 
         } catch (Exception e) {
             System.out.println(e);
@@ -61,6 +61,7 @@ public class queryProcessor {
     //4. nonPhraseSearch
     public ArrayList<DocumentWordEntry> nonPhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection) throws IOException {
         ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
+        ArrayList<DocumentWordEntry> allResults = new ArrayList<DocumentWordEntry>();
         for (int i = 0; i < length; i++) {
             FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
             for (Document document : documents) {
@@ -80,12 +81,42 @@ public class queryProcessor {
                 double tf = (double) document.get("tf");
                 double idf = (double) document.get("idf");
                 double urlLength = (double) document.get("url_length");
-                toRanker.add(i, new DocumentWordEntry(pageRank, docUrl,docTitle,wordFrequency,isInTitle,
-                        isInHeader,isInUrl, firstStatement,imgSrc,word,docLength,tf, idf,urlLength));
 
+
+
+                allResults.add(i, new DocumentWordEntry(pageRank, docUrl,docTitle,wordFrequency,isInTitle,
+                        isInHeader,isInUrl, firstStatement,imgSrc,word,docLength,tf, idf,urlLength));
             }
         }
-        return toRanker;
+        for(int i = 0 ; i < allResults.size();i++ ){
+            for (int j = i+1; j<allResults.size();j++){
+
+                if(allResults.get(i).getUrl().equals(allResults.get(j).getUrl())){
+                    allResults.get(i).setTf(allResults.get(i).getTf()+allResults.get(j).getTf());
+                    allResults.get(i).setIdf(allResults.get(i).getIdf()+allResults.get(j).getIdf());
+                    allResults.get(i).setMatches(allResults.get(i).getMatches()+5);
+                    if(allResults.get(j).isInHeader() == true)
+                    {
+                        allResults.get(i).setWordInHeader(allResults.get(i).getWordInHeader() + 1);
+                    }
+                    if(allResults.get(j).isInTitle() == true)
+                    {
+                        allResults.get(i).setWordInTitle(allResults.get(i).getWordInTitle() + 2);
+                    }
+                    if(allResults.get(j).isInUrl() == true)
+                    {
+                        allResults.get(i).setWordInUrl(allResults.get(i).getWordInUrl() + 3);
+                    }
+
+                    allResults.remove(j);
+                }
+
+            }
+
+        }
+
+
+        return allResults;
     }
 
 

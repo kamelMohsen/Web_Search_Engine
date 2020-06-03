@@ -26,7 +26,7 @@ public class Interface extends HttpServlet {
         //0. Retrieve data
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         Yara = mongoClient.getDatabase("indexDB");
-        MongoCollection<Document> collection = Yara.getCollection("index_table");
+        MongoCollection<Document> collection = Yara.getCollection("index_table_13k");
 
         //1.To extract the text entered by the user
         userInput = request.getParameter("textbox");

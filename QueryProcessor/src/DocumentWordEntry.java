@@ -1,4 +1,7 @@
 import java.util.List;
+
+import static jdk.nashorn.internal.objects.Global.Infinity;
+
 @SuppressWarnings("ALL")
 public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double totalRank;
@@ -17,6 +20,11 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     private double tf;
     private double idf;
     private double urlLength;
+    private int matches;
+    double wordInUrl ;
+    double wordInTitle;
+    double wordInHeader;
+
 
     public DocumentWordEntry(double pageRank, String url,
                              String title, int frequency, boolean inTitle, boolean inHeader, boolean inUrl,
@@ -37,10 +45,47 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
         this.tf = tf;
         this.idf = idf;
         this.urlLength = urlLength;
+        this.matches = 0;
+        this.wordInUrl = this.inUrl? 3 : 0;
+        this.wordInTitle = this.inTitle? 2 : 0;
+        this.wordInHeader = this.inHeader? 1 : 0;
+
     }
 
 // Setters & Getters
 
+
+    public double getWordInUrl() {
+        return wordInUrl;
+    }
+
+    public void setWordInUrl(double wordInUrl) {
+        this.wordInUrl = wordInUrl;
+    }
+
+    public double getWordInTitle() {
+        return wordInTitle;
+    }
+
+    public void setWordInTitle(double wordInTitle) {
+        this.wordInTitle = wordInTitle;
+    }
+
+    public double getWordInHeader() {
+        return wordInHeader;
+    }
+
+    public void setWordInHeader(double wordInHeader) {
+        this.wordInHeader = wordInHeader;
+    }
+
+    public int getMatches() {
+        return matches;
+    }
+
+    public void setMatches(int matches) {
+        this.matches = matches;
+    }
 
     public double getPageRank() {
         return pageRank;
@@ -175,12 +220,10 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     }
 
     public void calculateTotalRank(){
-        double wordInUrl = inUrl? 3 : 0;
-        double wordInTitle = inTitle? 2 : 0;
-        double wordInHeader = inHeader? 1 : 0;
         double tfidf = tf*idf;
-        this.RelevanceRank = wordInUrl + wordInHeader + wordInTitle + tfidf + urlLength;
-        this.totalRank = RelevanceRank + pageRank;
+        this.RelevanceRank = this.wordInUrl + this.wordInHeader + this.wordInTitle + tfidf + (this.urlLength==Infinity ? 2:this.urlLength ) + (double)this.matches;
+        //this.RelevanceRank =   this.urlLength + tfidf  + (this.matches == 0 ? 1 : (double)this.matches)*(wordInUrl + wordInHeader + wordInTitle);
+        this.totalRank = RelevanceRank + 0*pageRank;
     }
 
     public double getTotalRank() {
