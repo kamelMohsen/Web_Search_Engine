@@ -1,0 +1,4 @@
+org.apache.lucene.codecs
+org.apache.lucene.codecs.lucene50
+org.apache.lucene.codecs.lucene53
+org.apache.lucene.codecs.lucene54

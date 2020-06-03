@@ -1,0 +1,6 @@
+org.apache.lucene.codecs.autoprefix
+org.apache.lucene.codecs.blockterms
+org.apache.lucene.codecs.blocktreeords
+org.apache.lucene.codecs.bloom
+org.apache.lucene.codecs.memory
+org.apache.lucene.codecs.simpletext
