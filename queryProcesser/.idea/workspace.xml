@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eae720e-d30f-4476-a1e0-f9b379295246" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/suggestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DataDocument.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DocumentWordEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DocumentWordEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/suggestions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Indexer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Indexer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeywordsExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeywordsExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/suggestions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

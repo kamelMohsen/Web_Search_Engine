@@ -27,7 +27,7 @@ public class Interface extends HttpServlet {
         MongoCollection<Document> collection = Yara.getCollection("index_table");
 
         //1.To extract the text entered by the user
-        userInput = request.getParameter("iputQuery");
+        userInput = request.getParameter("textbox");
         request.getParameter("page");
 
         //2. class constructors
@@ -94,7 +94,8 @@ public class Interface extends HttpServlet {
                 "  <a href=\"http://localhost:8080/Interface?textbox="+userInput+"+\"&page=3\">1</a>\n"+
                 "  <a class=\"active\" href=\"#\">2</a>\n" +
                 "  <a href=\"#\">3</a>\n" +
-                "  <a href=\"#\">4</a>\n" +
+                "  <form action = \"Interface?textbox="+userInput+"\"&page=4\" method=\"GET\" id=\"page4\">\" +\n" +
+                "                    \"<input type=\"submit\" value=\"kamel\"/> </form>\n" +
                 "  <a href=\"#\">5</a>\n" +
                 "  <a href=\"#\">6</a>\n" +
                 "  <a href=\"#\">&raquo;</a>\n" +
