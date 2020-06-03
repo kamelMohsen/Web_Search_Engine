@@ -1,0 +1,574 @@
+30-May-2020 14:33:57.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+30-May-2020 14:33:57.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+30-May-2020 14:33:57.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+30-May-2020 14:33:57.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-May-2020 14:33:57.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-May-2020 14:33:57.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2020 14:33:57.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_251\jre
+30-May-2020 14:33:57.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_251-b08
+30-May-2020 14:33:57.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-May-2020 14:33:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 14:33:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 14:33:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\conf\logging.properties
+30-May-2020 14:33:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2020 14:33:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2020 14:33:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2020 14:33:57.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2020 14:33:57.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 14:33:57.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 14:33:57.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\temp
+30-May-2020 14:33:57.501 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+30-May-2020 14:33:57.501 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+30-May-2020 14:33:57.502 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-May-2020 14:33:57.546 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+30-May-2020 14:33:57.970 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2020 14:33:58.229 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-May-2020 14:33:58.275 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1673 ms
+30-May-2020 14:33:58.522 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2020 14:33:58.522 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+30-May-2020 14:33:58.555 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs]
+30-May-2020 14:34:01.209 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 14:34:01.351 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs] has finished in [2,795] ms
+30-May-2020 14:34:01.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples]
+30-May-2020 14:34:03.429 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 14:34:03.576 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples] has finished in [2,223] ms
+30-May-2020 14:34:03.576 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager]
+30-May-2020 14:34:05.086 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 14:34:05.090 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager] has finished in [1,514] ms
+30-May-2020 14:34:05.090 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager]
+30-May-2020 14:34:05.946 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 14:34:05.953 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager] has finished in [863] ms
+30-May-2020 14:34:05.953 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT]
+30-May-2020 14:34:06.072 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+30-May-2020 14:34:07.625 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 14:34:07.631 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT] has finished in [1,678] ms
+30-May-2020 14:34:07.636 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2020 14:34:07.716 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9441 ms
+30-May-2020 15:13:00.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\Yara\Downloads\jdk-14_windows-x64_bin\jdk-14
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14+36-1461
+30-May-2020 15:13:00.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-May-2020 15:13:00.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 15:13:00.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 15:13:00.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2020 15:13:00.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2020 15:13:00.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2020 15:13:00.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\conf\logging.properties
+30-May-2020 15:13:00.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2020 15:13:00.093 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2020 15:13:00.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2020 15:13:00.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2020 15:13:00.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 15:13:00.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 15:13:00.096 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\temp
+30-May-2020 15:13:00.096 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+30-May-2020 15:13:00.097 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+30-May-2020 15:13:00.101 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-May-2020 15:13:00.108 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+30-May-2020 15:13:00.219 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2020 15:13:03.326 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-May-2020 15:13:03.346 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4235 ms
+30-May-2020 15:13:03.446 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2020 15:13:03.447 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+30-May-2020 15:13:03.508 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs]
+30-May-2020 15:13:06.179 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 15:13:06.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs] has finished in [2,842] ms
+30-May-2020 15:13:06.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples]
+30-May-2020 15:13:08.002 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 15:13:08.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples] has finished in [1,760] ms
+30-May-2020 15:13:08.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager]
+30-May-2020 15:13:09.171 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 15:13:09.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager] has finished in [1,063] ms
+30-May-2020 15:13:09.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager]
+30-May-2020 15:13:10.103 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 15:13:10.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager] has finished in [929] ms
+30-May-2020 15:13:10.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT]
+30-May-2020 15:13:10.144 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+30-May-2020 15:13:11.235 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 15:13:11.239 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT] has finished in [1,129] ms
+30-May-2020 15:13:11.245 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2020 15:13:11.263 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7917 ms
+30-May-2020 15:13:33.904 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:13:34.049 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:13:34.201 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 15:13:36.046 INFO [cluster-ClusterId{value='5ed25bfdb863575a9a09c09e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 15:13:36.055 INFO [cluster-ClusterId{value='5ed25bfeb863575a9a09c09f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 15:16:00.573 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:16:00.576 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:16:00.583 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 15:16:02.580 INFO [cluster-ClusterId{value='5ed25c90b863575a9a09c0a0', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 15:16:02.593 INFO [cluster-ClusterId{value='5ed25c90b863575a9a09c0a1', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 15:17:06.007 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:17:06.010 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 15:17:06.012 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 15:17:08.013 INFO [cluster-ClusterId{value='5ed25cd2b863575a9a09c0a2', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 15:17:08.013 INFO [cluster-ClusterId{value='5ed25cd2b863575a9a09c0a3', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:38:22.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+30-May-2020 18:38:22.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+30-May-2020 18:38:22.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+30-May-2020 18:38:22.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-May-2020 18:38:22.854 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-May-2020 18:38:22.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2020 18:38:22.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\Yara\Downloads\jdk-14_windows-x64_bin\jdk-14
+30-May-2020 18:38:22.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14+36-1461
+30-May-2020 18:38:22.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-May-2020 18:38:22.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:38:22.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:38:22.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2020 18:38:22.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2020 18:38:22.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2020 18:38:22.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\conf\logging.properties
+30-May-2020 18:38:22.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2020 18:38:22.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2020 18:38:22.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2020 18:38:22.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2020 18:38:22.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:38:22.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:38:22.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\temp
+30-May-2020 18:38:22.874 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+30-May-2020 18:38:22.874 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+30-May-2020 18:38:22.875 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-May-2020 18:38:22.914 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+30-May-2020 18:38:23.078 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2020 18:38:23.444 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-May-2020 18:38:23.515 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3107 ms
+30-May-2020 18:38:23.665 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2020 18:38:23.666 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+30-May-2020 18:38:23.708 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs]
+30-May-2020 18:38:26.719 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:38:26.887 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs] has finished in [3,179] ms
+30-May-2020 18:38:26.888 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples]
+30-May-2020 18:38:30.610 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:38:30.734 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples] has finished in [3,845] ms
+30-May-2020 18:38:30.734 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager]
+30-May-2020 18:38:32.239 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:38:32.255 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager] has finished in [1,521] ms
+30-May-2020 18:38:32.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager]
+30-May-2020 18:38:33.349 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:38:33.353 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager] has finished in [1,098] ms
+30-May-2020 18:38:33.353 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT]
+30-May-2020 18:38:33.570 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+30-May-2020 18:38:40.571 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:38:40.581 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT] has finished in [7,228] ms
+30-May-2020 18:38:40.632 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2020 18:38:40.682 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 17166 ms
+30-May-2020 18:39:06.916 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:39:07.312 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:39:07.624 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:39:09.244 INFO [cluster-ClusterId{value='5ed28c2a2f73221608d47c5e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:39:09.334 INFO [cluster-ClusterId{value='5ed28c2b2f73221608d47c5f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:41:53.012 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:41:53.014 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:41:55.044 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c60', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:41:55.050 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c61', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:42:18.732 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:42:18.735 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:42:18.741 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:42:20.743 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c62', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:42:20.761 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c63', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:42:27.642 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:42:27.647 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:42:27.652 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:42:29.656 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c64', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:42:29.662 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c65', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:43:20.830 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:43:20.833 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:43:20.836 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:43:22.846 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c67', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:43:22.857 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c66', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Exception in monitor thread while connecting to server localhost:27017
+	com.mongodb.MongoSocketOpenException: Exception opening socket
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+		at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+	Caused by: java.net.ConnectException: Connection refused: no further information
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+		at java.base/java.net.Socket.connect(Socket.java:648)
+		at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+		at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+		at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+		... 3 more
+30-May-2020 18:44:14.373 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c62', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:162, serverValue:1}] to localhost:27017
+30-May-2020 18:44:14.395 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c62', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13031800}
+30-May-2020 18:44:14.499 INFO [cluster-ClusterId{value='5ed28c2a2f73221608d47c5e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:163, serverValue:2}] to localhost:27017
+30-May-2020 18:44:14.504 INFO [cluster-ClusterId{value='5ed28c2a2f73221608d47c5e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2632100}
+30-May-2020 18:44:15.168 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c66', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:164, serverValue:3}] to localhost:27017
+30-May-2020 18:44:15.172 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c66', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2232900}
+30-May-2020 18:44:15.966 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c65', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:165, serverValue:4}] to localhost:27017
+30-May-2020 18:44:15.969 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c65', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2022300}
+30-May-2020 18:44:17.440 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c60', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:166, serverValue:5}] to localhost:27017
+30-May-2020 18:44:17.444 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c60', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1685400}
+30-May-2020 18:44:17.474 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c61', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:167, serverValue:6}] to localhost:27017
+30-May-2020 18:44:17.478 INFO [cluster-ClusterId{value='5ed28cd12f73221608d47c61', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2011100}
+30-May-2020 18:44:19.105 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c63', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:168, serverValue:7}] to localhost:27017
+30-May-2020 18:44:19.108 INFO [cluster-ClusterId{value='5ed28cea2f73221608d47c63', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1559100}
+30-May-2020 18:44:20.310 INFO [cluster-ClusterId{value='5ed28c2b2f73221608d47c5f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:169, serverValue:8}] to localhost:27017
+30-May-2020 18:44:20.313 INFO [cluster-ClusterId{value='5ed28c2b2f73221608d47c5f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1617900}
+30-May-2020 18:44:20.982 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c67', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:170, serverValue:9}] to localhost:27017
+30-May-2020 18:44:20.986 INFO [cluster-ClusterId{value='5ed28d282f73221608d47c67', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1979400}
+30-May-2020 18:44:22.271 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c64', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:171, serverValue:10}] to localhost:27017
+30-May-2020 18:44:22.272 INFO [cluster-ClusterId{value='5ed28cf32f73221608d47c64', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=911700}
+30-May-2020 18:45:41.258 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:45:41.261 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:45:41.264 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:45:41.272 INFO [cluster-ClusterId{value='5ed28db52f73221608d47c68', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:172, serverValue:11}] to localhost:27017
+30-May-2020 18:45:41.275 INFO [cluster-ClusterId{value='5ed28db52f73221608d47c69', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:173, serverValue:12}] to localhost:27017
+30-May-2020 18:45:41.275 INFO [cluster-ClusterId{value='5ed28db52f73221608d47c68', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1340500}
+30-May-2020 18:45:41.278 INFO [cluster-ClusterId{value='5ed28db52f73221608d47c69', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1207100}
+30-May-2020 18:45:41.329 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:174, serverValue:13}] to localhost:27017
+30-May-2020 18:47:13.641 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:47:13.644 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:47:13.647 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:47:13.652 INFO [cluster-ClusterId{value='5ed28e112f73221608d47c6a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:175, serverValue:14}] to localhost:27017
+30-May-2020 18:47:13.654 INFO [cluster-ClusterId{value='5ed28e112f73221608d47c6a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1015100}
+30-May-2020 18:47:13.657 INFO [cluster-ClusterId{value='5ed28e112f73221608d47c6b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:176, serverValue:15}] to localhost:27017
+30-May-2020 18:47:13.660 INFO [cluster-ClusterId{value='5ed28e112f73221608d47c6b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1116600}
+30-May-2020 18:47:13.665 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:177, serverValue:16}] to localhost:27017
+30-May-2020 18:47:20.554 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:47:20.557 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:47:20.567 INFO [cluster-ClusterId{value='5ed28e182f73221608d47c6c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:178, serverValue:17}] to localhost:27017
+30-May-2020 18:47:20.569 INFO [cluster-ClusterId{value='5ed28e182f73221608d47c6c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=772600}
+30-May-2020 18:47:20.573 INFO [cluster-ClusterId{value='5ed28e182f73221608d47c6d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:179, serverValue:18}] to localhost:27017
+30-May-2020 18:47:20.577 INFO [cluster-ClusterId{value='5ed28e182f73221608d47c6d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2277200}
+30-May-2020 18:48:25.292 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:48:25.297 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:48:25.302 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:48:25.311 INFO [cluster-ClusterId{value='5ed28e592f73221608d47c6e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:180, serverValue:19}] to localhost:27017
+30-May-2020 18:48:25.313 INFO [cluster-ClusterId{value='5ed28e592f73221608d47c6e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=562600}
+30-May-2020 18:48:25.313 INFO [cluster-ClusterId{value='5ed28e592f73221608d47c6f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:181, serverValue:20}] to localhost:27017
+30-May-2020 18:48:25.315 INFO [cluster-ClusterId{value='5ed28e592f73221608d47c6f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=683000}
+30-May-2020 18:48:25.318 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:182, serverValue:21}] to localhost:27017
+30-May-2020 18:49:25.988 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:49:25.991 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:49:25.996 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:49:26.001 INFO [cluster-ClusterId{value='5ed28e952f73221608d47c70', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:183, serverValue:22}] to localhost:27017
+30-May-2020 18:49:26.001 INFO [cluster-ClusterId{value='5ed28e952f73221608d47c71', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:184, serverValue:23}] to localhost:27017
+30-May-2020 18:49:26.002 INFO [cluster-ClusterId{value='5ed28e952f73221608d47c70', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=674600}
+30-May-2020 18:49:26.003 INFO [cluster-ClusterId{value='5ed28e952f73221608d47c71', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=452400}
+30-May-2020 18:49:26.010 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:185, serverValue:24}] to localhost:27017
+30-May-2020 18:52:41.456 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:52:41.459 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:52:41.461 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:52:41.466 INFO [cluster-ClusterId{value='5ed28f592f73221608d47c72', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:186, serverValue:31}] to localhost:27017
+30-May-2020 18:52:41.469 INFO [cluster-ClusterId{value='5ed28f592f73221608d47c72', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=448700}
+30-May-2020 18:52:41.469 INFO [cluster-ClusterId{value='5ed28f592f73221608d47c73', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:187, serverValue:32}] to localhost:27017
+30-May-2020 18:52:41.471 INFO [cluster-ClusterId{value='5ed28f592f73221608d47c73', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=518000}
+30-May-2020 18:52:41.473 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:188, serverValue:33}] to localhost:27017
+30-May-2020 18:53:25.778 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:53:25.781 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:53:25.784 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+30-May-2020 18:53:25.787 INFO [cluster-ClusterId{value='5ed28f852f73221608d47c74', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:189, serverValue:34}] to localhost:27017
+30-May-2020 18:53:25.789 INFO [cluster-ClusterId{value='5ed28f852f73221608d47c74', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=345900}
+30-May-2020 18:53:25.789 INFO [cluster-ClusterId{value='5ed28f852f73221608d47c75', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:190, serverValue:35}] to localhost:27017
+30-May-2020 18:53:25.792 INFO [cluster-ClusterId{value='5ed28f852f73221608d47c75', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1464400}
+30-May-2020 18:53:25.795 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:191, serverValue:36}] to localhost:27017
+30-May-2020 18:55:53.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+30-May-2020 18:55:53.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+30-May-2020 18:55:53.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+30-May-2020 18:55:53.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-May-2020 18:55:53.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-May-2020 18:55:53.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-May-2020 18:55:53.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\Yara\Downloads\jdk-14_windows-x64_bin\jdk-14
+30-May-2020 18:55:53.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14+36-1461
+30-May-2020 18:55:53.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-May-2020 18:55:53.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:55:53.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:55:53.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-May-2020 18:55:53.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-May-2020 18:55:53.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-May-2020 18:55:53.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\conf\logging.properties
+30-May-2020 18:55:53.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-May-2020 18:55:53.380 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-May-2020 18:55:53.380 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-May-2020 18:55:53.381 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-May-2020 18:55:53.381 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:55:53.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55
+30-May-2020 18:55:53.383 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\temp
+30-May-2020 18:55:53.390 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+30-May-2020 18:55:53.392 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+30-May-2020 18:55:53.392 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-May-2020 18:55:53.404 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+30-May-2020 18:55:53.489 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-May-2020 18:55:53.605 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-May-2020 18:55:53.630 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 994 ms
+30-May-2020 18:55:53.696 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-May-2020 18:55:53.697 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+30-May-2020 18:55:53.719 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs]
+30-May-2020 18:55:56.286 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:55:56.395 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\docs] has finished in [2,675] ms
+30-May-2020 18:55:56.396 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples]
+30-May-2020 18:55:58.706 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:55:58.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\examples] has finished in [2,432] ms
+30-May-2020 18:55:58.830 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager]
+30-May-2020 18:56:00.250 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:56:00.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\host-manager] has finished in [1,433] ms
+30-May-2020 18:56:00.265 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager]
+30-May-2020 18:56:01.499 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:56:01.505 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\manager] has finished in [1,241] ms
+30-May-2020 18:56:01.507 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT]
+30-May-2020 18:56:01.555 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+30-May-2020 18:56:03.444 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-May-2020 18:56:03.453 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Yara\Downloads\APT\Web_Search_Engine\APT\apache-tomcat-8.5.55\webapps\ROOT] has finished in [1,947] ms
+30-May-2020 18:56:03.461 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-May-2020 18:56:03.484 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9852 ms
+30-May-2020 18:56:04.413 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:56:04.669 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:56:04.780 INFO [cluster-ClusterId{value='5ed290242e65da65b8725637', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:37}] to localhost:27017
+30-May-2020 18:56:04.780 INFO [cluster-ClusterId{value='5ed290242e65da65b8725638', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:38}] to localhost:27017
+30-May-2020 18:56:04.814 INFO [cluster-ClusterId{value='5ed290242e65da65b8725638', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20206800}
+30-May-2020 18:56:04.814 INFO [cluster-ClusterId{value='5ed290242e65da65b8725637', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19977300}
+30-May-2020 18:56:45.789 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:56:45.794 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+30-May-2020 18:56:45.805 INFO [cluster-ClusterId{value='5ed2904d2e65da65b8725639', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:3, serverValue:39}] to localhost:27017
+30-May-2020 18:56:45.810 INFO [cluster-ClusterId{value='5ed2904d2e65da65b8725639', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2497100}
+30-May-2020 18:56:45.814 INFO [cluster-ClusterId{value='5ed2904d2e65da65b872563a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:4, serverValue:40}] to localhost:27017
+30-May-2020 18:56:45.817 INFO [cluster-ClusterId{value='5ed2904d2e65da65b872563a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1358600}

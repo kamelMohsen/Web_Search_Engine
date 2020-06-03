@@ -95,3 +95,13 @@
 0:0:0:0:0:0:0:1 - - [29/May/2020:14:58:58 +0200] "GET /Interface?textbox=bbc HTTP/1.1" 200 3554
 127.0.0.1 - - [29/May/2020:15:03:19 +0200] "GET /Interface?textbox=cairo HTTP/1.1" 200 5752
 127.0.0.1 - - [29/May/2020:15:03:21 +0200] "GET /Interface?textbox=%22cairo%22 HTTP/1.1" 500 1605
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:51:10 +0200] "GET / HTTP/1.1" 200 11415
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:51:14 +0200] "GET /Interface.html HTTP/1.1" 200 1836
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:51:23 +0200] "GET /Interface?textbox=messi HTTP/1.1" 500 3654
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:51:29 +0200] "GET /Interface?textbox=messi HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:53:28 +0200] "GET /Interface?textbox=messi HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:57:24 +0200] "GET /Interface.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:57:24 +0200] "GET /icon.ico HTTP/1.1" 200 107032
+0:0:0:0:0:0:0:1 - - [29/May/2020:20:57:29 +0200] "GET /Interface?textbox=eew HTTP/1.1" 500 3654
+0:0:0:0:0:0:0:1 - - [29/May/2020:21:18:24 +0200] "GET /Interface?textbox=eew HTTP/1.1" 500 3654
+0:0:0:0:0:0:0:1 - - [29/May/2020:21:22:20 +0200] "GET /Interface?textbox=eew HTTP/1.1" 500 3654

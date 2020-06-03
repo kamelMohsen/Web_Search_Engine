@@ -55,11 +55,6 @@ class KeywordsExtractor {
             CharTermAttribute token = tokenStream.getAttribute(CharTermAttribute.class);
 
 
-
-
-
-
-
             while (tokenStream.incrementToken()) {
 
                 String term = token.toString();

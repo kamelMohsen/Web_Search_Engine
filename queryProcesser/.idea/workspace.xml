@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eae720e-d30f-4476-a1e0-f9b379295246" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/suggestions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" afterDir="false" />
@@ -17,8 +18,10 @@
       <change beforePath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Indexer/out/production/SearchEngine/com/company/HTMLPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/queryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/queryProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeywordsExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeywordsExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/suggestions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,13 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../queryProcesser\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -88,22 +98,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="445" y="121" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590858304975" />
-    <state width="1493" height="329" key="GridCell.Tab.0.bottom" timestamp="1590910296652">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1590926741829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="329" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590910296652" />
-    <state width="1493" height="329" key="GridCell.Tab.0.center" timestamp="1590910296652">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590926741829" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1590926741829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="329" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590910296652" />
-    <state width="1493" height="329" key="GridCell.Tab.0.left" timestamp="1590910296651">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590926741829" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1590926741828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="329" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590910296651" />
-    <state width="1493" height="329" key="GridCell.Tab.0.right" timestamp="1590910296652">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590926741828" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1590926741829">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="329" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590910296652" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590926741829" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1590844738146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

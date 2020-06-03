@@ -20,15 +20,313 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facf82cf-ff27-426d-8248-542e2c2afcf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../queryProcesser/Interface by Yara.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/Interface by Yara.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/catalina.2020-05-29.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost.2020-05-29.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/logs/localhost_access_log.2020-05-29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DataDocument.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/suggestions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../APT/apache-tomcat-8.5.55/work/Catalina/localhost/ROOT/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/NOTICE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/RELEASE-NOTES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/ByteOrderMark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/ByteOrderParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/Charsets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/CopyUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/DirectoryWalker.CancelException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/DirectoryWalker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/EndianUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileCleaner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileCleaningTracker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileDeleteStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileExistsException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileSystemUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FileUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/FilenameUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/HexDump.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/IOCase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/IOExceptionWithCause.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/IOUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/LineIterator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/TaggedIOException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/ByteOrderMark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/ByteOrderParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/Charsets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/CopyUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/DirectoryWalker.CancelException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/DirectoryWalker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/EndianUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileCleaner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileCleaningTracker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileDeleteStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileExistsException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileSystemUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FileUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/FilenameUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/HexDump.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/IOCase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/IOExceptionWithCause.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/IOUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/LineIterator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/class-use/TaggedIOException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/CompositeFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/DefaultFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/DirectoryFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/ExtensionFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/LastModifiedFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/NameFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/PathFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/SizeFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/CompositeFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/DefaultFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/DirectoryFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/ExtensionFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/LastModifiedFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/NameFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/PathFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/class-use/SizeFileComparator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/comparator/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/AbstractFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/AgeFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/AndFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/CanReadFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/CanWriteFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/ConditionalFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/DelegateFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/DirectoryFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/EmptyFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/FalseFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/FileFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/FileFilterUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/HiddenFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/IOFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/MagicNumberFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/NameFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/NotFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/OrFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/PrefixFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/RegexFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/SizeFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/SuffixFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/TrueFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/WildcardFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/WildcardFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/AbstractFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/AgeFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/AndFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/CanReadFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/CanWriteFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/ConditionalFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/DelegateFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/DirectoryFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/EmptyFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/FalseFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/FileFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/FileFilterUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/HiddenFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/IOFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/MagicNumberFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/NameFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/NotFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/OrFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/PrefixFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/RegexFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/SizeFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/SuffixFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/TrueFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/WildcardFileFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/class-use/WildcardFilter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/filefilter/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/AutoCloseInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/BOMInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/BoundedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/BoundedReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/BrokenInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/CharSequenceInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/CharSequenceReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ClassLoaderObjectInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/CloseShieldInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ClosedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/CountingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/DemuxInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/InfiniteCircularInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/MessageDigestCalculatingInputStream.MessageDigestMaintainingObserver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/MessageDigestCalculatingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/NullInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/NullReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ObservableInputStream.Observer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ObservableInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ProxyInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ProxyReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ReaderInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/ReversedLinesFileReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/SwappedDataInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/TaggedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/Tailer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/TailerListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/TailerListenerAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/TeeInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/UnixLineEndingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/WindowsLineEndingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/XmlStreamReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/XmlStreamReaderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/AutoCloseInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/BOMInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/BoundedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/BoundedReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/BrokenInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/CharSequenceInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/CharSequenceReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ClassLoaderObjectInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/CloseShieldInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ClosedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/CountingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/DemuxInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/InfiniteCircularInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/MessageDigestCalculatingInputStream.MessageDigestMaintainingObserver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/MessageDigestCalculatingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/NullInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/NullReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ObservableInputStream.Observer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ObservableInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ProxyInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ProxyReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ReaderInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/ReversedLinesFileReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/SwappedDataInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/TaggedInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/Tailer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/TailerListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/TailerListenerAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/TeeInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/UnixLineEndingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/WindowsLineEndingInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/XmlStreamReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/class-use/XmlStreamReaderException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/input/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/FileAlterationListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/FileAlterationListenerAdaptor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/FileAlterationMonitor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/FileAlterationObserver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/FileEntry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/class-use/FileAlterationListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/class-use/FileAlterationListenerAdaptor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/class-use/FileAlterationMonitor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/class-use/FileAlterationObserver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/class-use/FileEntry.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/monitor/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/AppendableOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/BrokenOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ByteArrayOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ChunkedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ChunkedWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/CloseShieldOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ClosedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/CountingOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/DeferredFileOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/DemuxOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/FileWriterWithEncoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/LockableFileWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/NullOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/NullWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ProxyOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ProxyWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/StringBuilderWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/TaggedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/TeeOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/ThresholdingOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/WriterOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/XmlStreamWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/AppendableOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/BrokenOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ByteArrayOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ChunkedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ChunkedWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/CloseShieldOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ClosedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/CountingOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/DeferredFileOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/DemuxOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/FileWriterWithEncoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/LockableFileWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/NullOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/NullWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ProxyOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ProxyWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/StringBuilderWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/TaggedOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/TeeOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/ThresholdingOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/WriterOutputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/class-use/XmlStreamWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/output/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/ClassNameMatcher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/ValidatingObjectInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/class-use/ClassNameMatcher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/class-use/ValidatingObjectInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/org/apache/commons/io/serialization/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/commons-io-2.6-bin/commons-io-2.6/docs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/jar_files/opennlp-tools-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/jsoup-1.6.0.jar/jsoup-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/libraries/servlet_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/queryProcesser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/.idea/queryProcesser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/src/DataDocument.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../queryProcesser/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/src/queryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../queryProcesser/src/queryProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queryProcesser/src/suggestions.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +337,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZoUaYnqqLRf01xMk3drCD4VMmT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,34 +415,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="241" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585505815977" />
-    <state x="186" y="151" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590748994452">
-      <screen x="0" y="168" width="1360" height="600" />
+    <state x="225" y="153" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590858456592">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="225" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585505689735" />
+    <state x="225" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590858456592" />
     <state x="186" y="151" key="FileChooserDialogImpl/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590748994452" />
-    <state width="1314" height="101" key="GridCell.Tab.0.bottom" timestamp="1590748997097">
-      <screen x="0" y="168" width="1360" height="600" />
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1590858460899">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590714914521" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590428920008" />
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590858460899" />
     <state width="1314" height="101" key="GridCell.Tab.0.bottom/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590748997097" />
-    <state width="1314" height="101" key="GridCell.Tab.0.center" timestamp="1590748997097">
-      <screen x="0" y="168" width="1360" height="600" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1590858460899">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590714914520" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590428920007" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590858460899" />
     <state width="1314" height="101" key="GridCell.Tab.0.center/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590748997097" />
-    <state width="1314" height="101" key="GridCell.Tab.0.left" timestamp="1590748997096">
-      <screen x="0" y="168" width="1360" height="600" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1590858460899">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590714914520" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590428920007" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590858460899" />
     <state width="1314" height="101" key="GridCell.Tab.0.left/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590748997096" />
-    <state width="1314" height="101" key="GridCell.Tab.0.right" timestamp="1590748997097">
-      <screen x="0" y="168" width="1360" height="600" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1590858460899">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590714914520" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590428920007" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590858460899" />
     <state width="1314" height="101" key="GridCell.Tab.0.right/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590748997097" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590076844166">
       <screen x="0" y="0" width="1536" height="824" />

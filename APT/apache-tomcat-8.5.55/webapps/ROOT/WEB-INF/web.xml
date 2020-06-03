@@ -31,11 +31,19 @@
 	<servlet-name>Name</servlet-name>
 	<servlet-class>Interface</servlet-class>
   </servlet>
+  <servlet>
+	<servlet-name>Name2</servlet-name>
+	<servlet-class>suggestions</servlet-class>
+  </servlet>
   
 
 	<servlet-mapping>
 		<servlet-name>Name</servlet-name>
 		<url-pattern>/Interface</url-pattern>
 	</servlet-mapping>
-
+	
+<servlet-mapping>
+		<servlet-name>Name2</servlet-name>
+		<url-pattern>/suggestions</url-pattern>
+	</servlet-mapping>
 </web-app>

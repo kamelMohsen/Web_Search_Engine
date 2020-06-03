@@ -1,0 +1,28 @@
+suggestions
+{
+ display: flex;
+ flex-direction: column;
+align-items: center;
+
+}
+
+suggestions.list
+{
+    width: 100%;
+    max-width: 768px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+}
+
+suggestions.list.item{
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+
+}
+suggestions.list.item:last-of-type{
+    border-bottom: none;
+}
+suggestions.list.item:hover{
+    background:  rgba(0, 0, 0, 0.05);
+}
