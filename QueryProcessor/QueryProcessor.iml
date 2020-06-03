@@ -9,43 +9,22 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib" />
         </CLASSES>
-        <JAVADOC>
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-common" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-icu" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-kuromoji" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-morfologik" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-phonetic" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-smartcn" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-stempel" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/analyzers-uima" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/backward-codecs" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/benchmark" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/classification" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/codecs" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/core" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/demo" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/expressions" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/facet" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/grouping" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/highlighter" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/join" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/memory" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/misc" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/queries" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/queryparser" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/replicator" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/sandbox" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/spatial" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/spatial-extras" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/spatial3d" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/suggest" />
-          <root url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib/lucene-6.1.0/docs/test-framework" />
-        </JAVADOC>
+        <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/../Server/apache-tomcat-8.5.55/lib" recursive="false" />
       </library>

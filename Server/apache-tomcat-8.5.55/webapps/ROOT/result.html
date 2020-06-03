@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+	 
+        <title>Result</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="icon.ico">
+        <style>
+            /* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+           .button{
+		    background-color: #222020;
+			height: 40px;
+			width: 210px;
+			text-align: center;
+			/* margin-left: 650px; */
+			border: 0;
+			color: white;
+			margin: 0p 710px;
+			transition-duration: 0.4s;
+}
+
+
+.button:hover {
+  background-color: red;
+  color: white;
+}
+.button2:hover {
+  background-color: red; 
+  color: white;
+}
+			
+
+            .im{
+					/*margin-top: 100px;*/
+					text-align: center;
+					/* padding-bottom: 20px; */
+					font-size: 200px;
+					background-color:red;
+            }
+			/*.Suggestions{
+			border-top:2px solid #999; */
+				}
+				.Suggestions > div {
+				padding:15 px;
+				border-bottom: 1px solid #f83;
+				font-size:20px;
+				cursor:pointer;]
+				
+				}
+				.Suggestions > div:hover{
+				background-color: #ff1243;
+				}
+				.buttons{
+				margin:50px 8px;
+				}
+                 .button2{
+				    	    background-color: #222020;
+			height: 40px;
+			width: 210px;
+			text-align: center;
+			/* margin-left: 650px; */
+			border: 0;
+			color: white;
+			margin: 0p 850px;
+			transition-duration: 0.4s;
+				 }
+			    .container{
+				width: 60%;
+				border-radius: 3px;
+				overflow: hidden;
+				}
+				.container input{
+				 border: 0;
+				font-size: 25px;
+				color: #f83;
+				background-color: lightgray;
+				width: 100%;
+				text-align: center;
+				 }
+				 .box span{
+                display:inline-block; 
+                 }
+				 .box{
+				 text-align: center;
+				width: 50%;
+				border: solid #2c2929;
+				border-radius: 4px;
+				transition: width 0.4s ease-in-out;
+				background-image: url(searchicon.png);
+				padding: 12px 200px;
+				box-sizing: border-box;
+				margin:0px ;
+				 }
+				 .button3{
+				   background-color: #222020;
+			height: 50px;
+			width: 50px;
+			text-align: center;
+			/* margin-left: 650px; */
+			border: 0;
+			color: white;
+			margin: 0p 850px;
+			transition-duration: 0.4s;
+				 }
+				 .button4{
+				   background-color: #222020;
+			height: 40px;
+			width: 210px;
+			text-align: center;
+			/* margin-left: 650px; */
+			border: 0;
+			color: white;
+			margin: 0p 850px;
+			transition-duration: 0.4s;
+				 }
+				 .sora{
+				 padding: 0px 1200px;
+				 }
+			
+        </style>
+    </head>
+    <body>
+        
+		
+<form action = "Interface.html" method="GET" id="Interface"> <input type="submit" value="Home Page"/> </form>
+
+<!--Pagination--> 
+<div class ="results">	
+<div id="listingTable"></div>
+<a href="javascript:prevPage()" id="btn_prev">Prev</a>
+<a href="javascript:nextPage()" id="btn_next">Next</a>
+page: <span id="page"></span>
+
+
+      <script src="pagination.js"></script>
+
+
+
+
+</body>
+</html>

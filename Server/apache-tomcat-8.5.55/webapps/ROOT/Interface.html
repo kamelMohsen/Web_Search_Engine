@@ -1,86 +1,29 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>Intelligente</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="icon.ico">
-        <style>
-            
-           .button{
-            background-color: #D3D3D3;
-            height: 40px;
-            width: 210px;
-            text-align: center; 
-			margin-left: 650px;
-			border: 0;
-			}
-			
-                   
-            .im{
-                margin-left: 300px;
-				margin-top: 100px;
-				height: 200px;
-				text-align: center;
-				padding-bottom: 20px;				
-            }
-			.Suggestions{
-			border-top:2px solid #999;
-				}
-				.Suggestions > div {
-				padding:15 px;
-				border-bottom: 1px solid #f83;
-				font-size:20px;
-				cursor:pointer;]
-				
-				}
-				.Suggestions > div:hover{
-				background-color:#999;
-				}
-			    .container{
-				width:60%;
-				margin:100px auto;
-				border-radius:3px;
-				overflow:hidden;
-				}
-				.container input{
-				 border: 0;
-				font-size: 25px;
-				color: #f83;
-				background-color: lightgray;
-				width: 100%;
-				text-align: center;
-				 }
-				 .box span{
-                display:inline-block; 
-            }
-        </style>
+		<script src="https://kit.fontawesome.com/8f6a4bf373.js" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Engine</title>
+            <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div>
- <form action="Interface" method="GET">
-     <img class="im"   src="logo3.png" alt="logo">
-	 
- 
- <input class="button" type="submit" value="Search" >
- <div class="container">
- <input type="text" name="textbox" class="box" placeholder=" Type here.....">
- <div class="Suggestions">
- <div></div>
- <div> </div>
- <div> </div>
- </div>
- </div>
- <br><br>
-  
-</form> 
+        <div class="header">
+            <form action="Interface" method="GET">
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Type anything" autocomplete="off" name="textbox">
+                    <button  class="voice-btn" type="button">
+                        <i class="fas fa-microphone-alt"></i>
+					</button>
+
+                    <button  class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+				</div>
+				<input type="checkbox" id="ImageSearch" class="image-btn" value="ImageSearch" name="checkbox">
+				<label class="image-label" for="ImageSearch">Images</label><br>
+            </form>
         </div>
-
-
-</body>
-</html>
-
+		<script src="script.js"></script>
+    </body>
+    </html>
