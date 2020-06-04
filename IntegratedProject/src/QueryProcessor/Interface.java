@@ -25,12 +25,12 @@ public class Interface extends HttpServlet {
     public String checkBox = "check";
     static private MongoDatabase Yara;
     private static MongoClient mongoClient;
-    public  String Path = "F:/Tech/CUFE_CHS/Spring 2020/Advance Programming Techniques/Project/Web_Search_Engine/Server/apache-tomcat-8.5.55/webapps/ROOT";
+    public  String Path = "~/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT";
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws  IOException
     {
         //0. Retrieve data
-        mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        mongoClient = new MongoClient("localhost", 27017);
         Yara = mongoClient.getDatabase("indexDB");
         MongoCollection<Document> collection = Yara.getCollection("index_table_13k");
 

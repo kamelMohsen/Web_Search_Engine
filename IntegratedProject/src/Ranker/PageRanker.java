@@ -11,10 +11,7 @@ import org.bson.types.ObjectId;
 
 import static com.mongodb.client.model.Filters.eq;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +22,7 @@ public class PageRanker  {
     private static final String HREFS_COLLECTION_NAME = "hrefs";
     private static final double dampingFactor = 0.85;
     private static final double invDampingFactor = 1-dampingFactor;
-    private static final int noOfIterations = 2;
+    private static final int noOfIterations = 50;
     public static void calculatePageRank(MongoDatabase database) {
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);

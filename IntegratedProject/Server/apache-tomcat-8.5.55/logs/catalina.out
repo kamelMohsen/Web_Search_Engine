@@ -1,0 +1,1086 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:42:47.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:42:47.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:42:47.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:42:47.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:42:47.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:42:47.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:42:47.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:42:47.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:42:47.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:42:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:42:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:42:47.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:42:47.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:42:47.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:42:47.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:42:47.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:42:47.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:42:47.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:42:47.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:42:47.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:42:47.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:42:47.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:42:47.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:42:47.313 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:42:47.382 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:42:47.400 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 15:42:47.427 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1135 ms
+04-Jun-2020 15:42:47.530 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:42:47.531 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:42:47.556 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:42:48.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [1,271] ms
+04-Jun-2020 15:42:48.841 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:42:48.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [105] ms
+04-Jun-2020 15:42:48.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:42:49.021 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [75] ms
+04-Jun-2020 15:42:49.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:42:49.120 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [99] ms
+04-Jun-2020 15:42:49.121 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:42:50.313 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:42:56.859 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:42:56.871 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [7,750] ms
+04-Jun-2020 15:42:56.876 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:42:56.894 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9466 ms
+04-Jun-2020 15:46:56.999 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/ahmad/Desktop/APT%20project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/tomcat-users.xml]
+04-Jun-2020 15:46:57.001 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.open The specified user database [conf/tomcat-users.xml] could not be found
+04-Jun-2020 15:46:57.001 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.open Failed to close [conf/tomcat-users.xml]
+	java.io.FileNotFoundException: /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/tomcat-users.xml (No such file or directory)
+		at java.base/java.io.FileInputStream.open0(Native Method)
+		at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+		at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+		at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+		at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:466)
+		at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:689)
+		at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:160)
+		at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:309)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1145)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-Jun-2020 15:46:57.503 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+04-Jun-2020 15:46:57.527 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [ROOT]
+	java.lang.IllegalStateException: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:100)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:257)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:280)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:62)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:215)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:224)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1129)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1655)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:236)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:182)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:308)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		... 24 more
+	Caused by: java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:233)
+		... 27 more
+	Caused by: java.nio.file.NoSuchFileException: /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/lib/jsoup-1.11.2.jar
+		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+		at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1225)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:727)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:844)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:247)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+		... 31 more
+04-Jun-2020 15:46:58.045 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+04-Jun-2020 15:46:58.059 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [examples]
+	java.lang.IllegalStateException: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:100)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:257)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:280)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:62)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:215)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:224)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1129)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1655)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+	Caused by: java.io.IOException: java.lang.reflect.InvocationTargetException
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:236)
+		at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:182)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:308)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:96)
+		... 24 more
+	Caused by: java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+		at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+		at org.apache.tomcat.util.compat.Jre9Compat.jarFileNewInstance(Jre9Compat.java:233)
+		... 27 more
+	Caused by: java.nio.file.NoSuchFileException: /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar
+		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+		at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1225)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:727)
+		at java.base/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:844)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:247)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:348)
+		... 31 more
+04-Jun-2020 15:46:58.594 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+04-Jun-2020 15:46:58.598 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [host-manager]
+	java.lang.NullPointerException
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-Jun-2020 15:46:59.102 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+04-Jun-2020 15:46:59.106 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [manager]
+	java.lang.NullPointerException
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-Jun-2020 15:46:59.610 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+04-Jun-2020 15:46:59.614 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [docs]
+	java.lang.NullPointerException
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1657)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1596)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1548)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:452)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:834)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1417)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1344)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1603)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1159)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1385)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1353)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+04-Jun-2020 15:48:29.627 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/home/ahmad/Desktop/APT%20project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/tomcat-users.xml]
+04-Jun-2020 15:48:29.651 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:48:29.912 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [261] ms
+04-Jun-2020 15:48:29.912 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:48:29.936 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [24] ms
+04-Jun-2020 15:48:29.936 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:48:29.963 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [27] ms
+04-Jun-2020 15:48:29.963 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:48:29.980 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [17] ms
+04-Jun-2020 15:48:29.980 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:48:30.647 WARNING [localhost-startStop-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:48:36.362 INFO [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:48:36.364 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [6,384] ms
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:53:04.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:53:04.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:53:04.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:53:04.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:53:04.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:53:04.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:53:04.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:53:04.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:53:04.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:53:04.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:53:04.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:53:04.713 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:53:04.797 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:53:04.835 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1068)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:222)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1066)
+		... 13 more
+04-Jun-2020 15:53:04.836 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2572 ms
+04-Jun-2020 15:53:04.963 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:53:04.963 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:53:04.983 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:53:06.053 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [1,069] ms
+04-Jun-2020 15:53:06.054 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:53:06.101 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [47] ms
+04-Jun-2020 15:53:06.101 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:53:06.140 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [39] ms
+04-Jun-2020 15:53:06.140 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:53:06.171 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [31] ms
+04-Jun-2020 15:53:06.172 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:53:07.030 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:53:19.787 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:53:19.798 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [13,626] ms
+04-Jun-2020 15:53:19.803 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 14966 ms
+04-Jun-2020 15:53:19.835 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+04-Jun-2020 15:53:19.836 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:53:19.837 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 15:53:19.920 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:53:19.920 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:54:11.773 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 15:54:11.774 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:54:11.782 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 15:54:11.829 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:54:11.831 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:54:14.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:54:14.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:54:14.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:54:14.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:54:14.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:54:14.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:54:14.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:54:14.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:54:14.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:54:14.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:54:14.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:54:14.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:54:14.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:54:14.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:54:14.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:54:14.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:54:14.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:54:14.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:54:14.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:54:14.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:54:14.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:54:14.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:54:14.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:54:14.748 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:54:14.867 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:54:14.885 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 15:54:14.909 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1510 ms
+04-Jun-2020 15:54:14.998 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:54:14.998 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:54:15.024 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:54:15.822 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [797] ms
+04-Jun-2020 15:54:15.823 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:54:15.912 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [89] ms
+04-Jun-2020 15:54:15.912 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:54:15.953 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [40] ms
+04-Jun-2020 15:54:15.953 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:54:15.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [44] ms
+04-Jun-2020 15:54:15.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:54:16.255 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:54:22.014 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:54:22.017 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [6,020] ms
+04-Jun-2020 15:54:22.022 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:54:22.037 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7128 ms
+04-Jun-2020 15:56:15.730 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 15:56:15.732 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:56:15.746 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 15:56:15.877 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:56:15.879 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:56:18.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:56:18.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:56:18.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:56:18.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:56:18.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:56:18.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:56:18.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:56:18.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:56:18.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:56:18.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:56:18.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:56:18.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:56:18.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:56:18.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:56:18.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:56:18.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:56:18.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:56:18.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:56:18.474 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:56:18.517 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:56:18.531 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 15:56:18.546 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 863 ms
+04-Jun-2020 15:56:18.628 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:56:18.629 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:56:18.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:56:19.263 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [620] ms
+04-Jun-2020 15:56:19.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:56:19.302 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [38] ms
+04-Jun-2020 15:56:19.302 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:56:19.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [28] ms
+04-Jun-2020 15:56:19.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:56:19.358 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [27] ms
+04-Jun-2020 15:56:19.358 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:56:19.639 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:56:24.296 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:56:24.299 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [4,941] ms
+04-Jun-2020 15:56:24.319 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:56:24.380 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5833 ms
+04-Jun-2020 15:57:01.556 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 15:57:01.557 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:01.565 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 15:57:01.612 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:01.613 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:57:03.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:57:03.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:57:03.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:57:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:57:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:57:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:57:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:57:03.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:57:03.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:57:03.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:03.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:03.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:57:03.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:57:03.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:57:03.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:57:03.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:03.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:03.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:57:03.959 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:57:04.019 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:04.033 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 15:57:04.058 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 774 ms
+04-Jun-2020 15:57:04.140 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:57:04.140 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:57:04.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:57:04.802 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [649] ms
+04-Jun-2020 15:57:04.802 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:57:04.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [36] ms
+04-Jun-2020 15:57:04.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:57:04.874 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [36] ms
+04-Jun-2020 15:57:04.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:57:04.899 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [24] ms
+04-Jun-2020 15:57:04.900 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:57:05.162 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:57:10.078 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:57:10.081 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [5,181] ms
+04-Jun-2020 15:57:10.085 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:10.100 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6041 ms
+04-Jun-2020 15:57:37.990 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 15:57:37.991 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:37.999 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 15:57:38.054 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:38.058 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:57:40.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 15:57:40.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 15:57:40.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 15:57:40.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 15:57:40.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 15:57:40.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 15:57:40.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 15:57:40.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 15:57:40.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 15:57:40.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:40.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:40.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 15:57:40.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 15:57:40.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 15:57:40.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 15:57:40.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:40.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 15:57:40.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 15:57:40.510 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 15:57:40.568 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:40.584 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 15:57:40.606 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 886 ms
+04-Jun-2020 15:57:40.699 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 15:57:40.699 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 15:57:40.714 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 15:57:41.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [750] ms
+04-Jun-2020 15:57:41.465 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 15:57:41.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [46] ms
+04-Jun-2020 15:57:41.512 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 15:57:41.550 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [37] ms
+04-Jun-2020 15:57:41.550 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 15:57:41.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [29] ms
+04-Jun-2020 15:57:41.580 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 15:57:41.892 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 15:57:47.204 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 15:57:47.207 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [5,626] ms
+04-Jun-2020 15:57:47.211 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 15:57:47.242 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6636 ms
+04-Jun-2020 16:03:43.782 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:03:43.784 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:03:43.799 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:03:44.059 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:03:44.065 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:03:54.780 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:03:54.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:03:54.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:03:54.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:03:54.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:03:54.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:03:54.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:03:54.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:03:54.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:03:54.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:03:54.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:03:54.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:03:54.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:03:54.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:03:54.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:03:54.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:03:54.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:03:54.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:03:54.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:03:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:03:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:03:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:03:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:03:54.810 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:03:54.894 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:03:54.930 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:03:54.962 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1799 ms
+04-Jun-2020 16:03:55.090 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:03:55.090 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:03:55.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:03:55.913 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [809] ms
+04-Jun-2020 16:03:55.914 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:03:55.957 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [44] ms
+04-Jun-2020 16:03:55.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:03:55.998 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [41] ms
+04-Jun-2020 16:03:55.998 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:03:56.027 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [29] ms
+04-Jun-2020 16:03:56.027 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:03:56.341 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:04:04.479 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:04:04.482 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [8,455] ms
+04-Jun-2020 16:04:04.487 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:04:04.512 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9549 ms
+04-Jun-2020 16:07:14.195 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:07:14.195 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:07:14.203 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:07:14.253 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:07:14.255 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:07:16.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:07:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:07:16.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:07:16.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:07:16.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:07:16.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:07:16.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:07:16.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:07:16.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:07:16.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:07:16.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:07:16.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:07:16.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:07:16.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:07:16.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:07:16.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:07:16.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:07:16.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:07:16.698 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:07:16.855 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:07:16.887 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:07:16.937 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1141 ms
+04-Jun-2020 16:07:17.111 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:07:17.112 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:07:17.159 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:07:18.062 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [903] ms
+04-Jun-2020 16:07:18.063 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:07:18.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [49] ms
+04-Jun-2020 16:07:18.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:07:18.150 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [38] ms
+04-Jun-2020 16:07:18.150 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:07:18.179 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [29] ms
+04-Jun-2020 16:07:18.180 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:07:18.532 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:07:23.710 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:07:23.715 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [5,535] ms
+04-Jun-2020 16:07:23.738 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:07:23.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 6829 ms
+04-Jun-2020 16:12:14.564 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+04-Jun-2020 16:12:14.620 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+04-Jun-2020 16:12:15.983 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:12:24.938 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:12:24.951 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+04-Jun-2020 16:12:27.584 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:12:27.586 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:12:27.599 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:12:27.711 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:12:27.715 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:12:31.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:12:31.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:12:31.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:12:31.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:12:31.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:12:31.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:12:31.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:12:31.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:12:31.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:12:31.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:12:31.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:12:31.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:12:31.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:12:31.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:12:31.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:12:31.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:12:31.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:12:31.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:12:31.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:12:31.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:12:31.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:12:31.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:12:31.533 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:12:31.533 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:12:31.638 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:12:31.709 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:12:31.751 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1370 ms
+04-Jun-2020 16:12:31.921 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:12:31.922 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:12:31.962 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:12:32.990 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [1,028] ms
+04-Jun-2020 16:12:32.991 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:12:33.045 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [54] ms
+04-Jun-2020 16:12:33.046 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:12:33.092 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [47] ms
+04-Jun-2020 16:12:33.093 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:12:33.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [42] ms
+04-Jun-2020 16:12:33.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:12:33.368 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:12:38.843 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:12:38.845 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [5,710] ms
+04-Jun-2020 16:12:38.850 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:12:38.869 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7117 ms
+04-Jun-2020 16:13:19.012 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context []
+04-Jun-2020 16:13:19.290 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+04-Jun-2020 16:13:21.444 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:13:28.885 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:13:28.886 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:13:28.899 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:13:45.872 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:13:45.890 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+04-Jun-2020 16:13:45.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:13:45.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:13:45.994 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:13:45.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:13:45.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:13:45.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:13:45.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:13:45.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:13:45.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:13:45.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:13:45.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:13:45.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:13:45.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:13:45.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:13:45.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:13:45.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:13:45.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:13:45.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:13:45.999 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:13:46.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:13:46.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:13:46.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:13:46.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:13:46.007 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:13:46.007 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:13:46.007 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:13:46.069 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:13:46.090 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:13:46.125 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1900 ms
+04-Jun-2020 16:13:46.306 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:13:46.308 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:13:46.375 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:13:47.422 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [1,048] ms
+04-Jun-2020 16:13:47.423 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:13:47.531 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [107] ms
+04-Jun-2020 16:13:47.531 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:13:47.567 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [36] ms
+04-Jun-2020 16:13:47.568 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:13:47.618 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [50] ms
+04-Jun-2020 16:13:47.618 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:13:47.887 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:13:53.355 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:13:53.358 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [5,740] ms
+04-Jun-2020 16:13:53.364 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:13:53.389 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 7261 ms
+04-Jun-2020 16:18:08.795 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:18:08.822 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:18:08.837 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:18:09.030 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:18:09.034 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:18:12.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:18:12.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:18:12.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:18:12.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:18:12.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:18:12.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:18:12.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:18:12.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:18:12.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:18:12.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:18:12.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:18:12.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:18:12.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:18:12.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:18:12.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:18:12.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:18:12.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:18:12.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:18:12.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:18:12.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:18:12.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:18:12.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:18:12.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:18:12.354 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:18:12.449 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:18:12.541 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:18:12.579 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1552 ms
+04-Jun-2020 16:18:12.703 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:18:12.704 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:18:12.801 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:18:15.009 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [290] milliseconds.
+04-Jun-2020 16:18:15.097 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [2,296] ms
+04-Jun-2020 16:18:15.098 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:18:15.186 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [88] ms
+04-Jun-2020 16:18:15.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:18:15.251 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [64] ms
+04-Jun-2020 16:18:15.251 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:18:15.288 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [37] ms
+04-Jun-2020 16:18:15.289 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:18:15.984 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:18:25.872 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:18:25.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [10,594] ms
+04-Jun-2020 16:18:25.887 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:18:25.905 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 13325 ms
+04-Jun-2020 16:23:44.993 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:23:45.049 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:23:45.064 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:23:45.278 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:23:45.284 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:23:51.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:23:51.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:23:51.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:23:51.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:23:51.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:23:51.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:23:51.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:23:51.061 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:23:51.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:23:51.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:23:51.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:23:51.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:23:51.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:23:51.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:23:51.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:23:51.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:23:51.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:23:51.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:23:51.065 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:23:51.142 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:23:51.162 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:23:51.187 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3653 ms
+04-Jun-2020 16:23:51.308 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:23:51.309 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:23:51.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:23:53.255 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:23:53.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [2,028] ms
+04-Jun-2020 16:23:53.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:23:53.772 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:23:53.776 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [415] ms
+04-Jun-2020 16:23:53.777 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:23:54.282 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:23:54.288 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [511] ms
+04-Jun-2020 16:23:54.289 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:23:54.749 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:23:54.751 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [462] ms
+04-Jun-2020 16:23:54.751 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:23:55.354 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:24:03.332 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:24:03.334 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [8,583] ms
+04-Jun-2020 16:24:03.339 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:24:03.363 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12174 ms
+04-Jun-2020 16:27:15.069 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:27:15.270 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:27:15.286 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:27:15.499 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:27:15.504 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:27:22.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:27:22.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:27:22.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:27:22.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:27:22.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:27:22.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:27:22.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:27:22.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:27:22.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:27:22.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:27:22.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:27:22.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:27:22.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:27:22.150 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:27:22.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:27:22.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:27:22.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:27:22.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:27:22.151 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:27:22.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:27:22.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:27:22.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:27:22.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:27:22.152 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:27:22.424 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:27:22.497 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:27:22.522 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1671 ms
+04-Jun-2020 16:27:23.370 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:27:23.370 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:27:23.448 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:27:26.465 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:27:26.643 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [3,195] ms
+04-Jun-2020 16:27:26.644 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:27:27.055 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:27:27.061 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [417] ms
+04-Jun-2020 16:27:27.061 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:27:27.431 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:27:27.434 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [373] ms
+04-Jun-2020 16:27:27.435 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:27:27.873 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:27:27.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [440] ms
+04-Jun-2020 16:27:27.875 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:27:28.699 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:27:39.126 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:27:39.223 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [11,347] ms
+04-Jun-2020 16:27:39.238 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:27:39.260 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 16737 ms
+04-Jun-2020 16:36:56.515 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:36:56.560 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:36:56.574 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:36:56.805 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:36:56.806 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:36:59.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:36:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:36:59.958 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:36:59.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:36:59.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:36:59.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:37:00.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:37:00.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:37:00.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:37:00.118 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:37:00.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:37:00.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:37:00.119 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:37:00.119 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:37:00.301 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:37:00.323 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:37:00.347 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1572 ms
+04-Jun-2020 16:37:00.532 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:37:00.532 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:37:00.564 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:37:02.232 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:37:02.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [1,787] ms
+04-Jun-2020 16:37:02.352 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:37:02.849 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:37:02.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [530] ms
+04-Jun-2020 16:37:02.882 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:37:03.242 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:37:03.244 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [362] ms
+04-Jun-2020 16:37:03.244 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:37:03.621 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:37:03.624 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [380] ms
+04-Jun-2020 16:37:03.624 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:37:04.579 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:37:14.174 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:37:14.191 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [10,567] ms
+04-Jun-2020 16:37:14.196 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:37:14.222 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 13874 ms
+04-Jun-2020 16:43:39.138 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jun-2020 16:43:39.274 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:43:39.288 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jun-2020 16:43:39.461 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:43:39.463 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:43:42.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+04-Jun-2020 16:43:42.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+04-Jun-2020 16:43:42.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+04-Jun-2020 16:43:42.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Jun-2020 16:43:42.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-33-generic
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.7+10-post-Ubuntu-3ubuntu1
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:43:42.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:43:42.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/conf/logging.properties
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jun-2020 16:43:42.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jun-2020 16:43:42.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jun-2020 16:43:42.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jun-2020 16:43:42.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:43:42.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55
+04-Jun-2020 16:43:42.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/temp
+04-Jun-2020 16:43:42.644 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+04-Jun-2020 16:43:42.722 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:43:42.762 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jun-2020 16:43:42.798 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1700 ms
+04-Jun-2020 16:43:43.174 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jun-2020 16:43:43.174 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+04-Jun-2020 16:43:43.424 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples]
+04-Jun-2020 16:43:48.716 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:43:48.901 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/examples] has finished in [5,475] ms
+04-Jun-2020 16:43:48.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager]
+04-Jun-2020 16:43:49.340 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:43:49.360 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/host-manager] has finished in [458] ms
+04-Jun-2020 16:43:49.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager]
+04-Jun-2020 16:43:49.752 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:43:49.754 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/manager] has finished in [394] ms
+04-Jun-2020 16:43:49.754 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs]
+04-Jun-2020 16:43:50.107 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:43:50.109 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/docs] has finished in [355] ms
+04-Jun-2020 16:43:50.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT]
+04-Jun-2020 16:43:50.638 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+04-Jun-2020 16:43:59.206 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+04-Jun-2020 16:43:59.306 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ahmad/Desktop/APT project/IntegratedGit/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT] has finished in [9,195] ms
+04-Jun-2020 16:43:59.325 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jun-2020 16:43:59.347 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 16549 ms
+INFO  Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+INFO  Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Not a phrase
+INFO  Cluster description not yet available. Waiting for 30000 ms before timing out
+INFO  Opened connection [connectionId{localValue:1, serverValue:27}] to localhost:27017
+INFO  Opened connection [connectionId{localValue:2, serverValue:28}] to localhost:27017
+INFO  Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15638346}
+INFO  Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19124046}
+INFO  Opened connection [connectionId{localValue:3, serverValue:29}] to localhost:27017
+An error occurred.
+java.io.FileNotFoundException: ~/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT/pagination.js (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
+	at QueryProcessor.queryProcessor.createJSFile(queryProcessor.java:169)
+	at QueryProcessor.Interface.doGet(Interface.java:83)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:615)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+INFO  Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Not a phrase
+INFO  Cluster description not yet available. Waiting for 30000 ms before timing out
+INFO  Opened connection [connectionId{localValue:5, serverValue:31}] to localhost:27017
+INFO  Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3201299}
+INFO  Opened connection [connectionId{localValue:4, serverValue:30}] to localhost:27017
+INFO  Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 6]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1725507}
+INFO  Opened connection [connectionId{localValue:6, serverValue:32}] to localhost:27017
+An error occurred.
+java.io.FileNotFoundException: ~/Web_Search_Engine/IntegratedProject/Server/apache-tomcat-8.5.55/webapps/ROOT/pagination.js (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:126)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:66)
+	at QueryProcessor.queryProcessor.createJSFile(queryProcessor.java:169)
+	at QueryProcessor.Interface.doGet(Interface.java:83)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:615)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1627)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)

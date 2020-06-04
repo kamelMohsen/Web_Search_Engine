@@ -29,7 +29,7 @@
   
   <servlet>
 	<servlet-name>Name</servlet-name>
-	<servlet-class>Interface</servlet-class>
+	<servlet-class>QueryProcessor.Interface</servlet-class>
   </servlet>
   
 
