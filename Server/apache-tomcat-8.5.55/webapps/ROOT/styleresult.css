@@ -5,7 +5,7 @@ body{
 }
 .search-box{
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #2f3640;
@@ -24,10 +24,10 @@ body{
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
-    width: 500px;
+    width: 400px;
 }
 .search-box:hover > .search-txt{
-    width: 550px;
+    width: 400px;
     padding: 0 6px;
 }
 .search-box:hover > .search-btn{
@@ -65,7 +65,7 @@ body{
 }
 .search-label{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 41%;
     color: #e84118;
     width: 50px;
@@ -79,7 +79,7 @@ body{
 }
 .search-radio{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 45%;
     color: #e84118;
     width: 40px;
@@ -94,7 +94,7 @@ body{
 
 .images-label{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 51%;
     color: #e84118;
     width: 50px;
@@ -107,7 +107,7 @@ body{
 }
 .images-radio{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 55%;
     color: #e84118;
     width: 40px;
@@ -121,7 +121,7 @@ body{
 }
 .trends-label{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 61%;
     color: #e84118;
     width: 50px;
@@ -135,7 +135,7 @@ body{
 }
 .trends-radio{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 65%;
     color: #e84118;
     width: 40px;
@@ -149,7 +149,7 @@ body{
 }
 .countries-list{
     position: absolute;
-    top: 60%;
+    top: 25%;
     left: 32%;
     color: #e84118;
     width: 100px;
@@ -160,4 +160,11 @@ body{
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+}
+.results{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    border: thin;
+    text-align: left;
 }

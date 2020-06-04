@@ -1,0 +1,270 @@
+05-Jun-2020 00:21:12.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:21:12.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:21:12.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:21:12.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:21:12.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:21:12.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:21:12.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:21:12.715 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:21:12.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:21:12.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:21:12.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:21:12.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:21:12.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:21:12.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:21:12.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:21:12.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:21:12.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:21:12.720 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:21:12.720 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:21:12.722 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:21:12.758 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:21:12.864 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:21:12.941 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:21:12.965 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 935 ms
+05-Jun-2020 00:21:13.098 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:21:13.099 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:21:13.124 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:21:13.685 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [560] ms
+05-Jun-2020 00:21:13.688 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:21:14.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [1,137] ms
+05-Jun-2020 00:21:14.826 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:21:14.918 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [92] ms
+05-Jun-2020 00:21:14.918 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:21:14.962 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [44] ms
+05-Jun-2020 00:21:14.963 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:21:15.917 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:21:24.677 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:21:24.684 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [9,721] ms
+05-Jun-2020 00:21:24.689 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:21:24.698 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11732 ms
+05-Jun-2020 00:22:56.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:22:56.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:22:56.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:22:56.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:22:56.734 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:22:56.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:22:56.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:22:56.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:22:56.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:22:56.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:22:56.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:22:56.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:22:56.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:22:56.739 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:22:56.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:22:56.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:22:56.741 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:22:56.741 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:22:56.741 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:22:56.749 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:22:56.797 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:22:56.863 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:22:56.876 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 521 ms
+05-Jun-2020 00:22:56.918 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:22:56.918 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:22:56.930 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:22:57.186 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [256] ms
+05-Jun-2020 00:22:57.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:22:57.594 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [407] ms
+05-Jun-2020 00:22:57.594 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:22:57.637 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [43] ms
+05-Jun-2020 00:22:57.637 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:22:57.675 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [38] ms
+05-Jun-2020 00:22:57.675 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:22:57.989 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:23:04.857 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:23:04.863 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [7,188] ms
+05-Jun-2020 00:23:04.868 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:23:04.879 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8001 ms
+05-Jun-2020 00:24:30.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:24:30.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:24:30.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:24:30.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:24:30.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:24:30.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:24:30.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:24:30.450 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:24:30.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:24:30.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:24:30.451 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:24:30.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:24:30.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:24:30.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:24:30.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:24:30.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:24:30.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:24:30.455 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:24:30.455 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:24:30.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:24:30.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:24:30.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:24:30.463 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:24:30.463 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:24:30.464 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:24:30.470 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:24:30.531 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:24:30.598 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:24:30.615 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 590 ms
+05-Jun-2020 00:24:30.648 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:24:30.649 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:24:30.660 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:24:30.903 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [243] ms
+05-Jun-2020 00:24:30.924 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:24:31.320 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [396] ms
+05-Jun-2020 00:24:31.320 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:24:31.355 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [35] ms
+05-Jun-2020 00:24:31.361 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:24:31.389 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [28] ms
+05-Jun-2020 00:24:31.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:24:31.669 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:24:38.641 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:24:38.647 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [7,257] ms
+05-Jun-2020 00:24:38.652 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:24:38.662 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 8046 ms
+05-Jun-2020 00:27:27.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:27:27.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:27:27.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:27:27.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:27:27.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:27:27.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:27:27.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:27:27.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:27:27.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:27:27.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:27:27.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:27:27.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:27:27.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:27:27.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:27:27.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:27:27.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:27:27.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:27:27.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:27:27.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:27:27.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:27:27.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:27:27.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:27:27.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:27:27.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:27:27.469 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:27:27.485 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:27:27.538 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:27:27.607 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:27:27.624 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 634 ms
+05-Jun-2020 00:27:27.667 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:27:27.668 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:27:27.684 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:27:28.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [320] ms
+05-Jun-2020 00:27:28.006 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:27:28.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [640] ms
+05-Jun-2020 00:27:28.647 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:27:28.736 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [89] ms
+05-Jun-2020 00:27:28.736 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:27:28.821 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [84] ms
+05-Jun-2020 00:27:28.851 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:27:29.247 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:27:39.100 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:27:39.109 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [10,258] ms
+05-Jun-2020 00:27:39.113 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:27:39.127 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11501 ms
+05-Jun-2020 00:28:36.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:28:36.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:28:36.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:28:36.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:28:36.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:28:36.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:28:36.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:28:36.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:28:36.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:28:36.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:28:36.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:28:36.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:28:36.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:28:36.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:28:36.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:28:36.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:28:36.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:28:36.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:28:36.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:28:36.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:28:36.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:28:36.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:28:36.323 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:28:36.323 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:28:36.324 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:28:36.334 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:28:36.406 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:28:36.495 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:28:36.517 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 812 ms
+05-Jun-2020 00:28:36.566 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:28:36.566 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:28:36.580 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:28:36.923 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [342] ms
+05-Jun-2020 00:28:36.924 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:28:37.413 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [489] ms
+05-Jun-2020 00:28:37.413 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:28:37.469 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [56] ms
+05-Jun-2020 00:28:37.470 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:28:37.517 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [47] ms
+05-Jun-2020 00:28:37.517 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:28:38.070 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:28:48.859 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:28:48.866 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [11,349] ms
+05-Jun-2020 00:28:48.870 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:28:48.885 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12367 ms
+05-Jun-2020 00:29:22.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.55
+05-Jun-2020 00:29:22.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 5 2020 22:10:54 UTC
+05-Jun-2020 00:29:22.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.55.0
+05-Jun-2020 00:29:22.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+05-Jun-2020 00:29:22.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+05-Jun-2020 00:29:22.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2020 00:29:22.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-14.0.1
+05-Jun-2020 00:29:22.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           14.0.1+7
+05-Jun-2020 00:29:22.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2020 00:29:22.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:29:22.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:29:22.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2020 00:29:22.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2020 00:29:22.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2020 00:29:22.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\conf\logging.properties
+05-Jun-2020 00:29:22.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2020 00:29:22.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2020 00:29:22.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2020 00:29:22.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2020 00:29:22.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:29:22.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55
+05-Jun-2020 00:29:22.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\temp
+05-Jun-2020 00:29:22.872 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+05-Jun-2020 00:29:22.872 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+05-Jun-2020 00:29:22.873 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+05-Jun-2020 00:29:22.878 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+05-Jun-2020 00:29:22.937 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:29:22.999 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2020 00:29:23.012 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 557 ms
+05-Jun-2020 00:29:23.051 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2020 00:29:23.051 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.55
+05-Jun-2020 00:29:23.064 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs]
+05-Jun-2020 00:29:23.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\docs] has finished in [269] ms
+05-Jun-2020 00:29:23.334 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples]
+05-Jun-2020 00:29:23.779 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\examples] has finished in [445] ms
+05-Jun-2020 00:29:23.779 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager]
+05-Jun-2020 00:29:23.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\host-manager] has finished in [46] ms
+05-Jun-2020 00:29:23.825 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager]
+05-Jun-2020 00:29:23.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\manager] has finished in [40] ms
+05-Jun-2020 00:29:23.866 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT]
+05-Jun-2020 00:29:24.231 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+05-Jun-2020 00:29:32.812 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2020 00:29:32.827 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [F:\Tech\CUFE_CHS\Spring 2020\Advance Programming Techniques\Project\Web_Search_Engine\Server\apache-tomcat-8.5.55\webapps\ROOT] has finished in [8,960] ms
+05-Jun-2020 00:29:32.834 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2020 00:29:32.854 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9842 ms

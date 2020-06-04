@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="facf82cf-ff27-426d-8248-542e2c2afcf2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SearchEngine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scraper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/lib" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -171,10 +167,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="221" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590388182082" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1591306295391">
+    <state x="0" y="0" key="SettingsEditor" timestamp="1591306776060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591306295391" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591306776060" />
     <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585505701298" />
     <state x="477" y="267" key="com.intellij.ide.util.TipDialog" timestamp="1590387018369">
       <screen x="0" y="0" width="1536" height="824" />
