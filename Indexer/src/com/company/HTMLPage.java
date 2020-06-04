@@ -57,40 +57,40 @@ public class HTMLPage {
             }
 
             // Extract headers and add title and url
+            String headerString = "";
             this.htmlElements.add(new HTMLElement(this.url,"url"));
-
             this.htmlElements.add(new HTMLElement(parsedHtml.title(),"title"));
             this.text += parsedHtml.title()+" ";
 
             for(Element header : parsedHtml.getElementsByTag("h1")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("h2")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("h3")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("h4")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("h5")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("h6")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
             for(Element header : parsedHtml.getElementsByTag("th")) {
-                this.htmlElements.add(new HTMLElement(header.text(),"header"));
+                headerString += header.text();
                 this.text += header.text()+" ";
             }
-
+            this.htmlElements.add(new HTMLElement(headerString,"header"));
             // Extract rest of the site
             for(Element header : parsedHtml.getElementsByTag("p")) {
                 this.htmlElements.add(new HTMLElement(header.text(),"paragraph"));

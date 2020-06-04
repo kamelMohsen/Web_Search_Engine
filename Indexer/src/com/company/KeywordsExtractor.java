@@ -1,5 +1,6 @@
 package com.company;
 
+import org.apache.http.Header;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.StopFilter;
@@ -24,21 +25,17 @@ class KeywordsExtractor {
 
         TokenStream tokenStream = null;
         String Url = htmlElements.get(0).getElement();
-
+        String Title = htmlElements.get(1).getElement();
+        String Headers = htmlElements.get(2).getElement();
         try {
             List<Keyword> cardKeywords = new LinkedList<>();
-            for(int i = 1 ; i< htmlElements.size() ; i++) {
+            for(int i = 3 ; i< htmlElements.size() ; i++) {
 
 
-                boolean inTitle = false;
-                boolean inHeader = false;
 
-                if(htmlElements.get(i).getType().equals("title")){
-                    inTitle = true;
-                }
-                if(htmlElements.get(i).getType().equals("header")){
-                    inHeader = true;
-                }
+
+
+
                 // treat the dashed words, don't let separate them during the processing
                 String fullText = htmlElements.get(i).getElement();
 
@@ -63,14 +60,26 @@ class KeywordsExtractor {
                 while (tokenStream.incrementToken()) {
 
                     String term = token.toString();
+                    boolean inTitle = false;
+                    boolean inHeader = false;
                     boolean inUrl = false;
-                    if(Url.toLowerCase().split(term).length>1){
+
+                    if(Headers.contains(term)){
+                        inHeader = true;
+                    }
+                    if(Title.contains(term)){
+                        inTitle = true;
+                    }
+                    if(Url.contains(term)){
                         inUrl =true;
                     }
+
                     String stem = getStemForm(term);
+                    String firstStripped = htmlElements.get(i).getElement().replaceAll("[^a-zA-Z0-9]", " ");
+
 
                     if (stem != null) {
-                        Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"), htmlElements.get(i).getElement(),inTitle,inHeader,inUrl));
+                        Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStripped ,inTitle,inHeader,inUrl));
                         // treat the dashed words back, let look them pretty
                         cardKeyword.add(term.replaceAll("-0", "-"));
                     }
