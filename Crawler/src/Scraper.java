@@ -62,6 +62,9 @@ public class Scraper {
             Elements hyperLinks = htmlDocument.select("a[href]");
             for (Element link : hyperLinks) {
                 this.links.add(link.absUrl("href"));
+                if(links.size()>50){
+                    break;
+                }
             }
             DB.visitLink(url, importance);
             DB.insertLink(getLinks());
@@ -139,6 +142,9 @@ public class Scraper {
             Elements hyperLinks = htmlDocument.select("a[href]");
             for (Element link : hyperLinks) {
                 this.links.add(link.absUrl("href"));
+                if(links.size()>50){
+                    break;
+                }
             }
             DB.updateLink(url);
             DB.updateHref(getLinks(), url);

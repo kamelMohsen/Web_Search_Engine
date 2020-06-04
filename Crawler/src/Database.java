@@ -20,6 +20,7 @@ public class Database {
         hrefCollection = crawlerDB.getCollection("hrefs");
         crawlerCollection.createIndex("URL");
         hrefCollection.createIndex("URL");
+        hrefCollection.createIndex("refTo");
         crawlerCollection.createIndex("Visited");
         crawlerCollection.createIndex("indexed");
 

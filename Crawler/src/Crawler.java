@@ -87,7 +87,6 @@ public class Crawler implements Runnable{
                 if(!queue.isEmpty()) {
                     synchronized ( Visited) {
                         try {
-                            Collections.shuffle(queue);
                             String nextUrl = queue.remove(0);
                             currentUrl = Visited.contains(nextUrl) ? null : nextUrl;
 
