@@ -4,9 +4,9 @@ var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEv
 
 
 
-var textBox = document.querySelector('.box');
+var textBox = document.querySelector('.search-txt');
 
-var testBtn = document.querySelector('.button3');
+var testBtn = document.querySelector('.voice-btn');
 
 
 

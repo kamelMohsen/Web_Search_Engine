@@ -105,3 +105,10 @@ body{
     align-items: center;
     transition: 0.4s;
 }
+.results{
+    position: absolute;
+    top: 75%;
+    left: 2%;
+    border: thin;
+    text-align: left;
+}

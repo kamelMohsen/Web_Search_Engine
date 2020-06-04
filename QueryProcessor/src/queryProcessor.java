@@ -177,13 +177,13 @@ public class queryProcessor {
              myWriter.write("var objJson = [\n");
              for(int i = 0 ; i < docs.size(); i++){
                  if(i== docs.size()-1){
-                     String Stripped = docs.get(i).getFirstStatement().replaceAll("\""," ").replaceAll("\\n|\\\t"," ");
+                     String Stripped = docs.get(i).getFirstStatement().replaceAll("\""," ").replaceAll("\\n|\\\t|\\+"," ").replaceAll("@\"[^0-9a-zA-Z:,]+\""," ");
                      myWriter.write("    { title:\""+docs.get(i).getTitle().replaceAll("\""," ").replaceAll("\\n|\\\t"," ")+"\" ," +
                              " statement:\""+Stripped.substring(0,(Stripped.length()>140 ? 140:Stripped.length()))+"..."+"\" ," +
                              " url:\""+docs.get(i).getUrl().replaceAll("\""," ").replaceAll("\\n|\\\t"," ")+"\"}\n");
                  }
                  else {
-                     String Stripped = docs.get(i).getFirstStatement().replaceAll("\""," ").replaceAll("\\n|\\\t"," ");
+                     String Stripped = docs.get(i).getFirstStatement().replaceAll("\""," ").replaceAll("\\n|\\\t|\\+"," ").replaceAll("@\"[^0-9a-zA-Z:,]+\""," ");
                      myWriter.write("    { title: \"" + docs.get(i).getTitle().replaceAll("\"", " ").replaceAll("\\n|\\\t"," ") + "\" ," +
                              " statement:\""+Stripped.substring(0,(Stripped.length()>140 ? 140:Stripped.length()))+"..."+"\" ," +
                              " url:\"" + docs.get(i).getUrl().replaceAll("\""," ").replaceAll("\\n|\\\t"," ") + "\"},\n");
