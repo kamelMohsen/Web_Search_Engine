@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Integrated.iml" filepath="$PROJECT_DIR$/Integrated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Web_Search_Engine.iml" filepath="$PROJECT_DIR$/.idea/Web_Search_Engine.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47c19167-2458-4038-aed7-18ba87ae49ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Integrated.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/catalina-ant.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/catalina-ha.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/catalina-storeconfig.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/catalina-tribes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/catalina.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jsoup-1.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jsoup-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lucene-analyzers-common-6.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lucene-core-6.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/mongo-java-driver-3.12.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/mongo-java-driver-3.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/mongodb-driver-3.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/mongodb-driver-core-3.6.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/opennlp-tools-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler/Crawler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler/CrawlerDatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler/Scraper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/DocumentWordEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/HTMLElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/HTMLPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/ImageContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/IndexItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/Indexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/IndexerDataBaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/Keyword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/KeywordsExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/Link.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Indexer/Normalizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/Interface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/Keyword.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/KeywordsExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/QueryDocumentWordEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/RelevanceRanker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/queryProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueryProcessor/suggestions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ranker/PageRanker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ranker/URLRank.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cpaeFsR3fPttRqaXcz3tA9RkcI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47c19167-2458-4038-aed7-18ba87ae49ad" name="Default Changelist" comment="" />
+      <created>1591228082675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591228082675</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="131" width="424" height="520" key="FileChooserDialogImpl" timestamp="1591228539809">
+      <screen x="0" y="168" width="1360" height="600" />
+    </state>
+    <state x="458" y="131" width="424" height="520" key="FileChooserDialogImpl/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1591228539809" />
+    <state x="0" y="84" width="1350" height="607" key="new project wizard" timestamp="1591228550081">
+      <screen x="0" y="168" width="1360" height="600" />
+    </state>
+    <state x="0" y="84" width="1350" height="607" key="new project wizard/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1591228550081" />
+  </component>
+</project>
