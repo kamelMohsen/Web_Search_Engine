@@ -70,14 +70,25 @@ class KeywordsExtractor {
                     if(Title.contains(term)){
                         inTitle = true;
                     }
-                    if(Url.contains(term)){
-                        inUrl =true;
+                    if(Url.contains(term)) {
+                        inUrl = true;
                     }
+
+
 
                     String stem = getStemForm(term);
                     String firstStripped = htmlElements.get(i).getElement().replaceAll("[^a-zA-Z0-9]", " ");
-
-
+                    int start = 0;
+                    int end = firstStripped.length()-1;
+                    if(firstStripped.indexOf(term)-150 >0)
+                    {
+                        start = firstStripped.indexOf(term) - 150;
+                    }
+                    if(firstStripped.indexOf(term)+150 < firstStripped.length())
+                    {
+                        end = firstStripped.indexOf(term) + 150;
+                    }
+                    firstStripped = firstStripped.substring(start,end);
                     if (stem != null) {
                         Keyword cardKeyword = find(cardKeywords, new Keyword(stem.replaceAll("-0", "-"),firstStripped ,inTitle,inHeader,inUrl));
                         // treat the dashed words back, let look them pretty

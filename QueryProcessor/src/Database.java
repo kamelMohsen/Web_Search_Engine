@@ -18,16 +18,16 @@ public class Database {
     }
     void insertWord(String Word, String Region){
 
-        DBCursor cur =  peopleCollection.find(new BasicDBObject("Word", Word)
+        DBCursor cur =  peopleCollection.find(new BasicDBObject("Word", Word.toLowerCase())
                 .append("Region",Region));
         int size = cur.size();
         if(size != 0){
             BasicDBObject newDocument = new BasicDBObject().append("$inc",
                     new BasicDBObject().append("occurrence", 1));
-            peopleCollection.update(new BasicDBObject().append("Word", Word).
+            peopleCollection.update(new BasicDBObject().append("Word", Word.toLowerCase()).
                     append("Region",Region), newDocument);
         }else{
-            BasicDBObject wordEntry = new BasicDBObject("Word", Word)
+            BasicDBObject wordEntry = new BasicDBObject("Word", Word.toLowerCase())
                     .append("occurrence", 1).
                             append("Region",Region);
             peopleCollection.insert(wordEntry);
@@ -35,16 +35,16 @@ public class Database {
 
 
         ////////////////////////////////////////////////////////////////////////////////
-        DBCursor cur1 =  peopleCollection.find(new BasicDBObject("Word", Word)
+        DBCursor cur1 =  peopleCollection.find(new BasicDBObject("Word", Word.toLowerCase())
                 .append("Region","WW"));
         int size1 = cur1.size();
         if(size1 != 0){
             BasicDBObject newDocument = new BasicDBObject().append("$inc",
                     new BasicDBObject().append("occurrence", 1));
-            peopleCollection.update(new BasicDBObject().append("Word", Word).
+            peopleCollection.update(new BasicDBObject().append("Word", Word.toLowerCase()).
                     append("Region","WW"), newDocument);
         }else{
-            BasicDBObject wordEntry = new BasicDBObject("Word", Word)
+            BasicDBObject wordEntry = new BasicDBObject("Word", Word.toLowerCase())
                     .append("occurrence", 1).
                             append("Region","WW");
             peopleCollection.insert(wordEntry);
@@ -61,7 +61,7 @@ public class Database {
             DBObject doc = cur.next();
             String Word = (String) doc.get("Word");
             int number = (int) doc.get("occurrence");
-            queue.add(Word);
+            queue.add(Word.toUpperCase());
             numbers.add(number);
         }
 
@@ -75,7 +75,7 @@ public class Database {
             DBObject doc = cur.next();
             String Word = (String) doc.get("Word");
             int number = (int) doc.get("occurrence");
-            queue.add(Word);
+            queue.add(Word.toUpperCase());
             numbers.add(number);
         }
     }

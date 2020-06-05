@@ -24,10 +24,10 @@ body{
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
-    width: 500px;
+    width: 400px;
 }
 .search-box:hover > .search-txt{
-    width: 550px;
+    width: 400px;
     padding: 0 6px;
 }
 .search-box:hover > .search-btn{
@@ -36,7 +36,7 @@ body{
 .search-box:hover > .voice-btn{
     background: white;
 }
-.search-box:hover > .image-btn{
+.search-box:hover > .image-radio{
     background: white;
 }
 .search-btn{

@@ -50,7 +50,11 @@ public class HTMLPage {
             for(Element metaTag: parsedHtml.getElementsByTag("img")) {
                 alt = metaTag.attr("alt");
                 src = metaTag.attr("src");
-                if(!alt.equals("") && !src.equals("")) {
+                if(!src.replaceAll("\\s+","").equals("")) {
+                    if(alt.replaceAll("\\s+","").equals(""))
+                    {
+                        alt = parsedHtml.title();
+                    }
                     ImageContainer imageContainer = new ImageContainer(alt,src);
                     imgList.add(imageContainer);
                 }

@@ -3,6 +3,7 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import com.rometools.rome.feed.atom.Link;
 import org.bson.Document;
 
 import javax.servlet.annotation.WebServlet;
@@ -28,7 +29,7 @@ public class Interface extends HttpServlet {
         //0. Retrieve data
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         Yara = mongoClient.getDatabase("indexDB");
-        MongoCollection<Document> collection = Yara.getCollection("index_table_Final");
+        MongoCollection<Document> collection = Yara.getCollection("index_table");
 
         //1.To extract the text entered by the user
         userInput = request.getParameter("textbox");
@@ -94,20 +95,17 @@ public class Interface extends HttpServlet {
 
                         }
                     }
-                    String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
-                    docType = docType +
-                            "<html>\n" +
-                            "<head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"></head>\n";
 
+                    List<String> imagesList = new LinkedList<>();
                     for (String s : images) {
+                        if (s.length() > 10) {
+                            imagesList.add(s);
 
-                        docType += "<img src=\"" + s + "\" style=\"width:15%\" style=\"height:15%\">";
-
-
+                        }
                     }
 
-                    docType += "</body></html>";
-                    response.getWriter().print(docType);
+                    queryProcessor.createImagesJSFile(imagesList, Path);
+                    response.sendRedirect("http://localhost:8080/images.html");
                 }
             }
             if (radio.equals("TrendsSearch")) {
@@ -115,24 +113,14 @@ public class Interface extends HttpServlet {
                 List<String> names = new LinkedList<>();
                 Vector numbers = new Vector();
 
-                if(region.equals("Global")){
-                    trendPoster.getTrendsWorldWide(names,numbers);
-                }else{
-                    trendPoster.getTrendsInRegion(names,numbers,region.toLowerCase());
+                if (region.equals("Global")) {
+                    trendPoster.getTrendsWorldWide(names, numbers);
+                } else {
+                    trendPoster.getTrendsInRegion(names, numbers, region.toLowerCase());
                 }
+                queryProcessor.createTrendsJSFile(names, numbers, region, Path);
 
-                String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
-                docType = docType +
-                        "<html>\n" +
-                        "<head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"></head>\n";
-                System.out.println("Brougth trends : " + names.size());
-                for (int i = 0 ; i < names.size() ; i++) {
-
-                    docType += "<h2>"+names.get(i) + "</h2><br>";
-                }
-
-                docType += "</body></html>";
-                response.getWriter().print(docType);
+                response.sendRedirect("http://localhost:8080/trends.html");
             }
         }
 
