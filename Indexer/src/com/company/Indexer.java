@@ -57,7 +57,7 @@ public class Indexer  implements Runnable{
             mergeImages(newHtml,keywordsList);
 
                 keywordsList.forEach(keyword -> {
-                    DocumentWordEntry documentWordElement = new DocumentWordEntry(newHtml.getUrl(), keyword.getFrequency(), keyword.isInTitle(), keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount(),keyword.isInHeader(),keyword.isInUrl());
+                    DocumentWordEntry documentWordElement = new DocumentWordEntry(newHtml.getUrl(), keyword.getFrequency(), keyword.isInTitle(), keyword.getFirstStatement(), keyword.getImgSrcList(), newHtml.getTitle(), newHtml.getPageRank(), newHtml.getWordsCount(),keyword.isInHeader(),keyword.isInUrl(),newHtml.getRegion(),newHtml.getDate());
                     IndexItem newIndexEntry = new IndexItem(keyword.getStem(), documentWordElement);
 
                     synchronized (dataBase) {

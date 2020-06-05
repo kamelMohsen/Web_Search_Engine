@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 @SuppressWarnings("All")
@@ -10,7 +11,8 @@ public class Main {
         List<Link> linksList;
         linksList = new LinkedList<>();
         dataBase.getLinks(linksList);
-        long startTime = System.nanoTime();
+        long beforeTime = System.currentTimeMillis();
+        PerformanceAnalyzer crawlerPerformance = new PerformanceAnalyzer(2);
         Thread t1;
         List<Thread> threadsList = new LinkedList<>();
         for(int i = 0; i < 7; i++) {
@@ -23,22 +25,22 @@ public class Main {
             thread.join();
         }
 
-        long endTime = System.nanoTime();
-        long totalTime = endTime - startTime;
-        System.out.println("Total time indexing : " + totalTime / 1000000000);
+
 
         threadsList.clear();
         linksList.clear();
         dataBase.getLinks(linksList);
 
-        startTime = System.nanoTime();
 
         Normalizer normalizer = new Normalizer(dataBase,linksList,linksList.size());
         normalizer.startNormalizing();
 
-        endTime = System.nanoTime();
-        totalTime = endTime - startTime;
-        System.out.println("Total time normalizing : " + totalTime / 1000000000);
+        try {
+            crawlerPerformance.addToFile("Time to index and normalize 100 documents is " +
+                    (System.currentTimeMillis() - beforeTime)/1000 + " seconds.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

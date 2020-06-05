@@ -9,6 +9,7 @@ import org.bson.types.ObjectId;
 
 import static com.mongodb.client.model.Filters.eq;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -23,7 +24,7 @@ public class PageRanker  {
     private static final String HREFS_COLLECTION_NAME = "hrefs";
     private static final double dampingFactor = 0.85;
     private static final double invDampingFactor = 1-dampingFactor;
-    private static final int noOfIterations = 2;
+    private static final int noOfIterations = 10;
     public static void calculatePageRank(MongoDatabase database) {
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);
@@ -113,8 +114,19 @@ public class PageRanker  {
 
 
     public static void main(String[] args) {
+        long beforeTime = System.currentTimeMillis();
+        PerformanceAnalyzer crawlerPerformance = new PerformanceAnalyzer(1);
+
         MongoClient mongoMan = new MongoClient("localhost", 27017);
+
         MongoDatabase database = mongoMan.getDatabase(DATABASE_NAME);
         calculatePageRank(database);
+        try {
+            crawlerPerformance.addToFile("Time to page rank 100 documents for " + noOfIterations +" iterations is " +
+                    (System.currentTimeMillis() - beforeTime)/1000 + " seconds.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

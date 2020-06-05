@@ -108,6 +108,8 @@ public class DataBase {
                 .append("tf", ((double) indexItem.getDocumentWordElement().getFrequency() / (double) indexItem.getDocumentWordElement().getWordsCount()))
                 .append("idf", (double) 0)
                 .append("url_length", url_length)
+                .append("region", indexItem.getDocumentWordElement().getRegion())
+                .append("date", indexItem.getDocumentWordElement().getDate())
                 .append("img_srcs", dblImgs));
     }
 

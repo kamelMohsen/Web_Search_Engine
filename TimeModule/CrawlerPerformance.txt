@@ -1,0 +1,2 @@
+Time to crawl 1000 is 121 seconds.
+Time to crawl 100 is 14 seconds.

@@ -1,0 +1,10 @@
+Time to relevance rank 150 documents for a 2 words query is : 3 milliseconds.
+Total latency to return search results 245 milliseconds.
+Total latency to return image results 593 milliseconds.
+Total latency to return trends 76 milliseconds.
+-----------------------------------------------------------1000--------------------------------
+Time to relevance rank 13 documents for a 2 words query is : 1 milliseconds.
+Total latency to return search results 75 milliseconds.
+Total latency to return image results 74 milliseconds.
+Total latency to return trends 73 milliseconds.
+------------------------------------------------------------100

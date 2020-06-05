@@ -1,0 +1,2 @@
+Time to page rank 1000 documents for 10 iterations is 461 seconds.
+Time to page rank 100 documents for 10 iterations is 23 seconds.

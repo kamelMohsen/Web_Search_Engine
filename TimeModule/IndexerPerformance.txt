@@ -1,0 +1,2 @@
+Time to index and normalize 1000 documents is 830 seconds.
+Time to index and normalize 100 documents is 47 seconds.

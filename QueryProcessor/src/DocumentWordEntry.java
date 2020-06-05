@@ -24,12 +24,14 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
     double wordInUrl ;
     double wordInTitle;
     double wordInHeader;
+    double sameCountry;
+    double recent;
 
 
     public DocumentWordEntry(double pageRank, String url,
                              String title, int frequency, boolean inTitle, boolean inHeader, boolean inUrl,
                              String firstStatement, List<String> imgSrc, String word, int docLength, double tf,
-                             double idf, double urlLength) {
+                             double idf, double urlLength,double sameCountry,double recent) {
 
         this.pageRank = pageRank;
         this.url = url;
@@ -49,6 +51,8 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
         this.wordInUrl = this.inUrl? 3 : 0;
         this.wordInTitle = this.inTitle? 2 : 0;
         this.wordInHeader = this.inHeader? 1 : 0;
+        this.sameCountry = sameCountry;
+        this.recent = recent;
 
     }
 
@@ -221,9 +225,9 @@ public class DocumentWordEntry implements Comparable< DocumentWordEntry > {
 
     public void calculateTotalRank(){
         double tfidf = tf*idf;
-        this.RelevanceRank = this.wordInUrl + this.wordInHeader + this.wordInTitle + tfidf + (this.urlLength==Infinity ? 2:this.urlLength ) + (double)this.matches;
+        this.RelevanceRank = this.wordInUrl + this.wordInHeader + this.wordInTitle + tfidf + (this.urlLength ) + (double)this.matches + recent + sameCountry;
         //this.RelevanceRank =   this.urlLength + tfidf  + (this.matches == 0 ? 1 : (double)this.matches)*(wordInUrl + wordInHeader + wordInTitle);
-        this.totalRank = RelevanceRank + 0*pageRank;
+        this.totalRank = RelevanceRank + pageRank;
     }
 
     public double getTotalRank() {

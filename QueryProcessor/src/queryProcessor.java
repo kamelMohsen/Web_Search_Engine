@@ -44,12 +44,93 @@ public class queryProcessor {
     }
 
     //3. phrase search
-    public ArrayList<DocumentWordEntry> PhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection) throws IOException {
-        return null;
+    public ArrayList<DocumentWordEntry> PhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection,String searchRegion) throws IOException {
+        ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
+        ArrayList<DocumentWordEntry> allResults = new ArrayList<DocumentWordEntry>();
+        for (int i = 0; i < length; i++) {
+            FindIterable<Document> documents = (FindIterable<Document>) collection.find(Filters.eq("word", finalStemmedArray[i]));
+            for (Document document : documents) {
+
+
+                double pageRank = (double) document.get("page_rank");
+                String docUrl = (String) document.get("doc_url");
+                String docTitle = (String) document.get("title");
+                int  wordFrequency = (int) document.get("word_frequency");
+                boolean isInTitle = (boolean) document.get("is_in_title");
+                boolean isInHeader = (boolean) document.get("is_in_header");
+                boolean isInUrl = (boolean) document.get("is_in_url");
+                String firstStatement = (String) document.get("first_statement");
+                List<String> imgSrc = new LinkedList<String>();//(ArrayList) document.get("img_srcs");
+                String word = (String) document.get("word");
+                int  docLength = (int) document.get("total_words_count");
+                double tf = (double) document.get("tf");
+                double idf = (double) document.get("idf");
+                double urlLength = (double) document.get("url_length");
+                Date date = (Date)document.get("date");
+                String region = (String) document.get("region");
+                double recent = 0;
+                double sameCountry = 0;
+
+                if(date.getYear() == new Date().getYear())
+                {
+                    recent = 2;
+                }
+                else if(date.getYear() - (new Date().getYear()) == 1){
+                    recent =1 ;
+                }
+                else if(date.getYear() - (new Date().getYear()) < 5){
+                    recent = 0.5 ;
+                }
+                if(region.equals(searchRegion)){
+                    sameCountry = 1;
+                }
+
+                allResults.add(i, new DocumentWordEntry(pageRank, docUrl,docTitle,wordFrequency,isInTitle,
+                        isInHeader,isInUrl, firstStatement,imgSrc,word,docLength,tf, idf,urlLength,sameCountry,recent));
+            }
+        }
+        for(int i = 0 ; i < allResults.size();i++ ){
+            for (int j = i+1; j<allResults.size();j++){
+
+                if(allResults.get(i).getUrl().equals(allResults.get(j).getUrl())){
+                    allResults.get(i).setTf(allResults.get(i).getTf()+allResults.get(j).getTf());
+                    allResults.get(i).setIdf(allResults.get(i).getIdf()+allResults.get(j).getIdf());
+                    allResults.get(i).setMatches(allResults.get(i).getMatches()+5);
+                    if(allResults.get(j).isInHeader() == true)
+                    {
+                        allResults.get(i).setWordInHeader(allResults.get(i).getWordInHeader() + 1);
+                    }
+                    if(allResults.get(j).isInTitle() == true)
+                    {
+                        allResults.get(i).setWordInTitle(allResults.get(i).getWordInTitle() + 2);
+                    }
+                    if(allResults.get(j).isInUrl() == true)
+                    {
+                        allResults.get(i).setWordInUrl(allResults.get(i).getWordInUrl() + 3);
+                    }
+
+                    allResults.remove(j);
+                    j--;
+                }
+
+            }
+
+        }
+        for(DocumentWordEntry documentWordEntry : allResults){
+
+            if(documentWordEntry.getMatches() == finalStemmedArray.length){
+
+                toRanker.add(documentWordEntry);
+            }
+
+        }
+
+
+        return allResults;
     }
 
 
-    public ArrayList<DocumentWordEntry>  imageSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection) {
+    public ArrayList<DocumentWordEntry>  imageSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection,String searchRegion) {
         ArrayList<DocumentWordEntry> allResults = new ArrayList<DocumentWordEntry>();
 
         for (int i = 0; i < length; i++) {
@@ -68,6 +149,24 @@ public class queryProcessor {
                 double tf = (double) document.get("tf");
                 double idf = (double) document.get("idf");
                 double urlLength = (double) document.get("url_length");
+                Date date = (Date)document.get("date");
+                String region = (String) document.get("region");
+                double recent = 0;
+                double sameCountry = 0;
+
+                if(date.getYear() == new Date().getYear())
+                {
+                    recent = 2;
+                }
+                else if(date.getYear() - (new Date().getYear()) == 1){
+                    recent =1 ;
+                }
+                else if(date.getYear() - (new Date().getYear()) < 5){
+                    recent = 0.5 ;
+                }
+                if(region.equals(searchRegion)){
+                    sameCountry = 1;
+                }
 
                 ArrayList<Document> allWebPages = (ArrayList<Document>) document.get("img_srcs"); //has all info need to be parsed
 
@@ -78,7 +177,7 @@ public class queryProcessor {
                 }
 
                 allResults.add(new DocumentWordEntry(pageRank, docUrl, docTitle, wordFrequency, isInTitle,
-                        isInHeader, isInUrl, firstStatement, imgSrc, word, docLength, tf, idf, urlLength));
+                        isInHeader, isInUrl, firstStatement, imgSrc, word, docLength, tf, idf, urlLength,sameCountry,recent));
 
             }
         }
@@ -109,7 +208,7 @@ public class queryProcessor {
 
 
     //4. nonPhraseSearch
-    public ArrayList<DocumentWordEntry> nonPhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection) throws IOException {
+    public ArrayList<DocumentWordEntry> nonPhraseSearch(String[] finalStemmedArray, int length, MongoCollection<Document> collection,String searchRegion) throws IOException {
         ArrayList<DocumentWordEntry> toRanker = new ArrayList<DocumentWordEntry>();
         ArrayList<DocumentWordEntry> allResults = new ArrayList<DocumentWordEntry>();
         for (int i = 0; i < length; i++) {
@@ -131,11 +230,29 @@ public class queryProcessor {
                 double tf = (double) document.get("tf");
                 double idf = (double) document.get("idf");
                 double urlLength = (double) document.get("url_length");
+                Date date = (Date)document.get("date");
+                String region = (String) document.get("region");
+                double recent = 0;
+                double sameCountry = 0;
+
+                if(date.getYear() == new Date().getYear())
+                {
+                    recent = 2;
+                }
+                else if(date.getYear() - (new Date().getYear()) == 1){
+                    recent =1 ;
+                }
+                else if(date.getYear() - (new Date().getYear()) < 5){
+                    recent = 0.5 ;
+                }
+                if(region.equals(searchRegion)){
+                    sameCountry = 1;
+                }
 
 
 
                 allResults.add(i, new DocumentWordEntry(pageRank, docUrl,docTitle,wordFrequency,isInTitle,
-                        isInHeader,isInUrl, firstStatement,imgSrc,word,docLength,tf, idf,urlLength));
+                        isInHeader,isInUrl, firstStatement,imgSrc,word,docLength,tf, idf,urlLength,sameCountry,recent));
             }
         }
         for(int i = 0 ; i < allResults.size();i++ ){

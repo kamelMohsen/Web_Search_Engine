@@ -26,6 +26,8 @@ public class Interface extends HttpServlet {
     public String Path = "F:/Tech/CUFE_CHS/Spring 2020/Advance Programming Techniques/Project/Web_Search_Engine/Server/apache-tomcat-8.5.55/webapps/ROOT";
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        long beforeTime = System.currentTimeMillis();
+        PerformanceAnalyzer crawlerPerformance = new PerformanceAnalyzer(3);
         //0. Retrieve data
         mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         Yara = mongoClient.getDatabase("indexDB");
@@ -53,7 +55,7 @@ public class Interface extends HttpServlet {
                 }
 
                 KeywordsExtractor keywordsExtractor = new KeywordsExtractor();
-                List<Keyword> keywordList = keywordsExtractor.getKeywordsList(userInput);
+                List<Keyword> keywordList = keywordsExtractor.getKeywordsList(userInput.replaceAll("\"+",""));
 
 
                 String[] finalStemmedArray = new String[keywordList.size()];  //Construct a string to put in it the stemmed words
@@ -64,23 +66,37 @@ public class Interface extends HttpServlet {
 
                 //5. check  phrase or non phrase then process accordingly (Send data to query processor)
                 if (radio != null && radio.equals("ImagesSearch")) {
-                    docs = qp.imageSearch(finalStemmedArray, keywordList.size(), collection);
+                    docs = qp.imageSearch(finalStemmedArray, keywordList.size(), collection,region);
                 } else if (qp.phraseOrNonphrase(userInput) == 1) {
-                    docs = qp.nonPhraseSearch(finalStemmedArray, keywordList.size(), collection);
+                    docs = qp.nonPhraseSearch(finalStemmedArray, keywordList.size(), collection,region);
                 } else if (qp.phraseOrNonphrase(userInput) == 0) {
-                    docs = qp.PhraseSearch(finalStemmedArray, keywordList.size(), collection); //Fills array List toRanker
+                    docs = qp.PhraseSearch(finalStemmedArray, keywordList.size(), collection,region); //Fills array List toRanker
                 }
-
+                for(DocumentWordEntry doc : docs) {
+                    System.out.println(doc.getTotalRank());
+                }
                 //6. Call the ranker ; the toRanker arrayList should be filled by this stage
+                long beforeRankTime = System.currentTimeMillis();
                 RelevanceRanker rr = new RelevanceRanker();
                 rr.calculateRelevanceRank(docs);
-
+                try {
+                    crawlerPerformance.addToFile("Time to relevance rank "+ docs.size() + " documents for a 2 words query is :" +
+                            (System.currentTimeMillis() - beforeRankTime) + " milliseconds.");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
                 //7.  print the results on screen
                 //-set page content
                 response.setContentType("text/html");
                 if (radio.equals("Search")) {
                     queryProcessor.createJSFile(docs, Path);
+                    try {
+                        crawlerPerformance.addToFile("Total latency to return search results " +
+                                (System.currentTimeMillis() - beforeTime)+ " milliseconds.");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     response.sendRedirect("http://localhost:8080/result.html");
                 } else {
 
@@ -103,7 +119,12 @@ public class Interface extends HttpServlet {
 
                         }
                     }
-
+                    try {
+                        crawlerPerformance.addToFile("Total latency to return image results " +
+                                (System.currentTimeMillis() - beforeTime) + " milliseconds.");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     queryProcessor.createImagesJSFile(imagesList, Path);
                     response.sendRedirect("http://localhost:8080/images.html");
                 }
@@ -119,7 +140,12 @@ public class Interface extends HttpServlet {
                     trendPoster.getTrendsInRegion(names, numbers, region.toLowerCase());
                 }
                 queryProcessor.createTrendsJSFile(names, numbers, region, Path);
-
+                try {
+                    crawlerPerformance.addToFile("Total latency to return trends " +
+                            (System.currentTimeMillis() - beforeTime) + " milliseconds.");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 response.sendRedirect("http://localhost:8080/trends.html");
             }
         }
