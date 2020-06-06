@@ -1,16 +1,73 @@
 body{
     margin: 0;
     padding: 0;
-    background: #d8ccc9;
+    background: #de3c3c;
 }
-.titleName{
-    position: absolute;
-    top: 25%;
-    left: 45%;
-	color: whitesmoke;
-    align-content: center;
-    font-size: xxx-large;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+/*input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}*/
+
+/*input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}*/
+
+/*input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}*/
+
+.autocomplete-items {
+	 position: relative;
+  display: inline-block;
+	width: 80%;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
 .search-box{
     position: absolute;
     top: 50%;
@@ -31,7 +88,7 @@ body{
     color: white;
     font-size: 16px;
     transition: 0.4s;
-    line-height: 40px;
+    line-height: 30px;
     width: 400px;
 }
 .search-box:hover > .search-txt{
@@ -71,30 +128,18 @@ body{
     align-items: center;
     transition: 0.4s;
 }
-.search-label{
-    position: absolute;
-    top: 60%;
-    left: 41%;
-    color: #e84118;
-    width: 50px;
-    height: 40px;
-    border-radius: 50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
 .search-radio{
-    position: absolute;
-    top: 60%;
-    left: 45%;
+     position: absolute;
+    top: 48%;
+    left: 82%;
     color: #e84118;
-    width: 40px;
+    width: 25px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
+    /* background: #2f3640; */
     display: flex;
+    background-color: red;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
@@ -102,23 +147,24 @@ body{
 
 .images-label{
     position: absolute;
-    top: 60%;
-    left: 51%;
-    color: #e84118;
+    top: 55%;
+    left: 73%;
+    color: black;
     width: 50px;
-    height: 40px;
+    font-weight: bold;
     border-radius: 50%;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
 }
 .images-radio{
-    position: absolute;
-    top: 60%;
-    left: 55%;
+     position: absolute;
+    top: 54%;
+    left: 82%;
     color: #e84118;
-    width: 40px;
+    width: 25px;
     height: 40px;
     border-radius: 50%;
     background: #2f3640;
@@ -131,7 +177,7 @@ body{
     position: absolute;
     top: 60%;
     left: 61%;
-    color: #e84118;
+    color: black;
     width: 50px;
     height: 40px;
     border-radius: 50%;
@@ -156,13 +202,164 @@ body{
     transition: 0.4s;
 }
 .countries-list{
-    position: absolute;
-    top: 60%;
-    left: 32%;
-    color: #e84118;
+        position: absolute;
+    top: 67%;
+    left: 72%;
+    font-weight: bold;
+    color: #de0a0a;
     width: 100px;
     height: 40px;
-    border-radius: 30%;
+    /* border-radius: 30%; */
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.titleName{
+	font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+	color: black;
+    align-content: center;
+    font-size: xxx-large;
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+
+}
+
+.search-box:hover > .search-txt{
+    width: 400px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+    background: white;
+}
+.search-box:hover > .voice-btn{
+    background: white;
+}
+.search-box:hover > .image-radio{
+    background: white;
+}
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.voice-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-label{
+   position: absolute;
+    top: 48%;
+    left: 73%;
+    color: #de0a0a;
+    font-weight: bold;
+    font-size: x-large;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-radio{
+     position: absolute;
+    top: 48%;
+    left: 82%;
+    color: #e84118;
+    width: 25px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: #2f3640; */
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.images-label{
+    position: absolute;
+    top: 55%;
+    left: 73%;
+    color:#de0a0a;
+    width: 50px;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.images-radio{
+        position: absolute;
+    top: 54%;
+    left: 82%;
+    color: #e84118;
+    width: 25px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.trends-label{
+   position: absolute;
+    top: 60%;
+    left: 73%;
+    color: #de0a0a;
+    font-size: x-large;
+    width: 50px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.trends-radio{
+    position: absolute;
+    top: 60%;
+    left: 82%;
+    color: #171616;
+    width: 25px;
+    height: 40px;
+    border-radius: 50%;
     background: #2f3640;
     display: flex;
     justify-content: center;
