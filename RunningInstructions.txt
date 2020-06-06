@@ -1,6 +1,8 @@
 readme.txt
 
-The project is divided into 6 folders. The TimeModule text file contains the Performance Analysis module outputs. The Server contains the server info.
+The project is divided into 6 folders. The TimeModule text file contains the Performance Analysis module outputs. 
+
+The Server contains the server files needed, html, css and everything.
 
 1. First open the crawler project in IntelliJ.
 2. Open file-> Project Structure-> Select Project tab from the left
