@@ -1,0 +1,29 @@
+readme.txt
+
+The project is divided into 6 folders. The TimeModule text file contains the Performance Analysis module outputs. The Server contains the server info.
+
+1. First open the crawler project in IntelliJ.
+2. Open file-> Project Structure-> Select Project tab from the left
+3. Make sure the project compiler output is set to the 
+yourcomputer/whereOurProjectIsStored/Web_Search_Engine/Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF 
+
+or if at the apache-tomcat-8.5.55/webapps/ROOT/WEB-INF of the server you want to run it on
+
+4. In each of the four main components of the project: Crawler, Indexer, Ranker, QueryProcessor: there is a class called Performance Analyzer. This class has three paths to write in the output of the performance analysis in. Please change the paths to where you wanna see the output.
+
+5.Since one of the libraries is more than 600mbs, we couldn't include it in the github or the uploaded zip, so please include it on your machine, this is its link: https://stanfordnlp.github.io/CoreNLP/
+Download the zip file, not the English-Only version, and copy it to the Server/webapps/ROOT/WEB-INF/lib
+
+6. Install MongoDB if you don't already have it and make sure the server is running.
+
+7. Now that we're done with configurations, let's run:
+	
+	a. In the Crawler project -> Crawler.java: 
+		set the maxpages variable to be the number of pages to 			crawl.
+	b. The Crawler is set crawl and recrawl forever, so stop it 		   after there are no more new links in the CrawlerDB->Links 	  collection.
+	
+	c. now run the Ranker project and let it finish.
+	d. now run the Indexer project and let it finish.
+	e. now you start up the tomcat server that we provided and go 	   to the localhost:8080/Interface.html
+	f. Search as you like.
+	
