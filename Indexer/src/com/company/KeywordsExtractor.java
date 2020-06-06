@@ -21,7 +21,7 @@ import java.util.*;
 class KeywordsExtractor {
 
 
-    static List<Keyword> getKeywordsList(List<HTMLElement> htmlElements) throws IOException {
+    static List<Keyword> getKeywordsList(List<HTMLElement> htmlElements , DataBase dataBase) throws IOException {
 
         TokenStream tokenStream = null;
         String Url = htmlElements.get(0).getElement();
@@ -30,11 +30,9 @@ class KeywordsExtractor {
         try {
             List<Keyword> cardKeywords = new LinkedList<>();
             for(int i = 3 ; i< htmlElements.size() ; i++) {
-
-
-
-
-
+                synchronized (dataBase) {
+                    dataBase.addNGtworamWords(htmlElements.get(i).getElement());
+                }
 
                 // treat the dashed words, don't let separate them during the processing
                 String fullText = htmlElements.get(i).getElement();

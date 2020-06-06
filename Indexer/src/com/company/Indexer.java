@@ -116,7 +116,7 @@ public class Indexer  implements Runnable{
     public  List<Keyword> findKeywords(HTMLPage htmlPage) {
         List<Keyword> keywordsList = null;
         try {
-            keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getHtmlElements());
+            keywordsList = KeywordsExtractor.getKeywordsList(htmlPage.getHtmlElements(),dataBase);
         } catch (IOException e) {
             System.out.println("Failed extracting words from html page");
             e.printStackTrace();

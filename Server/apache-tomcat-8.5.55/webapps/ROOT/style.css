@@ -3,6 +3,14 @@ body{
     padding: 0;
     background: #d8ccc9;
 }
+.titleName{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+	color: whitesmoke;
+    align-content: center;
+    font-size: xxx-large;
+}
 .search-box{
     position: absolute;
     top: 50%;

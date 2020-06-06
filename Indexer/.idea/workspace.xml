@@ -20,41 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4f4f407-087d-4281-8de9-ce9335eea990" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Crawler/src/PerformanceAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/PerformanceAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QueryProcessor/src/PerformanceAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ranker/src/PerformanceAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/AutoCompleteJS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/autocomplete.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Crawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Crawler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Scraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/out/production/SearchEngine/Scraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crawler/seed_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/seed_list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Crawler/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/src/Crawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Crawler/src/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Crawler/src/Scraper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/DocumentWordEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/DocumentWordEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/HTMLPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/HTMLPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/Indexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/Indexer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/KeywordsExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/KeywordsExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SearchEngine/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SearchEngine/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DocumentWordEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DocumentWordEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/HTMLPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HTMLPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Indexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Indexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QueryProcessor/src/DocumentWordEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QueryProcessor/src/DocumentWordEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QueryProcessor/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QueryProcessor/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QueryProcessor/src/queryProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QueryProcessor/src/queryProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/KeywordsExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/KeywordsExtractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ranker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ranker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ranker/Ranker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ranker/Ranker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ranker/out/production/Ranker/PageRanker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ranker/out/production/Ranker/PageRanker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ranker/src/PageRanker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ranker/src/PageRanker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/catalina.2020-06-05.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/catalina.2020-06-05.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/localhost.2020-06-05.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/localhost.2020-06-05.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/localhost_access_log.2020-06-05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/logs/localhost_access_log.2020-06-05.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DocumentWordEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/DocumentWordEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/classes/queryProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/Interface.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/images.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/trends.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/trends.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimeModule/CrawlerPerformance.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TimeModule/CrawlerPerformance.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimeModule/QueryPerformance.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TimeModule/QueryPerformance.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimeModule/RankerPerformance.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TimeModule/RankerPerformance.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server/apache-tomcat-8.5.55/webapps/ROOT/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Coding/WebScrapper" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -158,33 +154,33 @@
     </state>
     <state x="516" y="128" key="DetectedRootsChooserDialog/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591305268989" />
     <state x="516" y="128" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1589897676222" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1591305266314">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1591449464963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591305266314" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591449464963" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589897671079" />
-    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1591385130542">
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom" timestamp="1591449232107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591385130542" />
+    <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591449232107" />
     <state width="1237" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1590209170457" />
     <state width="1493" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591341966496" />
-    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1591385130541">
+    <state width="1493" height="252" key="GridCell.Tab.0.center" timestamp="1591449232107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591385130541" />
+    <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591449232107" />
     <state width="1237" height="212" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1590209170456" />
     <state width="1493" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591341966496" />
-    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1591385130541">
+    <state width="1493" height="252" key="GridCell.Tab.0.left" timestamp="1591449232107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591385130541" />
+    <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591449232107" />
     <state width="1237" height="212" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1590209170455" />
     <state width="1493" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591341966496" />
-    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1591385130541">
+    <state width="1493" height="252" key="GridCell.Tab.0.right" timestamp="1591449232107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591385130541" />
+    <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591449232107" />
     <state width="1237" height="212" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.680@1920.0.1280.680" timestamp="1590209170456" />
     <state width="1493" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591341966496" />
     <state width="1314" height="140" key="GridCell.Tab.0.right/1360.141.1366.768/0.168.1360.600@0.168.1360.600" timestamp="1590749463179" />
@@ -221,13 +217,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="33" key="new project wizard/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590840078080" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1590846443115">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1591448712094">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1590846443115" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591379556481">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591448712094" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591448288706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591379556481" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591448288706" />
   </component>
 </project>

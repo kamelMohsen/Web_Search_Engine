@@ -24,7 +24,7 @@ public class PageRanker  {
     private static final String HREFS_COLLECTION_NAME = "hrefs";
     private static final double dampingFactor = 0.85;
     private static final double invDampingFactor = 1-dampingFactor;
-    private static final int noOfIterations = 10;
+    private static final int noOfIterations = 1;
     public static void calculatePageRank(MongoDatabase database) {
         MongoCollection<Document> linksCollection = database.getCollection(LINKS_COLLECTION_NAME);
         MongoCollection<Document> hrefsCollection = database.getCollection(HREFS_COLLECTION_NAME);

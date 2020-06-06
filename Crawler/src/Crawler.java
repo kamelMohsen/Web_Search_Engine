@@ -6,7 +6,7 @@ import java.util.*;
 @SuppressWarnings("ALL")
 public class Crawler implements Runnable {
 
-    private static int maxPages = 100;
+    private static int maxPages = 200000;
     public static int  noOfCrawlers = 7;
     private Set<String> Visited;
     private List<String> queue;

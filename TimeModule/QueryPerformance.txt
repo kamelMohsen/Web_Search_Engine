@@ -8,3 +8,85 @@ Total latency to return search results 75 milliseconds.
 Total latency to return image results 74 milliseconds.
 Total latency to return trends 73 milliseconds.
 ------------------------------------------------------------100
+Time to relevance rank3documents for a 2 words query is :1 milliseconds.
+Total latency to return search results 12148 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 18 milliseconds.
+Time to relevance rank3documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 52 milliseconds.
+Time to relevance rank13documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 38 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 40 milliseconds.
+Total latency to return trends 21 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 35 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 45 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 37 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 36 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 34 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 29 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 39 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 34 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 36 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 39 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 42 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 34 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 35 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 30 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 31 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 31 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 29 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 69 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 33 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 38 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 33 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 31 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 34 milliseconds.
+Total latency to return trends 15 milliseconds.
+Time to relevance rank3documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 20 milliseconds.
+Time to relevance rank21documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 33 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 22 milliseconds.
+Time to relevance rank22documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 35 milliseconds.
+Time to relevance rank22documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 39 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 25 milliseconds.
+Time to relevance rank4documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 28 milliseconds.
+Time to relevance rank2documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 23 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return image results 16 milliseconds.
+Time to relevance rank0documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 20 milliseconds.
+Time to relevance rank13documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 31 milliseconds.
+Time to relevance rank22documents for a 2 words query is :0 milliseconds.
+Total latency to return search results 36 milliseconds.

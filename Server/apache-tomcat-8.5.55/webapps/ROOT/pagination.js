@@ -1,19 +1,28 @@
 var current_page = 1;
 var records_per_page = 10;
 var objJson = [
-    { title: "The Official Home of CBBC - CBBC - BBC" , statement:"Copyright   2020 BBC  The BBC is not responsible for the content of external sites  Read about our approach to external linking..." , url:"https://www.bbc.co.uk/cbbc"},
-    { title: "Games for kids and early years activities - CBeebies - BBC" , statement:"Copyright   2020 BBC  The BBC is not responsible for the content of external sites  Read about our approach to external linking..." , url:"https://www.bbc.co.uk/cbeebies"},
-    { title: "BBC Food - Recipes and inspiration from your favourite BBC programmes and chefs" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.co.uk/food"},
-    { title: "Culture in Quarantine - BBC Arts" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.co.uk/arts"},
-    { title: "BBC Weather" , statement:"Vote for your favourite Weather Watchers photo of spring from our ten shortlisted images..." , url:"https://www.bbc.co.uk/weather"},
-    { title: "BBC - Search" , statement:"Home News Sport Reel Worklife Travel Future Culture Music TV Weather Sound..." , url:"https://search.bbc.co.uk/search"},
-    { title: "George Floyd: How the USA's history has shaped today's police brutality - BBC News" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/news/52921989"},
-    { title: "Coronavirus: Could more UK lives have been saved? - BBC News" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/news/health-52926198"},
-    { title: "George Floyd: Videos of police brutality during protests shock US - BBC News" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/news/world-us-canada-52932611"},
-    { title: "Africa's week in pictures: 29 May - 4 June 2020 - BBC News" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/news/world-africa-52920374"},
-    { title: "Coronavirus: Madagascar minister fired over $2m lollipop order - BBC News" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/news/world-africa-52929925"},
-    { title: "Premier League fixtures: BBC to show Bournemouth v Crystal Palace, Norwich v Everton - BBC Sport" , statement:"Home News Sport Weather iPlayer Sounds CBBC CBeebies Food Bitesize Arts Taster Local Three Men..." , url:"https://www.bbc.com/sport/football/52889445"},
-    { title:"Jadon Sancho: Borussia Dortmund forward unhappy over haircut picture fine - BBC Sport" , statement:"Copyright   2020 BBC  The BBC is not responsible for the content of external sites  Read about our approach to external linking..." , url:"https://www.bbc.com/sport/football/52940654"}
+    { title: "Thailand's 50 Richest List" , statement:"   2020 Forbes Media LLC  All Rights Reserved..." , url:"https://www.forbes.com/thailand-billionaires/list/"},
+    { title: "South Korea’s 50 Richest List" , statement:"   2020 Forbes Media LLC  All Rights Reserved..." , url:"https://www.forbes.com/korea-billionaires/list/"},
+    { title: "Japan’s 50 Richest List" , statement:"   2020 Forbes Media LLC  All Rights Reserved..." , url:"https://www.forbes.com/japan-billionaires/list/"},
+    { title: "Indonesia’s Richest 2019: Nation’s Wealthiest See Gains Despite Subdued Year" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/indonesia-billionaires/"},
+    { title: "Australia's Richest 2019: In A Down Year, Two Miners Break Back Into The Top 50" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/australia-billionaires/"},
+    { title: "India's Richest 2019: Fortune Favors A Few As Growth Slows" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/india-billionaires/"},
+    { title: "Philippines' Richest 2019: With A Notable Five Deceased, A New Generation Takes The Helm" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/philippines-billionaires/"},
+    { title: "Taiwan’s Richest 2020: Modest Gains For The 50 Richest" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/taiwan-billionaires/"},
+    { title: "Malaysia's Richest 2019: Multiple Factors Erode Fortunes Of Nation's Wealthiest" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/malaysia-billionaires/"},
+    { title: "The Net Worth Of Every 2020 Presidential Candidate" , statement:"Sign in to your Forbes account o..." , url:"https://www.forbes.com/sites/danalexander/2019/08/14/heres-the-net-worth-of-every-2020-presidential-candidate/"},
+    { title: "Forbes" , statement:"  2020 Forbes Media LLC  All Rights Reserved  Terms and ConditionsPrivacy StatementMarket Data by MorningstarAdChoice..." , url:"https://www.forbes.com/"},
+    { title: "Enterprise Tech" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/enterprise-tech/"},
+    { title: "Worlds Billionaires" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/worlds-billionaires/"},
+    { title: "Innovation" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/innovation/"},
+    { title: "Money & Politics" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/money-politics/"},
+    { title: "5G" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/5g/"},
+    { title: "Big Data" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/big-data/"},
+    { title: "Cybersecurity" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/cybersecurity/"},
+    { title: "AI" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/ai/"},
+    { title: "Consumer Tech" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/consumer-tech/"},
+    { title: "Cloud" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s ..." , url:"https://www.forbes.com/cloud/"},
+    { title:"Everbridge BrandVoice" , statement:"Billionaires All Billionaires World s Billionaires Forbes 400 America s Richest Self Made Women China s Richest India s Richest Indonesia s Richest K..." , url:"https://www.forbes.com/sites/everbridge/#de1e83e640f6"}
 ];function prevPage()
 {
     if (current_page > 1) {
